@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Обществознание ЕГЭ-2027: тренажёр заданий 10–13 с разбором</title>
+<meta name="description" content="Интерактивный тренажёр заданий 10, 11, 12 и 13 ЕГЭ по обществознанию 2027: политика, Конституция РФ, органы власти. Разбор каждого варианта ответа, баллы по критериям ФИПИ, мини-вариант с таймером.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#F3F5F9; --surface:#FFFFFF; --ink:#0F2137; --muted:#56667B; --line:#D6DEE9;
+  --primary:#1F46C9; --primary-ink:#FFFFFF; --blank:#EAF0FF; --blank-line:#9DB2F2;
+  --ok:#14703F; --ok-bg:#E3F4EB; --bad:#B8342A; --bad-bg:#FBE9E6; --warn:#8F5A00; --warn-bg:#FFF1D2;
+  --hdr:rgba(243,245,249,.92); --shadow:0 1px 0 rgba(15,33,55,.04);
+  --f-body:"Onest",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --f-disp:"Unbounded","Onest",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B1420; --surface:#132033; --ink:#E7EEF8; --muted:#9BAABF; --line:#27384F;
+    --primary:#8EAAFF; --primary-ink:#0B1420; --blank:#182A47; --blank-line:#3E5C9E;
+    --ok:#62D69C; --ok-bg:#10322A; --bad:#FF8B7F; --bad-bg:#3A1D1C; --warn:#F2C468; --warn-bg:#392E12;
+    --hdr:rgba(11,20,32,.92);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B1420; --surface:#132033; --ink:#E7EEF8; --muted:#9BAABF; --line:#27384F;
+  --primary:#8EAAFF; --primary-ink:#0B1420; --blank:#182A47; --blank-line:#3E5C9E;
+  --ok:#62D69C; --ok-bg:#10322A; --bad:#FF8B7F; --bad-bg:#3A1D1C; --warn:#F2C468; --warn-bg:#392E12;
+  --hdr:rgba(11,20,32,.92);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);-webkit-text-size-adjust:100%;height:auto}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.55 var(--f-body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--hdr);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+a{color:var(--primary);text-underline-offset:.18em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--primary);outline-offset:2px;border-radius:6px}
+h1,h2,h3,h4{margin:0;line-height:1.15;font-family:var(--f-disp);font-weight:600;letter-spacing:-.01em}
+h1{font-size:clamp(1.75rem,5.4vw,2.9rem)}
+h2{font-size:clamp(1.4rem,3.8vw,2rem);margin-bottom:.6rem}
+h3{font-size:1.05rem;line-height:1.3}
+h4{font-size:.95rem;margin:1.2rem 0 .5rem}
+p{margin:0 0 .8rem}
+.wrap{max-width:1040px;margin:0 auto;padding:0 clamp(16px,4vw,28px)}
+section{padding:clamp(44px,7vw,84px) 0}
+.muted{color:var(--muted)}
+.lead{font-size:1.15rem;max-width:60ch;color:var(--ink)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* шапка */
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--hdr);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;gap:1rem;min-height:56px}
+.brand{font:600 .95rem/1.1 var(--f-disp);color:var(--ink);text-decoration:none;white-space:nowrap}
+.nav{display:flex;gap:.25rem;overflow-x:auto;margin-left:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{color:var(--ink);text-decoration:none;padding:.5rem .7rem;border-radius:8px;font-size:.95rem;white-space:nowrap}
+.nav a:hover{background:var(--blank)}
+.tbtn{font:inherit;font-size:.85rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:.4rem .65rem;cursor:pointer;white-space:nowrap}
+@media (max-width:640px){.brand{display:none}.nav{margin-left:0}}
+
+/* герой */
+.hero{padding-top:clamp(32px,6vw,72px)}
+.hero .grid{display:grid;gap:2rem;align-items:center}
+@media (min-width:900px){.hero .grid{grid-template-columns:1.15fr .85fr;gap:3rem}}
+.hero h1{margin-bottom:1rem}
+.cta{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.4rem 0 1rem}
+.btn{font:inherit;font-weight:600;font-size:1rem;border-radius:10px;padding:.8rem 1.25rem;border:1.5px solid var(--primary);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;min-height:46px;background:transparent;color:var(--primary)}
+.btn.primary{background:var(--primary);color:var(--primary-ink)}
+.btn.ghost{border-color:var(--line);color:var(--ink)}
+.btn.danger{border-color:var(--bad);color:var(--bad)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.note{font-size:.93rem;color:var(--muted);max-width:60ch}
+
+/* бланк в герое и ответы */
+.form{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.2rem 1.2rem;box-shadow:var(--shadow)}
+.form .ft{font-size:.85rem;color:var(--muted);margin-bottom:.9rem}
+.frow{display:flex;align-items:center;gap:.9rem;margin-bottom:.8rem}
+.frow .no{font:600 1.35rem/1 var(--f-disp);width:2.6rem;color:var(--ink)}
+.cell{display:inline-grid;place-items:center;width:2.15rem;height:2.7rem;border:1.5px solid var(--blank-line);background:var(--blank);color:var(--primary);font:600 1.15rem/1 var(--f-disp);margin-right:-1.5px}
+.blank{display:inline-flex;vertical-align:middle}
+.blank .cell:first-child,.blank .cellcol:first-child .cell{border-radius:5px 0 0 5px}
+.blank .cell:last-child,.blank .cellcol:last-child .cell{border-radius:0 5px 5px 0}
+.blank.mini .cell{width:1.7rem;height:2.1rem;font-size:.95rem}
+.blank.good .cell{border-color:var(--ok);background:var(--ok-bg);color:var(--ok)}
+.cellcol{display:inline-flex;flex-direction:column;align-items:center}
+.cellcol .cl{font-size:.7rem;color:var(--muted);line-height:1.3}
+.form .cell{animation:put .35s ease both;animation-delay:var(--d,0s)}
+@keyframes put{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.form .cap{font-size:.9rem;color:var(--muted);margin:1rem 0 0}
+
+/* что проверяют */
+.trow{display:grid;gap:.4rem 1.2rem;padding:1.3rem 0;border-top:1px solid var(--line)}
+.trow:last-of-type{border-bottom:1px solid var(--line)}
+@media (min-width:760px){.trow{grid-template-columns:5.2rem 1fr auto;align-items:start}}
+.trow .num{font:600 2.4rem/1 var(--f-disp);color:var(--primary)}
+.trow h3{margin-bottom:.3rem}
+.trow p{margin:0 0 .6rem;max-width:62ch}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.6rem}
+.chip{font-size:.8rem;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.15rem .65rem;color:var(--muted)}
+.chip.strong{background:var(--primary);border-color:var(--primary);color:var(--primary-ink);font-weight:600}
+.chip.ghost{background:transparent}
+.trow .go{align-self:center}
+.stat{font-size:.88rem;color:var(--muted)}
+
+/* как устроено */
+.how{display:grid;gap:1rem;margin-top:1.2rem}
+@media (min-width:760px){.how{grid-template-columns:repeat(2,1fr)}}
+.how div{border-left:3px solid var(--blank-line);padding:.1rem 0 .1rem 1rem}
+.how h3{margin-bottom:.25rem}
+.how p{margin:0;color:var(--muted)}
+
+/* тренажёр */
+#trainer{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ctl{display:grid;gap:.8rem;margin:1.2rem 0 1.4rem}
+.seg{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}
+.seg .sl{font-size:.9rem;color:var(--muted);margin-right:.3rem;min-width:4.2rem}
+.sb{font:inherit;font-size:.95rem;font-weight:500;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);border-radius:9px;padding:.5rem .9rem;cursor:pointer;min-height:42px;text-align:left}
+.sb small{display:block;font-size:.75rem;font-weight:400;color:var(--muted);line-height:1.2}
+.sb.on{border-color:var(--primary);background:var(--blank);color:var(--primary)}
+.sb.on small{color:var(--primary)}
+.dim{opacity:.5}
+.tgrid{display:grid;gap:1.6rem}
+@media (min-width:940px){.tgrid{grid-template-columns:minmax(0,1fr) 320px;align-items:start}.tgrid aside{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px)}}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:clamp(1rem,3vw,1.5rem);margin-bottom:1rem}
+.card .topic{font:600 1.05rem/1.3 var(--f-disp);margin:.2rem 0 .8rem}
+.card .q{font-weight:500;margin-bottom:1rem}
+.opts{display:grid;gap:.55rem}
+.opt{font:inherit;color:inherit;text-align:left;display:flex;gap:.75rem;align-items:flex-start;width:100%;padding:.75rem .85rem;border:1.5px solid var(--line);border-radius:11px;background:var(--surface);cursor:pointer;min-height:48px}
+.opt .n{flex:none;display:grid;place-items:center;width:1.9rem;height:1.9rem;border-radius:7px;background:var(--blank);color:var(--primary);font:600 .85rem/1 var(--f-disp)}
+.opt .tx{padding-top:.18rem}
+.opt:hover{border-color:var(--blank-line)}
+.opt.is-sel{border-color:var(--primary);background:var(--blank)}
+.opt.is-sel .n{background:var(--primary);color:var(--primary-ink)}
+.opt.is-hit{border-color:var(--ok);background:var(--ok-bg)}
+.opt.is-bad{border-color:var(--bad);background:var(--bad-bg)}
+.opt.is-miss{border:1.5px dashed var(--warn);background:var(--warn-bg)}
+.opt.is-neutral{opacity:.9}
+.opt[aria-disabled="true"]{cursor:default}
+.why{font-size:.94rem;color:var(--muted);margin:.4rem 0 .35rem 2.6rem}
+.why .tag{font-weight:700;color:var(--ink)}
+.legend{border:1px solid var(--line);border-radius:11px;padding:.8rem 1rem;background:var(--surface);margin-bottom:1rem}
+.lh{font:600 .85rem/1.3 var(--f-body);color:var(--muted);margin:0 0 .4rem;letter-spacing:.02em}
+.lh.left{margin-top:.2rem}
+.lst{margin:0;padding:0;list-style:none;display:grid;gap:.25rem}
+.lst b{display:inline-grid;place-items:center;width:1.5rem;height:1.5rem;border-radius:6px;background:var(--blank);color:var(--primary);font-size:.85rem;margin-right:.4rem}
+.mrows{display:grid;gap:.7rem}
+.mrow{border:1.5px solid var(--line);border-radius:11px;padding:.75rem .85rem;background:var(--surface)}
+.mrow.is-hit{border-color:var(--ok);background:var(--ok-bg)}
+.mrow.is-bad{border-color:var(--bad);background:var(--bad-bg)}
+.mtop{display:flex;gap:.7rem;align-items:flex-start}
+.mt{margin:0}
+.letter{flex:none;display:grid;place-items:center;width:1.9rem;height:1.9rem;border-radius:50%;background:var(--blank);color:var(--primary);font:600 .85rem/1 var(--f-disp)}
+.picks{display:flex;flex-wrap:wrap;gap:.45rem;margin:.65rem 0 0 2.6rem}
+.pick{font:600 1rem/1 var(--f-disp);width:2.9rem;height:2.9rem;border:1.5px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink);cursor:pointer}
+.pick.is-sel{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
+.pick.is-right{border-color:var(--ok);background:var(--ok);color:var(--surface)}
+.pick.is-wrong{border-color:var(--bad);background:var(--bad);color:var(--surface)}
+.pick[aria-disabled="true"]{cursor:default}
+.mrow .why{margin-left:2.6rem}
+.answerbar{display:flex;align-items:center;gap:.8rem;margin-top:1rem;flex-wrap:wrap}
+.answerbar .al{font-size:.9rem;color:var(--muted)}
+.ctrl{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+.result{border-left:5px solid var(--line);background:var(--surface);border-radius:0 11px 11px 0;padding:.9rem 1rem;margin-top:1.1rem}
+.result.ok{border-left-color:var(--ok)} .result.part{border-left-color:var(--warn)} .result.bad{border-left-color:var(--bad)}
+.result p{margin:0 0 .5rem}
+.result .ans{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+.score{font:600 1.35rem/1.2 var(--f-disp)}
+.result .rule,.result .src{font-size:.85rem;color:var(--muted)}
+.summary .big,.empty .big{font:600 1.3rem/1.25 var(--f-disp);margin-bottom:.5rem}
+.empty{border:1.5px dashed var(--line);border-radius:14px;padding:1.4rem}
+.rows{list-style:none;margin:1rem 0 0;padding:0;display:grid;gap:.4rem}
+.rows li{display:flex;justify-content:space-between;gap:1rem;padding:.5rem .7rem;border-radius:8px;background:var(--surface);border-left:4px solid var(--line)}
+.rows li.ok{border-left-color:var(--ok)} .rows li.part{border-left-color:var(--warn)} .rows li.bad{border-left-color:var(--bad)}
+.rv{margin:1.6rem 0 .8rem}
+.exambar{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;align-items:center;justify-content:space-between;margin-bottom:1rem}
+.tl{font-size:.85rem;color:var(--muted);margin-right:.5rem}
+.timer{font:600 1.5rem/1 var(--f-disp);font-variant-numeric:tabular-nums}
+.timer.low{color:var(--bad)}
+.pills{display:flex;gap:.35rem;flex-wrap:wrap}
+.pill{font:600 .85rem/1 var(--f-disp);min-width:2.6rem;height:2.6rem;border:1.5px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink);cursor:pointer}
+.pill.has{border-color:var(--blank-line);background:var(--blank);color:var(--primary)}
+.pill.cur{border-color:var(--primary);box-shadow:inset 0 -3px 0 var(--primary)}
+.hint{font-size:.9rem;color:var(--muted)}
+aside{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.2rem}
+aside h3{margin-bottom:.6rem}
+.pgtop .score{margin:0}
+.per{list-style:none;margin:1rem 0 0;padding:0;display:grid;gap:.8rem}
+.pl{display:flex;flex-direction:column;font-size:.85rem;color:var(--muted);margin-bottom:.25rem}
+.pl b{color:var(--ink);font-size:.95rem}
+.bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--primary);border-radius:99px}
+.weak,.hist{margin:0;padding:0;list-style:none;display:grid;gap:.35rem;font-size:.9rem}
+.weak li{padding:.35rem .6rem;border-radius:8px;background:var(--warn-bg);color:var(--ink)}
+.hist li{display:flex;justify-content:space-between}
+
+/* теория */
+details{border-top:1px solid var(--line)}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:1rem 2rem 1rem 0;font:600 1.02rem/1.35 var(--f-disp);position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:.2rem;top:.85rem;font:500 1.5rem/1 var(--f-body);color:var(--primary)}
+details[open] summary::after{content:"−"}
+.dbody{padding:0 0 1.4rem;max-width:880px}
+.tw{overflow-x:auto;margin:.4rem 0 1.1rem;border:1px solid var(--line);border-radius:11px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.93rem}
+th,td{text-align:left;vertical-align:top;padding:.55rem .75rem;border-bottom:1px solid var(--line)}
+th{font-weight:600;background:var(--blank);color:var(--ink)}
+tr:last-child td{border-bottom:0}
+.dbody h4{font-family:var(--f-body);font-weight:700;font-size:1rem;margin:1.1rem 0 .4rem}
+.dbody ul{margin:0 0 .8rem;padding-left:1.2rem}
+.dbody li{margin-bottom:.25rem}
+.scheme{border-left:3px solid var(--primary);padding:.2rem 0 .2rem 1rem;margin:1rem 0}
+
+/* ошибки */
+.pit{display:grid;gap:1rem;margin-top:1.2rem}
+@media (min-width:760px){.pit{grid-template-columns:repeat(2,1fr)}}
+.pit div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
+.pit h3{margin-bottom:.35rem}
+.pit p{margin:0;color:var(--muted);font-size:.97rem}
+.rules{margin:1.4rem 0 0;padding-left:1.2rem}
+.rules li{margin-bottom:.4rem;max-width:70ch}
+
+/* источники */
+.src-list{margin:0;padding:0;list-style:none;display:grid;gap:.55rem}
+.src-list li{padding-left:1rem;border-left:3px solid var(--blank-line)}
+.honest{background:var(--warn-bg);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;margin:1.2rem 0;max-width:78ch}
+.honest p{margin:0}
+.noscript{background:var(--warn-bg);border-bottom:1px solid var(--line);padding:.9rem 0;font-weight:500}
+.codes{display:flex;flex-wrap:wrap;gap:.35rem;margin:.6rem 0}
+.codes code{font:500 .82rem/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--blank);border:1px solid var(--blank-line);border-radius:6px;padding:.3rem .45rem;color:var(--ink)}
+.faq details{border-top:1px solid var(--line)}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+footer p{max-width:70ch}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.form .cell{animation:none}}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top">Обществознание ЕГЭ-2027</a>
+    <nav class="nav" aria-label="Разделы страницы">
+      <a href="#tasks">Задания</a><a href="#trainer">Тренажёр</a><a href="#theory">Теория</a><a href="#errors">Ошибки</a><a href="#sources">Источники</a>
+    </nav>
+    <button type="button" class="tbtn" id="themeBtn" aria-pressed="false">Тёмная тема</button>
+  </div>
+</header>
+
+<noscript><div class="noscript"><div class="wrap">Тренажёр не запустился: в этом окне отключены скрипты. Так бывает при открытии файла в мессенджере или во встроенном просмотрщике. Откройте файл в обычном браузере (Chrome, Safari, Яндекс Браузер, Firefox): сохраните его в «Загрузки» или «Файлы» и откройте оттуда через «Поделиться → Открыть в браузере».</div></div></noscript>
+<main id="top">
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <h1>Задания 10–13 ЕГЭ по обществознанию: тренажёр с разбором</h1>
+      <p class="lead"><span id="taskCount">41</span> задание в формате КИМ-2027 по политике, Конституции и органам власти. Каждый вариант ответа объяснён и привязан к статье Конституции РФ или позиции кодификатора.</p>
+      <div class="cta">
+        <a class="btn primary" href="#trainer" data-go="all">Начать тренировку</a>
+        <a class="btn" href="#trainer" data-go="mini">Мини-вариант на 12 минут</a>
+      </div>
+      <p class="note">Актуально на 17 ноября 2026 года: ФИПИ не менял структуру ЕГЭ по обществознанию на 2027 год — 25 заданий, до 58 первичных баллов, 210 минут (<a href="https://rg.ru/2026/11/13/fipi-utverdil-kim-ege-v-2027-godu.html" target="_blank" rel="noopener">сообщение «Российской газеты»</a>). Задания 10–13 дают до 7 баллов.</p>
+    </div>
+    <div class="form" aria-hidden="true">
+      <p class="ft">Так выглядит ответ в бланке: цифры без пробелов. Пример заполнения.</p>
+      <div class="frow"><span class="no">10</span><span class="blank"><span class="cell" style="--d:.2s">1</span><span class="cell" style="--d:.3s">2</span><span class="cell" style="--d:.4s">5</span><span class="cell" style="--d:.5s">7</span></span></div>
+      <div class="frow"><span class="no">11</span><span class="blank"><span class="cell" style="--d:.6s">1</span><span class="cell" style="--d:.7s">3</span><span class="cell" style="--d:.8s">4</span></span></div>
+      <div class="frow"><span class="no">12</span><span class="blank"><span class="cell" style="--d:.9s">2</span><span class="cell" style="--d:1s">6</span></span></div>
+      <div class="frow"><span class="no">13</span><span class="blank"><span class="cell" style="--d:1.1s">2</span><span class="cell" style="--d:1.2s">1</span><span class="cell" style="--d:1.3s">3</span><span class="cell" style="--d:1.4s">4</span></span></div>
+      <p class="cap">Верных вариантов может быть два, три или четыре. Считайте по смыслу, а не по числу.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tasks">
+  <div class="wrap">
+    <h2>Что проверяют четыре задания</h2>
+    <p class="lead">Все четыре — из блоков «Политика» и «Право». Номера и уровень сложности взяты из спецификации ФИПИ, проценты выполнения — из методических рекомендаций ФИПИ по итогам ЕГЭ-2025.</p>
+    <div style="margin-top:1.4rem">
+      <div class="trow">
+        <span class="num">10</span>
+        <div>
+          <h3>Политика: понятия и связи</h3>
+          <p>Выбор нескольких верных ответов из семи: признаки, виды, функции, типологии. Государство, режимы, партии, выборы, СМИ, гражданское общество.</p>
+          <div class="chips"><span class="chip">кодификатор 4.1–4.4, 4.7–4.12</span><span class="chip">повышенный уровень</span><span class="chip">до 2 баллов</span></div>
+          <span class="stat">Выполнили в среднем 69,9% участников ЕГЭ-2025. В тренажёре заданий: <span class="cnt-num" data-n="10">10</span>.</span>
+        </div>
+        <a class="btn go" href="#trainer" data-go="10">Тренировать</a>
+      </div>
+      <div class="trow">
+        <span class="num">11</span>
+        <div>
+          <h3>Политика: анализ информации</h3>
+          <p>Верные суждения и выводы из описания ситуации. Главное — отличать то, что следует из условия, от домыслов.</p>
+          <div class="chips"><span class="chip">кодификатор 4.1–4.4, 4.7–4.12</span><span class="chip">повышенный уровень</span><span class="chip">до 2 баллов</span></div>
+          <span class="stat">Выполнили в среднем 70,2% участников ЕГЭ-2025. В тренажёре заданий: <span class="cnt-num" data-n="11">10</span>.</span>
+        </div>
+        <a class="btn go" href="#trainer" data-go="11">Тренировать</a>
+      </div>
+      <div class="trow">
+        <span class="num">12</span>
+        <div>
+          <h3>Конституция: строй, гражданство, права</h3>
+          <p>Основы конституционного строя, виды прав и свобод, конституционные обязанности: главы 1 и 2 Конституции РФ. Один балл только за полностью верный ответ.</p>
+          <div class="chips"><span class="chip">кодификатор 5.6, 5.7</span><span class="chip">базовый уровень</span><span class="chip">1 балл</span></div>
+          <span class="stat">Выполнили в среднем 59,9% участников ЕГЭ-2025. В тренажёре заданий: <span class="cnt-num" data-n="12">11</span>.</span>
+        </div>
+        <a class="btn go" href="#trainer" data-go="12">Тренировать</a>
+      </div>
+      <div class="trow">
+        <span class="num">13</span>
+        <div>
+          <h3>Федерация и органы власти</h3>
+          <p>Установление соответствия: полномочия и органы власти, вопросы и уровни ведения. Главы 3–7 Конституции РФ.</p>
+          <div class="chips"><span class="chip">кодификатор 4.5, 4.6</span><span class="chip">базовый уровень</span><span class="chip">до 2 баллов</span></div>
+          <span class="stat">Выполнили 49,7% участников ЕГЭ-2025 и 54% в ЕГЭ-2026: самое трудное из четырёх. В тренажёре заданий: <span class="cnt-num" data-n="13">10</span>.</span>
+        </div>
+        <a class="btn go" href="#trainer" data-go="13">Тренировать</a>
+      </div>
+    </div>
+    <div class="how">
+      <div><h3>Выбор по смыслу</h3><p>Тренажёр не подсказывает, сколько ответов верно, как и на экзамене. Порядок вариантов каждый раз перемешивается.</p></div>
+      <div><h3>Баллы по критериям ФИПИ</h3><p>2 балла — верный ответ, 1 балл — одна ошибка (лишняя или пропущенная цифра), иначе 0. Задание 12 — 1 балл только за полностью верный ответ.</p></div>
+      <div><h3>Разбор каждого варианта</h3><p>После проверки видно, почему вариант верен или нет, со ссылкой на статью Конституции или позицию кодификатора.</p></div>
+      <div><h3>Прогресс остаётся у вас</h3><p>Результаты хранятся в браузере этого устройства и никуда не отправляются. Ошибки возвращаются в начало следующей серии.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="trainer">
+  <div class="wrap">
+    <h2>Тренажёр</h2>
+    <p class="muted">Выберите номер задания или пройдите вариант на время.</p>
+    <div class="ctl">
+      <div id="numRow" class="seg" role="group" aria-label="Номер задания">
+        <span class="sl">Задание</span>
+        <button type="button" class="sb on" data-num="all" aria-pressed="true">Все</button>
+        <button type="button" class="sb" data-num="10" aria-pressed="false">10</button>
+        <button type="button" class="sb" data-num="11" aria-pressed="false">11</button>
+        <button type="button" class="sb" data-num="12" aria-pressed="false">12</button>
+        <button type="button" class="sb" data-num="13" aria-pressed="false">13</button>
+      </div>
+      <div class="seg" role="group" aria-label="Режим">
+        <span class="sl">Режим</span>
+        <button type="button" class="sb on" data-mode="practice" aria-pressed="true">Практика</button>
+        <button type="button" class="sb" data-mode="mini" aria-pressed="false">Мини-вариант<small>4 задания, 12 минут</small></button>
+        <button type="button" class="sb" data-mode="full" aria-pressed="false">Расширенный<small>8 заданий, 24 минуты</small></button>
+      </div>
+      <div id="filterRow" class="seg">
+        <span class="sl"></span>
+        <button type="button" class="sb" id="onlyErr" aria-pressed="false">Только нерешённые и с ошибками</button>
+      </div>
+    </div>
+    <div class="tgrid">
+      <div>
+        <div id="stageTop"></div>
+        <div id="stage"></div>
+      </div>
+      <aside aria-label="Ваш прогресс">
+        <h3>Ваш прогресс</h3>
+        <div id="progress"></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="theory">
+  <div class="wrap">
+    <h2>Короткая теория по кодификатору</h2>
+    <p class="lead">Опорные таблицы по позициям, которые проверяют задания 10–13. Для полного курса используйте учебники из списка источников.</p>
+    <div style="margin-top:1.2rem">
+
+      <details>
+        <summary>Политическая система, государство и режимы (задания 10, 11)</summary>
+        <div class="dbody">
+          <h4>Подсистемы политической системы</h4>
+          <div class="tw"><table>
+            <tr><th>Подсистема</th><th>Что входит</th></tr>
+            <tr><td>Институциональная</td><td>государство, политические партии, общественно-политические организации и движения, политические СМИ</td></tr>
+            <tr><td>Нормативная</td><td>правовые нормы, моральные нормы, политические традиции и обычаи</td></tr>
+            <tr><td>Коммуникативная</td><td>взаимодействие и связи между субъектами политики, в том числе власти и граждан</td></tr>
+            <tr><td>Культурно-идеологическая</td><td>политическая культура, идеология, политическая психология</td></tr>
+          </table></div>
+          <h4>Форма государства</h4>
+          <div class="tw"><table>
+            <tr><th>Элемент</th><th>Виды</th></tr>
+            <tr><td>Форма правления</td><td>монархия (абсолютная, конституционная); республика (президентская, парламентская, смешанная)</td></tr>
+            <tr><td>Территориальное устройство</td><td>унитарное государство, федерация, конфедерация</td></tr>
+            <tr><td>Политический режим</td><td>демократический, авторитарный, тоталитарный</td></tr>
+          </table></div>
+          <div class="scheme"><b>Режим и форма правления — разные вещи.</b> Форма правления отвечает на вопрос «как организованы высшие органы власти», режим — «какими методами осуществляется власть». Демократия возможна и в республике, и в конституционной монархии.</div>
+          <h4>Как отличить республики</h4>
+          <div class="tw"><table>
+            <tr><th>Форма</th><th>Кто формирует правительство</th><th>Перед кем оно отвечает</th></tr>
+            <tr><td>Президентская</td><td>президент, он же глава исполнительной власти</td><td>перед президентом</td></tr>
+            <tr><td>Парламентская</td><td>парламентское большинство</td><td>перед парламентом (вотум недоверия)</td></tr>
+            <tr><td>Смешанная</td><td>президент с участием парламента</td><td>перед президентом и парламентом</td></tr>
+          </table></div>
+          <h4>Выборы, партии, участие</h4>
+          <ul>
+            <li><b>Принципы избирательного права:</b> всеобщее, равное, прямое; голосование тайное.</li>
+            <li><b>Мажоритарная система:</b> побеждает кандидат, набравший большинство в округе; голоса за проигравших не учитываются.</li>
+            <li><b>Пропорциональная система:</b> голосуют за партийные списки, мандаты делятся пропорционально голосам, часто есть заградительный барьер.</li>
+            <li><b>Смешанная система:</b> часть мандатов по спискам, часть по округам. В Государственной Думе 450 депутатов: 225 по спискам и 225 по одномандатным округам.</li>
+            <li><b>Партийные системы:</b> однопартийная, двухпартийная, многопартийная.</li>
+            <li><b>Политическая культура (по отношению к власти):</b> патриархальная, подданническая, активистская.</li>
+            <li><b>Типы лидерства (М. Вебер):</b> традиционное, харизматическое, рационально-легальное.</li>
+            <li><b>Абсентеизм</b> — уклонение от участия в голосовании.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Конституция РФ: основы строя, права, обязанности (задание 12)</summary>
+        <div class="dbody">
+          <h4>Основы конституционного строя (глава 1)</h4>
+          <div class="tw"><table>
+            <tr><th>Статья</th><th>Содержание</th></tr>
+            <tr><td>1</td><td>демократическое федеративное правовое государство с республиканской формой правления</td></tr>
+            <tr><td>2</td><td>человек, его права и свободы — высшая ценность</td></tr>
+            <tr><td>3</td><td>носитель суверенитета и источник власти — многонациональный народ</td></tr>
+            <tr><td>4, 5</td><td>суверенитет на всей территории; федеративное устройство, равноправие субъектов</td></tr>
+            <tr><td>7</td><td>социальное государство: охрана труда и здоровья, МРОТ, поддержка семьи, материнства, отцовства, детства, пенсии и пособия</td></tr>
+            <tr><td>8, 9</td><td>единое экономическое пространство, свобода экономической деятельности; разные формы собственности, в том числе на землю и природные ресурсы</td></tr>
+            <tr><td>10, 11</td><td>разделение властей; власть осуществляют Президент, Федеральное Собрание, Правительство и суды</td></tr>
+            <tr><td>12</td><td>признание и гарантии местного самоуправления</td></tr>
+            <tr><td>13</td><td>идеологическое и политическое многообразие, многопартийность; никакая идеология не может быть государственной</td></tr>
+            <tr><td>14</td><td>светское государство; религиозные объединения отделены от государства</td></tr>
+            <tr><td>15</td><td>высшая юридическая сила Конституции; прямое действие; законы подлежат официальному опубликованию; международные договоры — часть правовой системы</td></tr>
+          </table></div>
+          <h4>Классификация прав и свобод (глава 2)</h4>
+          <div class="tw"><table>
+            <tr><th>Группа</th><th>Примеры (статьи)</th></tr>
+            <tr><td>Личные (гражданские)</td><td>жизнь (20); достоинство (21); свобода и личная неприкосновенность (22); частная жизнь, тайна переписки (23); неприкосновенность жилища (25); свобода передвижения (27); свобода совести и вероисповедания (28)</td></tr>
+            <tr><td>Политические</td><td>участие в управлении, избирать и быть избранным, референдум, равный доступ к госслужбе (32); объединения (30); собрания, митинги, демонстрации, шествия, пикетирование (31); обращения в органы власти (33)</td></tr>
+            <tr><td>Социально-экономические</td><td>предпринимательство (34); частная собственность (35); труд, забастовка, отдых (37); социальное обеспечение (39); жилище (40); охрана здоровья (41)</td></tr>
+            <tr><td>Культурные</td><td>участие в культурной жизни, доступ к культурным ценностям, свобода творчества (44); образование (43, часто относят и к социально-экономическим)</td></tr>
+          </table></div>
+          <h4>Обязанности и гарантии</h4>
+          <ul>
+            <li><b>Обязанности:</b> платить налоги (57); сохранять природу (58); защита Отечества (59); беречь памятники истории и культуры (44, ч. 3); основное общее образование обязательно (43, ч. 4).</li>
+            <li><b>Судебная защита и гарантии:</b> ст. 45–54. Презумпция невиновности (49), запрет повторного осуждения (50), свидетельский иммунитет (51), обратная сила только у закона, смягчающего ответственность (54).</li>
+            <li><b>Ограничения:</b> только федеральным законом и только в целях, указанных в ст. 55 (ч. 3). Ряд прав, в том числе по ст. 20, 21, 28 и 46–54, не подлежит ограничению даже при чрезвычайном положении (ст. 56, ч. 3).</li>
+            <li><b>Гражданство (ст. 6, 61, 62):</b> единое и равное; нельзя лишить гражданства; гражданина нельзя выдать другому государству; допускается второе гражданство по закону или договору.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Органы власти и предметы ведения (задание 13)</summary>
+        <div class="dbody">
+          <div class="scheme"><b>Короткая схема.</b> Президент определяет основные направления политики, подписывает законы и распускает Думу в случаях, указанных в Конституции. Дума принимает законы и утверждает кандидатуру премьера. Совет Федерации одобряет законы и назначает выборы Президента. Правительство реализует политику: бюджет, управление федеральной собственностью, меры по обороне и безопасности.</div>
+          <div class="tw"><table>
+            <tr><th>Орган</th><th>Ключевые полномочия</th></tr>
+            <tr><td>Президент РФ (ст. 80–93)</td><td>глава государства, гарант Конституции; определяет основные направления внутренней и внешней политики; подписывает и обнародует законы; назначает выборы Думы, распускает её в случаях по Конституции; Верховный Главнокомандующий; помилование; решает вопросы гражданства; принимает решение об отставке Правительства; избирается на шесть лет гражданами</td></tr>
+            <tr><td>Государственная Дума (ст. 94–109)</td><td>450 депутатов; принимает федеральные законы; утверждает кандидатуру Председателя Правительства; решает вопрос о доверии Правительству; объявляет амнистию; выдвигает обвинение против Президента</td></tr>
+            <tr><td>Совет Федерации</td><td>по два представителя от каждого субъекта и представители Российской Федерации; одобряет законы; назначает выборы Президента; отрешает Президента от должности; утверждает указы о военном и чрезвычайном положении; решает об использовании войск за рубежом; назначает по представлению Президента судей высших судов</td></tr>
+            <tr><td>Правительство РФ (ст. 110–117)</td><td>исполнительная власть; разрабатывает бюджет и обеспечивает его исполнение; единая финансовая, кредитная и денежная политика; единая политика в культуре, науке, образовании, здравоохранении, соцобеспечении, экологии; управление федеральной собственностью; меры по обороне, безопасности, внешней политике, законности и борьбе с преступностью</td></tr>
+            <tr><td>Конституционный Суд (ст. 125)</td><td>соответствие Конституции законов и других актов; споры о компетенции между органами власти; толкование Конституции; проверка конституционности закона, применённого в конкретном деле</td></tr>
+            <tr><td>Верховный Суд (ст. 126)</td><td>высший судебный орган по гражданским, уголовным, административным делам и экономическим спорам</td></tr>
+            <tr><td>Прокуратура (ст. 129)</td><td>единая централизованная система; надзор за соблюдением Конституции и исполнением законов</td></tr>
+          </table></div>
+          <h4>Предметы ведения</h4>
+          <div class="tw"><table>
+            <tr><th>Уровень</th><th>Статья</th><th>Примеры</th></tr>
+            <tr><td>Ведение Российской Федерации</td><td>71</td><td>федеральный бюджет и федеральные налоги; оборона и безопасность; внешняя политика; федеральная собственность; правовые основы единого рынка; денежная эмиссия</td></tr>
+            <tr><td>Совместное ведение</td><td>72</td><td>общие принципы налогообложения; обеспечение законности и правопорядка; природопользование и охрана окружающей среды; общие вопросы образования, науки, культуры, спорта</td></tr>
+            <tr><td>Ведение субъектов</td><td>73</td><td>всё, что не отнесено к ведению Российской Федерации и совместному ведению</td></tr>
+          </table></div>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="errors">
+  <div class="wrap">
+    <h2>Где теряют баллы в заданиях 10–13</h2>
+    <p class="lead">По данным методических рекомендаций ФИПИ по итогам ЕГЭ-2025 и ЕГЭ-2026.</p>
+    <div class="pit">
+      <div><h3>Ищут ровно три ответа</h3><p>В инструкции сказано: верных ответов от двух до четырёх. Выпускники искали третий и выбирали лишнее: так, 25,8% участников ЕГЭ-2026 решили, что социальные нормы входят в институциональную подсистему политической системы. Где верных было четыре, пропускали «тайное голосование» (10%) и «равное избирательное право» (7,4%).</p></div>
+      <div><h3>Путают подсистемы и признаки гражданского общества</h3><p>19,4% выбрали государственную собственность как экономическую основу гражданского общества, 16,3% — вертикальные связи между участниками. В гражданском обществе преобладают горизонтальные связи, а основа — разные формы собственности.</p></div>
+      <div><h3>Смешивают полномочия Президента и Думы</h3><p>В задании 13 самая частая ошибка — путаница между функциями законодательной власти и полномочиями главы государства. Тренируйте схему: Президент подписывает, Дума принимает, Совет Федерации одобряет, Правительство исполняет. Задание 13 выполнили 49,7% в 2025 году и 54% в 2026.</p></div>
+      <div><h3>Не различают группы прав</h3><p>В задании 12 путают политические и личные права. Политические связаны с участием в управлении государством (ст. 30–33), личные — с неприкосновенностью и свободой человека (ст. 20–28).</p></div>
+    </div>
+    <ol class="rules">
+      <li>Оцените каждый вариант отдельно: «верно» или «неверно». Только потом считайте цифры.</li>
+      <li>В задании на соответствие цифры могут повторяться. Проверьте каждую строку по статье Конституции.</li>
+      <li>В заданиях на выводы из описания опирайтесь только на текст. Если в нём нет информации, вывод неверен.</li>
+      <li>Не пропускайте однобалльные задания части 1: ФИПИ отмечает, что подготовка часто смещена на часть 2, а баллы теряются на простом.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="sources">
+  <div class="wrap">
+    <h2>Источники и честные оговорки</h2>
+    <div class="honest"><p><b>Откуда задания.</b> Задания авторские: они написаны по моделям ФИПИ из демоверсии, спецификации и методических рекомендаций, на основе кодификатора и текста Конституции РФ. Тексты из открытого банка ФИПИ здесь не копировались: они защищены авторским правом. Формулировки реальных заданий могут отличаться, поэтому обязательно решайте демоверсию и открытый банк. Номера заданий банка для этих тем — ниже.</p></div>
+    <h3 style="margin:1.4rem 0 .7rem">Официальные материалы</h3>
+    <ul class="src-list">
+      <li><a href="https://fipi.ru/ege/demoversii-specifikacii-kodifikatory" target="_blank" rel="noopener">ФИПИ: демоверсия, спецификация и кодификатор ЕГЭ-2027 по обществознанию</a>. Изменений структуры и содержания по сравнению с 2026 годом нет.</li>
+      <li><a href="https://ege.fipi.ru/bank/" target="_blank" rel="noopener">Открытый банк заданий ФИПИ</a>.</li>
+      <li><a href="https://doc.fipi.ru/navigator-podgotovki/navigator-ege/2025/ob-4-politika.pdf" target="_blank" rel="noopener">Навигатор подготовки ФИПИ, блок «Политика»</a> (задания 10, 11, 13).</li>
+      <li><a href="https://doc.fipi.ru/navigator-podgotovki/navigator-ege/2024/ob-5-pravo.pdf" target="_blank" rel="noopener">Навигатор подготовки ФИПИ, блок «Право»</a> (задание 12).</li>
+      <li><a href="https://doc.fipi.ru/ege/analiticheskie-i-metodicheskie-materialy/2025/ob_mr_2025.pdf" target="_blank" rel="noopener">Методические рекомендации ФИПИ по итогам ЕГЭ-2025</a> и <a href="https://doc.fipi.ru/ege/analiticheskie-i-metodicheskie-materialy/2026/ob_mr_2026.pdf" target="_blank" rel="noopener">ЕГЭ-2026</a>.</li>
+      <li><a href="https://www.kremlin.ru/acts/constitution" target="_blank" rel="noopener">Конституция Российской Федерации</a>: главы 1–2 для задания 12, главы 3–7 для задания 13.</li>
+    </ul>
+    <h3 style="margin:1.4rem 0 .7rem">Учебники из навигатора ФИПИ</h3>
+    <ul class="src-list">
+      <li>Боголюбов Л.Н., Лазебникова А.Ю. (ред.). Обществознание, 11 класс (политика, §§ 19–27) и 10 класс (право, §§ 17–30). Просвещение.</li>
+      <li>Котова О.А., Лискова Т.Е. Обществознание, 11 класс, серия «Сферы» (политика, §§ 1–10; право, §§ 11–21). Просвещение. Авторы — специалисты ФИПИ.</li>
+      <li>Никонов В.А. (ред.), Тишков В.А. (ред.), Кравченко А.И., Алёшина А.В. и др. — перечень параграфов в навигаторе ФИПИ.</li>
+      <li>По сообщению ТАСС, одиннадцатиклассники в 2027 году сдают ЕГЭ по действующим учебникам; новый государственный учебник для 11 класса поступит в школы к 1 сентября 2027 года (<a href="https://mel.fm/novosti/9387214-odinnadtsatiklassniki-v-2027-godu-sdadut-yege-po-obshchestvoznaniyu-po-starym-uchebnikam-i-pravilam" target="_blank" rel="noopener">«Мел»</a>).</li>
+    </ul>
+    <h3 style="margin:1.4rem 0 .5rem">Номера заданий открытого банка ФИПИ</h3>
+    <p class="muted" style="max-width:70ch">Эти номера ФИПИ рекомендует в навигаторе для тренировки. Введите их в поиск по номеру задания в открытом банке. Список по теме «Политика» (задания 10, 11, 13 и смежные), в навигаторе 2025 года.</p>
+    <div class="codes" id="codesPol"><code>CD8FB4</code><code>0810F0</code><code>5F8803</code><code>6BFFFA</code><code>D42E11</code><code>E04E08</code><code>7DF53B</code><code>00EC40</code><code>050541</code><code>581841</code><code>91954E</code><code>928812</code><code>49FDFA</code><code>F633F2</code><code>0793FF</code><code>A39EF4</code><code>9DEAFF</code><code>1348F4</code><code>0DB80A</code><code>7A2753</code><code>427308</code><code>4CE0F0</code><code>F4EEA1</code><code>90C002</code><code>094778</code><code>75A874</code><code>24CBB8</code><code>E3EF51</code><code>16E443</code><code>CA6D0A</code><code>CBAF62</code><code>44A872</code><code>F1B9BB</code><code>AE2842</code><code>39DE27</code><code>3982AE</code><code>C29F34</code><code>DCAC81</code></div>
+    <button type="button" class="btn ghost" data-copy="#codesPol">Скопировать номера</button>
+    <p class="muted" style="max-width:70ch;margin-top:1.2rem">Список по теме «Право» (задание 12 и смежные), в навигаторе 2024 года.</p>
+    <div class="codes" id="codesLaw"><code>D9F7B9</code><code>6F675C</code><code>05FF0C</code><code>0AAA71</code><code>7DF471</code><code>013724</code><code>095927</code><code>F24C47</code><code>F4544A</code><code>D4114D</code><code>E3DC46</code><code>91F1F1</code><code>7ABC0C</code><code>96CA00</code><code>4F0775</code><code>25A77A</code><code>591479</code><code>E0F77F</code><code>E3E17B</code><code>7AEDB8</code><code>116BB1</code><code>6647B2</code><code>8972BA</code><code>676C10</code><code>F46826</code><code>101727</code><code>0E4FDB</code><code>B2FED4</code><code>0CD9AD</code><code>0C25C6</code><code>6E07F0</code><code>68047F</code><code>31461A</code><code>6D312D</code><code>A5DDC0</code><code>16664B</code><code>8AEC0C</code><code>3F3279</code><code>54A09F</code><code>1F8D02</code><code>BEC0E2</code></div>
+    <button type="button" class="btn ghost" data-copy="#codesLaw">Скопировать номера</button>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <h2>Частые вопросы</h2>
+    <div style="margin-top:1rem">
+      <details><summary>Что изменится в ЕГЭ по обществознанию в 2027 году?</summary><div class="dbody"><p>По материалам ФИПИ — ничего: структура и содержание КИМ те же, что в 2026 году. 25 заданий (16 с кратким ответом и 9 с развёрнутым), максимум 58 первичных баллов, 210 минут.</p></div></details>
+      <details><summary>Как считаются баллы в тренажёре?</summary><div class="dbody"><p>Задания 10, 11 и 13 — до 2 баллов: 2 за верный ответ, 1 при одной ошибке (лишняя или пропущенная цифра, одна неверная строка в соответствии), иначе 0. Задание 12 — 1 балл за полностью верный ответ. Это соответствует логике критериев ФИПИ. Точные критерии смотрите в спецификации.</p></div></details>
+      <details><summary>Почему на экзамене цифры записывают без пробелов?</summary><div class="dbody"><p>Так требует инструкция: ответ на задание части 1 — последовательность цифр без пробелов и разделителей. В тренажёре эту строку показывает «бланк» с ячейками.</p></div></details>
+      <details><summary>Где хранится мой прогресс?</summary><div class="dbody"><p>Только в браузере вашего устройства. Если очистить данные сайта или открыть страницу на другом устройстве, прогресс начнётся заново.</p></div></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Неофициальный учебный проект. Он не связан с ФИПИ и Рособрнадзором. Задания авторские и могут отличаться от реальных заданий экзамена; ориентируйтесь на демоверсию и открытый банк на сайте ФИПИ. Сведения актуальны на 17 ноября 2026 года.</p>
+  </div>
+</footer>
+
+<script>
+/* ===== Хранилище заданий и конструкторы ===== */
+const TASKS = [];
+function M(id, num, code, topic, q, opts, src) {
+  TASKS.push({ id: id, num: num, type: "multi", code: code, topic: topic, q: q,
+    opts: opts.map(function (o) { return { t: o[0], ok: !!o[1], why: o[2] }; }), src: src });
+}
+function X(id, code, topic, q, left, right, choices, rows, src) {
+  TASKS.push({ id: id, num: 13, type: "match", code: code, topic: topic, q: q, left: left, right: right,
+    choices: choices, rows: rows.map(function (r) { return { t: r[0], a: r[1], why: r[2] }; }), src: src });
+}
+
+/* ===== Задание 10: политическая сфера, понятийный аппарат (кодификатор 4.1–4.4, 4.7–4.12) ===== */
+const SRC_POL = "Кодификатор ФИПИ, раздел 4. Боголюбов Л.Н. и др., Обществознание. 11 кл., §§ 19–27; Котова О.А., Лискова Т.Е., 11 кл. («Сферы»), §§ 1–10 (по навигатору ФИПИ).";
+
+M("t10-01", 10, "4.3", "Государство и его признаки",
+  "Найдите в приведённом списке признаки государства. Запишите цифры, под которыми они указаны.",
+  [
+    ["Публичная власть, опирающаяся на специальный аппарат управления и принуждения", 1, "Верно. Государство обладает публичной властью, отделённой от общества, и аппаратом управления, суда и принуждения."],
+    ["Государственный суверенитет", 1, "Верно. Верховенство власти внутри страны и независимость вовне — ключевой признак государства (в России — ст. 4 Конституции)."],
+    ["Добровольное вступление в организацию и выход из неё по желанию человека", 0, "Неверно. Так устроены общественные объединения. Гражданство государства определяется законом, а не личным желанием «вступить» или «выйти»."],
+    ["Право устанавливать налоги и обязательные сборы на основании закона", 1, "Верно. Налоги и обязательные платежи — прерогатива государства; ни партия, ни общественная организация этого права не имеют."],
+    ["Объединение людей на основе общих политических взглядов", 0, "Неверно. Это признак политической партии. Государство объединяет всё население территории независимо от взглядов."],
+    ["Действие власти только на тех, кто подписал устав организации", 0, "Неверно. Власть государства общеобязательна для всех, кто находится на его территории."],
+    ["Распространение власти на всё население в пределах территории страны", 1, "Верно. Территориальная организация населения и общеобязательность власти — классический признак государства."]
+  ], SRC_POL);
+
+M("t10-02", 10, "4.4", "Формы правления",
+  "Найдите в приведённом списке черты, характерные для парламентской республики. Запишите цифры, под которыми они указаны.",
+  [
+    ["Правительство формируется парламентским большинством", 1, "Верно. Партия или коалиция, победившая на выборах, формирует правительство — главная черта парламентской республики."],
+    ["Правительство несёт политическую ответственность перед парламентом", 1, "Верно. Правительство зависит от доверия парламента."],
+    ["Глава государства одновременно возглавляет правительство", 0, "Неверно. Это черта президентской республики (например, США). В парламентской правительство возглавляет премьер-министр."],
+    ["Власть главы государства передаётся по наследству", 0, "Неверно. Наследование власти — признак монархии, а не республики."],
+    ["Парламент вправе выразить правительству вотум недоверия, что влечёт его отставку", 1, "Верно. Вотум недоверия — основной рычаг парламента в отношении правительства."],
+    ["Правительство не зависит от парламента и подотчётно только президенту", 0, "Неверно. Так устроена президентская республика."],
+    ["Президент вправе по своему усмотрению в любой момент распустить парламент", 0, "Неверно. В парламентской республике роспуск парламента — исключительный случай, прямо предусмотренный конституцией."]
+  ], SRC_POL);
+
+M("t10-03", 10, "4.4", "Политические режимы",
+  "Найдите в приведённом списке признаки демократического политического режима. Запишите цифры, под которыми они указаны.",
+  [
+    ["Политический плюрализм и многопартийность", 1, "Верно. Многообразие мнений и партий — основа демократии."],
+    ["Гарантии прав и свобод личности, их судебная защита", 1, "Верно. Права человека — высшая ценность демократического государства."],
+    ["Монополия одной партии на власть", 0, "Неверно. Характерна для тоталитарных и части авторитарных режимов."],
+    ["Выборность и сменяемость органов власти", 1, "Верно. Власть формируется народом и периодически сменяется."],
+    ["Всеобъемлющий контроль государства над частной жизнью граждан", 0, "Неверно. Это признак тоталитаризма."],
+    ["Запрет оппозиции и цензура", 0, "Неверно. Подавление оппозиции и цензура несовместимы с демократией."],
+    ["Сосредоточение всей власти в руках одного лица без выборов", 0, "Неверно. Это автократия."]
+  ], SRC_POL);
+
+M("t10-04", 10, "4.2", "Политическая система: подсистемы",
+  "Найдите в приведённом списке элементы институциональной подсистемы политической системы общества. Запишите цифры, под которыми они указаны.",
+  [
+    ["Государство", 1, "Верно. Государство — основной политический институт."],
+    ["Политические партии", 1, "Верно. Партии — политические институты."],
+    ["Политическая психология", 0, "Неверно. Относится к культурно-идеологической подсистеме."],
+    ["Правовые нормы", 0, "Неверно. Относятся к нормативной подсистеме."],
+    ["Общественно-политические организации и движения", 1, "Верно. Входят в институциональную подсистему."],
+    ["Традиции и обычаи политической жизни", 0, "Неверно. Это политические нормы — нормативная подсистема."],
+    ["Политические средства массовой информации", 1, "Верно. СМИ в политической системе рассматриваются как политический институт."]
+  ], SRC_POL + " Типичная ошибка ЕГЭ-2026: четыре верных ответа вместо привычных трёх.");
+
+M("t10-05", 10, "4.4", "Гражданское общество",
+  "Найдите в приведённом списке признаки гражданского общества. Запишите цифры, под которыми они указаны.",
+  [
+    ["Развитая сеть общественных объединений, независимых от государства", 1, "Верно. Самоорганизация граждан — суть гражданского общества."],
+    ["Преобладание горизонтальных связей между участниками", 1, "Верно. Связи строятся на равенстве и добровольности, а не на подчинении."],
+    ["Государственная собственность как экономическая основа", 0, "Неверно. Экономическая основа — многообразие форм собственности, прежде всего частная: она делает граждан независимыми от власти."],
+    ["Преобладание вертикальных связей подчинения", 0, "Неверно. Вертикальные связи характерны для государственной иерархии."],
+    ["Правящая партия определяет деятельность всех общественных объединений", 0, "Неверно. Подконтрольность исключает самостоятельность."],
+    ["Приоритет интересов государства над правами личности", 0, "Неверно. В гражданском обществе приоритет — права и свободы человека."],
+    ["Отсутствие независимых СМИ", 0, "Неверно. Независимые СМИ — условие гражданского общества."]
+  ], SRC_POL + " В ЕГЭ-2026 здесь было всего два верных ответа, но многие искали третий.");
+
+M("t10-06", 10, "4.8", "Политическая культура",
+  "Найдите в приведённом списке типы политической культуры, выделяемые по отношению личности к власти (по Г. Алмонду и С. Вербе). Запишите цифры, под которыми они указаны.",
+  [
+    ["Патриархальная", 1, "Верно. Слабый интерес к политике, ориентация на местные и родовые связи."],
+    ["Подданническая", 1, "Верно. Власть воспринимается как сила, которой подчиняются; граждане ждут решений сверху."],
+    ["Активистская", 1, "Верно. Граждане участвуют в политике и влияют на решения власти."],
+    ["Доминирующая", 0, "Неверно. «Доминирующая» и «субкультура» — деление по распространённости в обществе, а не по отношению к власти."],
+    ["Демократическая", 0, "Неверно. В типологии по отношению к власти такого типа нет; демократия — характеристика режима."],
+    ["Элитарная", 0, "Неверно. Элитарная — вид культуры по уровню и носителям (народная, массовая, элитарная), а не вид политической."],
+    ["Экономическая", 0, "Неверно. Такого типа в этой классификации нет."]
+  ], SRC_POL + " Именно эти «доминирующую» и «демократическую» ошибочно выбирали на ЕГЭ-2026.");
+
+M("t10-07", 10, "4.10", "Избирательные системы",
+  "Найдите в приведённом списке признаки пропорциональной избирательной системы. Запишите цифры, под которыми они указаны.",
+  [
+    ["Избиратели голосуют за партийные списки", 1, "Верно. Выбор делается между партиями, а не между отдельными кандидатами."],
+    ["Мандаты распределяются пропорционально числу голосов, поданных за партии", 1, "Верно. Это определение пропорциональной системы."],
+    ["Побеждает кандидат, набравший большинство голосов в округе", 0, "Неверно. Это мажоритарная система."],
+    ["Способствует многопартийности и представительству малых партий", 1, "Верно. Голоса за небольшие партии не пропадают (если преодолён барьер)."],
+    ["Избиратель голосует за конкретного кандидата в одномандатном округе", 0, "Неверно. Это мажоритарная система."],
+    ["Часто применяется заградительный (процентный) барьер", 1, "Верно. Партии, не набравшие минимум голосов, мандатов не получают."],
+    ["Депутат напрямую связан с избирателями своего округа", 0, "Неверно. Это черта мажоритарной системы; при пропорциональной депутаты избираются по спискам."]
+  ], SRC_POL);
+
+M("t10-08", 10, "4.9", "Политические партии: функции",
+  "Найдите в приведённом списке функции политических партий. Запишите цифры, под которыми они указаны.",
+  [
+    ["Выражение и объединение (агрегирование) интересов социальных групп", 1, "Верно. Партия представляет интересы своих сторонников в политике."],
+    ["Выдвижение кандидатов на выборах", 1, "Верно. Одна из ключевых функций партий."],
+    ["Осуществление правосудия", 0, "Неверно. Правосудие осуществляют только суды (ст. 118 Конституции)."],
+    ["Охрана государственной границы", 0, "Неверно. Это функция государства."],
+    ["Издание нормативных актов, обязательных для всех, от имени государства", 0, "Неверно. Партии влияют на законы через депутатов, но сами государственных актов не издают."],
+    ["Политическая социализация и рекрутирование политической элиты", 1, "Верно. Партии вводят людей в политику и готовят будущих политиков."],
+    ["Контроль за исполнением судебных решений", 0, "Неверно. Этим занимается служба судебных приставов."]
+  ], SRC_POL);
+
+M("t10-09", 10, "4.12", "СМИ в политической системе",
+  "Найдите в приведённом списке функции средств массовой информации в политической жизни общества. Запишите цифры, под которыми они указаны.",
+  [
+    ["Информирование граждан о политических событиях", 1, "Верно. Базовая функция СМИ."],
+    ["Формирование общественного мнения", 1, "Верно. СМИ влияют на оценки граждан."],
+    ["Принятие законов", 0, "Неверно. Законы принимает парламент."],
+    ["Общественный контроль за деятельностью органов власти", 1, "Верно. Гласность и критика — форма общественного контроля («четвёртая власть» — образное название, не официальная ветвь)."],
+    ["Распределение бюджетных средств", 0, "Неверно. Это полномочие органов власти."],
+    ["Осуществление правосудия", 0, "Неверно. Правосудие — исключительно судебная власть."],
+    ["Политическая социализация, формирование политической культуры", 1, "Верно. СМИ передают политические знания и нормы."]
+  ], SRC_POL);
+
+M("t10-10", 10, "4.7", "Противодействие коррупции",
+  "Найдите в приведённом списке меры противодействия коррупции, предусмотренные законодательством РФ. Запишите цифры, под которыми они указаны.",
+  [
+    ["Антикоррупционная экспертиза нормативных правовых актов", 1, "Верно. Мера профилактики коррупции (ФЗ «О противодействии коррупции», ст. 6)."],
+    ["Обязанность госслужащих представлять сведения о доходах, расходах, имуществе и обязательствах имущественного характера", 1, "Верно. Контроль за расходами и доходами — типичная антикоррупционная мера."],
+    ["Расширение дискреционных (свободных) полномочий должностных лиц", 0, "Неверно. Широкая свобода усмотрения повышает коррупционные риски."],
+    ["Ограничения и запреты на получение подарков и вознаграждений в связи с должностным положением", 1, "Верно. Входят в ограничения для госслужащих."],
+    ["Сокращение открытости расходования бюджетных средств", 0, "Неверно. Антикоррупционная политика требует прозрачности."],
+    ["Формирование в обществе нетерпимости к коррупционному поведению", 1, "Верно. Входит в меры профилактики коррупции (ст. 6 ФЗ «О противодействии коррупции»)."],
+    ["Смягчение ответственности за получение взятки", 0, "Неверно. Противоречит политике государства — ответственность ужесточается."]
+  ], "ФЗ «О противодействии коррупции», ст. 1, 3, 6 (по навигатору ФИПИ); кодификатор 4.7.");
+
+/* ===== Задание 11: политическая сфера, применение знаний (кодификатор 4.1–4.4, 4.7–4.12) ===== */
+
+M("t11-01", 11, "4.10", "Избирательное право и системы",
+  "Выберите верные суждения об избирательном праве и избирательных системах и запишите цифры, под которыми они указаны.",
+  [
+    ["Всеобщее избирательное право означает, что участвовать в выборах могут граждане независимо от пола, расы, национальности и имущественного положения (с ограничениями, установленными законом, например по возрасту).", 1, "Верно. Это принцип всеобщности избирательного права."],
+    ["Равное избирательное право означает, что каждый избиратель имеет один голос.", 1, "Верно. «Один человек — один голос»."],
+    ["Тайное голосование допускает контроль должностных лиц за выбором избирателя.", 0, "Неверно. Тайна голосования как раз исключает любой контроль за волеизъявлением."],
+    ["Выборы депутатов Государственной Думы проводятся по смешанной системе: часть мандатов распределяется по партийным спискам, часть — по одномандатным округам.", 1, "Верно. С 2016 года 225 депутатов избираются по спискам и 225 — по одномандатным округам."],
+    ["При мажоритарной системе голоса, поданные за проигравших кандидатов, не влияют на распределение мандатов в округе.", 1, "Верно. Мандат получает победитель, голоса за остальных «пропадают»."],
+    ["Активное избирательное право — это право быть избранным.", 0, "Неверно. Активное право — право избирать; право быть избранным называют пассивным."],
+    ["Прямое избирательное право означает, что избиратели голосуют за выборщиков, которые затем избирают должностное лицо.", 0, "Неверно. При прямых выборах граждане голосуют непосредственно за кандидата; выборщики — это косвенные выборы."]
+  ], "Кодификатор 4.10; ФЗ «Об основных гарантиях избирательных прав и права на участие в референдуме»; Боголюбов, 11 кл., §§ 19–27 (по навигатору ФИПИ).");
+
+M("t11-02", 11, "4.4", "Политические режимы",
+  "Выберите верные суждения о политических режимах и запишите цифры, под которыми они указаны.",
+  [
+    ["При тоталитарном режиме государство стремится контролировать все сферы жизни общества.", 1, "Верно. Тотальный контроль — суть тоталитаризма."],
+    ["Для авторитарного режима характерна концентрация власти у одного лица или узкой группы при ограничении политической оппозиции.", 1, "Верно. Но, в отличие от тоталитаризма, сохраняются частные сферы жизни, вне политики."],
+    ["Демократический режим предполагает отсутствие политической оппозиции.", 0, "Неверно. Легальная оппозиция — обязательный признак демократии."],
+    ["Для тоталитарного режима характерна единая обязательная идеология.", 1, "Верно. Идеология навязывается всему обществу."],
+    ["Политический режим — это то же самое, что форма правления.", 0, "Неверно. Форма правления — организация высших органов власти (монархия, республика). Режим — способы и методы осуществления власти."],
+    ["Демократический режим возможен только при республиканской форме правления.", 0, "Неверно. Есть демократические конституционные монархии (например, Великобритания, Швеция)."],
+    ["При тоталитарном режиме действует принцип разделения властей.", 0, "Неверно. Разделение властей — признак демократии и правового государства."]
+  ], "Кодификатор 4.4; Боголюбов, 11 кл., §§ 19–27 (по навигатору ФИПИ).");
+
+M("t11-03", 11, "4.5", "Федеративное устройство РФ",
+  "Выберите верные суждения о федеративном устройстве Российской Федерации и запишите цифры, под которыми они указаны.",
+  [
+    ["Субъекты РФ равноправны между собой во взаимоотношениях с федеральными органами государственной власти.", 1, "Верно. Ст. 5 (ч. 4) Конституции РФ."],
+    ["Суверенитет Российской Федерации распространяется на всю её территорию.", 1, "Верно. Ст. 4 (ч. 1) Конституции РФ."],
+    ["Республики вправе устанавливать свои государственные языки.", 1, "Верно. Ст. 68 (ч. 2) Конституции РФ: республики вправе устанавливать свои государственные языки."],
+    ["Субъект РФ вправе выйти из состава России по решению своего законодательного органа.", 0, "Неверно. Конституция не предусматривает права выхода; Россия обеспечивает целостность и неприкосновенность своей территории (ст. 4)."],
+    ["Конституции республик имеют высшую юридическую силу на всей территории РФ.", 0, "Неверно. Высшую юридическую силу имеет Конституция РФ (ст. 15)."],
+    ["Края и области обладают собственным государственным суверенитетом.", 0, "Неверно. Носитель суверенитета — Российская Федерация в целом (ст. 4)."],
+    ["К городам федерального значения относятся Москва, Санкт-Петербург и Севастополь.", 1, "Верно. Ст. 65 Конституции РФ."]
+  ], "Конституция РФ, гл. 3 (ст. 65–79); кодификатор 4.5.");
+
+M("t11-04", 11, "4.6", "Президент РФ",
+  "Выберите верные суждения о статусе Президента Российской Федерации и запишите цифры, под которыми они указаны.",
+  [
+    ["Президент РФ является главой государства.", 1, "Верно. Ст. 80 (ч. 1)."],
+    ["Президент РФ избирается гражданами РФ на основе всеобщего равного и прямого избирательного права при тайном голосовании.", 1, "Верно. Ст. 81 (ч. 1)."],
+    ["Президент РФ избирается Государственной Думой.", 0, "Неверно. Президента избирают граждане; Совет Федерации лишь назначает выборы."],
+    ["Президент РФ вправе распустить Государственную Думу в случаях, предусмотренных Конституцией.", 1, "Верно. Ст. 84 и 109."],
+    ["Президент РФ принимает федеральные законы.", 0, "Неверно. Законы принимает Государственная Дума и одобряет Совет Федерации; Президент их подписывает и обнародует (ст. 105–107)."],
+    ["Президент РФ является гарантом Конституции, прав и свобод человека и гражданина.", 1, "Верно. Ст. 80 (ч. 2)."],
+    ["Президент РФ возглавляет Совет Федерации.", 0, "Неверно. Совет Федерации возглавляет его Председатель, избираемый из состава палаты (ст. 101)."]
+  ], "Конституция РФ, гл. 4 (ст. 80–93); кодификатор 4.6.");
+
+M("t11-05", 11, "4.8", "Политическое участие",
+  "Выберите верные суждения о политическом участии и запишите цифры, под которыми они указаны.",
+  [
+    ["Абсентеизм — уклонение избирателей от участия в голосовании.", 1, "Верно. Это определение абсентеизма."],
+    ["Участие в выборах — одна из форм политического участия.", 1, "Верно. Электоральное участие — самая массовая форма."],
+    ["Абсентеизм всегда свидетельствует о высокой политической активности граждан.", 0, "Неверно. Абсентеизм — проявление пассивности."],
+    ["Одной из причин абсентеизма может быть недоверие к власти или безразличие к политике.", 1, "Верно. Причины — апатия, разочарование, ощущение, что голос ничего не меняет."],
+    ["Политическое участие ограничивается только голосованием на выборах.", 0, "Неверно. Это ещё и работа в партиях, обращения в органы власти, участие в референдуме, митинги, избирательные кампании."],
+    ["Митинги и пикетирование всегда являются незаконными формами политического участия.", 0, "Неверно. Право на мирные собрания гарантировано ст. 31 Конституции; незаконны только действия, нарушающие закон."],
+    ["Членство в политической партии и участие в её деятельности — форма политического участия.", 1, "Верно. Это институционализированное участие."]
+  ], "Кодификатор 4.8; Боголюбов, 11 кл., §§ 19–27 (по навигатору ФИПИ).");
+
+M("t11-06", 11, "4.11", "Политическая элита и лидерство",
+  "Выберите верные суждения о политической элите и политическом лидерстве и запишите цифры, под которыми они указаны.",
+  [
+    ["Политическая элита — относительно небольшая группа людей, влияющая на принятие важнейших политических решений.", 1, "Верно. Это определение политической элиты."],
+    ["Для харизматического лидерства характерна вера последователей в исключительные личные качества лидера.", 1, "Верно. Классификация М. Вебера: традиционное, харизматическое, рационально-легальное."],
+    ["Рационально-легальное лидерство основано на традициях и обычаях.", 0, "Неверно. Оно основано на законе и установленных процедурах (выборах, назначении). На традициях основано традиционное лидерство."],
+    ["Политический лидер обязательно занимает государственную должность.", 0, "Неверно. Лидером может быть руководитель партии или оппозиции."],
+    ["Политическая элита формируется исключительно путём выборов.", 0, "Неверно. Есть и назначение, и кооптация, и иные каналы."],
+    ["Теория элит исходит из того, что все граждане в равной мере участвуют в управлении.", 0, "Неверно. Теории элит утверждают, что управляет меньшинство."],
+    ["Ротация (циркуляция) элит — смена состава политической элиты.", 1, "Верно. Это определение."]
+  ], "Кодификатор 4.11; Боголюбов, 11 кл., §§ 19–27 (по навигатору ФИПИ).");
+
+M("t11-07", 11, "4.9", "Партии и идеологии",
+  "Выберите верные суждения о политических партиях, партийных системах и идейно-политических течениях и запишите цифры, под которыми они указаны.",
+  [
+    ["Политическая партия стремится к завоеванию и осуществлению государственной власти.", 1, "Верно. Это отличает партию от других общественных объединений."],
+    ["Для двухпартийной системы характерно соперничество двух крупных партий, которые поочерёдно приходят к власти.", 1, "Верно. Примеры: США, Великобритания."],
+    ["Однопартийная система типична для демократических режимов.", 0, "Неверно. Она типична для тоталитарных и авторитарных режимов."],
+    ["Политические партии создаются исключительно органами государственной власти.", 0, "Неверно. Партии — добровольные объединения граждан."],
+    ["Многопартийность — одно из проявлений политического плюрализма.", 1, "Верно. Ст. 13 Конституции РФ признаёт политическое многообразие и многопартийность."],
+    ["Консерватизм ориентируется на сохранение традиционных ценностей и постепенность перемен.", 1, "Верно. Это основная идея консерватизма."],
+    ["Либерализм признаёт приоритет интересов коллектива над правами личности.", 0, "Неверно. Центральная ценность либерализма — свобода и права личности."]
+  ], "Кодификатор 4.9; Конституция РФ, ст. 13; Боголюбов, 11 кл., §§ 19–27 (по навигатору ФИПИ).");
+
+M("t11-08", 11, "4.6", "Разделение властей в РФ",
+  "Выберите верные суждения о разделении властей в Российской Федерации и запишите цифры, под которыми они указаны.",
+  [
+    ["Государственная власть в РФ осуществляется на основе разделения на законодательную, исполнительную и судебную.", 1, "Верно. Ст. 10 Конституции РФ."],
+    ["Государственную власть в РФ осуществляют Президент, Федеральное Собрание, Правительство и суды.", 1, "Верно. Ст. 11 (ч. 1) Конституции РФ."],
+    ["Государственная Дума осуществляет исполнительную власть.", 0, "Неверно. Исполнительная власть — у Правительства; Дума — палата законодательного органа (Федерального Собрания)."],
+    ["Правительство РФ осуществляет судебную власть.", 0, "Неверно. Судебную власть осуществляют суды."],
+    ["Правосудие в РФ осуществляется только судом.", 1, "Верно. Ст. 118 (ч. 1) Конституции РФ."],
+    ["Разделение властей означает, что ветви власти не взаимодействуют между собой.", 0, "Неверно. Между ветвями есть система сдержек и противовесов (утверждение премьера, вотум недоверия, роспуск Думы и т.д.)."],
+    ["Конституция РФ допускает объединение законодательной и исполнительной власти в одном органе.", 0, "Неверно. Органы разных ветвей самостоятельны (ст. 10)."]
+  ], "Конституция РФ, ст. 10, 11, 118; кодификатор 4.6.");
+
+M("t11-09", 11, "4.4", "Анализ описания: форма правления",
+  "Прочитайте описание. «В государстве Z граждане голосуют за партийные списки, места в парламенте распределяются пропорционально числу полученных голосов. Правительство формируется партией (коалицией), получившей большинство мест, и уходит в отставку, если парламент выражает ему недоверие. Главу государства избирает парламент; его функции в основном представительские». Выберите верные выводы, которые можно сделать на основе описания, и запишите цифры, под которыми они указаны.",
+  [
+    ["В государстве Z — парламентская республика.", 1, "Верно. Правительство зависит от парламента, глава государства избирается парламентом и представительствует."],
+    ["На парламентских выборах в Z применяется пропорциональная избирательная система.", 1, "Верно. Голосование за списки и распределение мест пропорционально голосам."],
+    ["Правительство Z формируется независимо от результатов парламентских выборов.", 0, "Неверно. Его формирует партия (коалиция), получившая большинство."],
+    ["В государстве Z — президентская республика.", 0, "Неверно. Глава государства не возглавляет правительство и избирается парламентом."],
+    ["Правительство Z зависит от парламентского большинства.", 1, "Верно. Оно формируется большинством и должно уйти при вотуме недоверия."],
+    ["Z — федеративное государство.", 0, "Неверно. Об устройстве в описании ничего не сказано. Выводить надо только то, что следует из текста."],
+    ["Глава государства Z — наследственный монарх.", 0, "Неверно. Его избирает парламент."]
+  ], "Кодификатор 4.4, 4.10; задания такого типа проверяют умение отличать выводы от домыслов.");
+
+M("t11-10", 11, "4.8", "Анализ ситуации: гражданская активность",
+  "Прочитайте описание. «Жители микрорайона создали инициативную группу, чтобы добиться ремонта дороги. Они собрали подписи, участвовали в публичных слушаниях, направили коллективное обращение в администрацию города и встретились с депутатами городского Совета». Выберите верные выводы и запишите цифры, под которыми они указаны.",
+  [
+    ["Действия жителей — пример политического участия (в том числе на местном уровне).", 1, "Верно. Они влияют на решения органов власти."],
+    ["Инициативная группа — проявление самоорганизации гражданского общества.", 1, "Верно. Граждане объединяются добровольно и независимо от государства."],
+    ["Действия жителей — пример абсентеизма.", 0, "Неверно. Абсентеизм — уклонение от участия, здесь наоборот."],
+    ["Жители действовали как органы местного самоуправления.", 0, "Неверно. Они граждане; органы МСУ — администрация и Совет."],
+    ["Жители реализовали право направлять коллективные обращения в органы власти.", 1, "Верно. Ст. 33 Конституции РФ."],
+    ["Описанные действия свидетельствуют об экстремистской деятельности.", 0, "Неверно. Действия законные и мирные."],
+    ["Ситуация характерна для активистской политической культуры.", 1, "Верно. Граждане стремятся влиять на власть."]
+  ], "Конституция РФ, ст. 33; кодификатор 4.4, 4.8.");
+
+/* ===== Задание 12: основы конституционного строя, права и свободы (кодификатор 5.6, 5.7) ===== */
+const SRC_CONST = "Конституция РФ, гл. 1–2; кодификатор 5.6, 5.7; навигатор ФИПИ («Право»): Боголюбов Л.Н. и др., Обществознание. 10 кл., §§ 17–30.";
+
+M("t12-01", 12, "5.6", "Основы конституционного строя",
+  "Найдите в приведённом списке положения, характеризующие основы конституционного строя Российской Федерации. Запишите цифры, под которыми они указаны.",
+  [
+    ["Российская Федерация — демократическое федеративное правовое государство с республиканской формой правления.", 1, "Верно. Ст. 1 (ч. 1)."],
+    ["Человек, его права и свободы являются высшей ценностью.", 1, "Верно. Ст. 2."],
+    ["В Российской Федерации устанавливается обязательная государственная идеология.", 0, "Неверно. Ст. 13 (ч. 2): никакая идеология не может устанавливаться в качестве государственной или обязательной."],
+    ["Российская Федерация — светское государство.", 1, "Верно. Ст. 14 (ч. 1)."],
+    ["Религиозные объединения входят в систему органов государственной власти.", 0, "Неверно. Ст. 14 (ч. 2): религиозные объединения отделены от государства и равны перед законом."],
+    ["Носителем суверенитета и единственным источником власти в РФ является её многонациональный народ.", 1, "Верно. Ст. 3 (ч. 1)."],
+    ["Земля и другие природные ресурсы могут находиться только в государственной собственности.", 0, "Неверно. Ст. 9 (ч. 2): они могут находиться в частной, государственной, муниципальной и иных формах собственности."]
+  ], SRC_CONST);
+
+M("t12-02", 12, "5.7", "Классификация прав: политические",
+  "Найдите в приведённом списке политические права и свободы человека и гражданина РФ. Запишите цифры, под которыми они указаны.",
+  [
+    ["Право избирать и быть избранным в органы государственной власти и местного самоуправления", 1, "Верно. Ст. 32 (ч. 2). Это политическое право."],
+    ["Право участвовать в референдуме", 1, "Верно. Ст. 32 (ч. 2)."],
+    ["Право на жизнь", 0, "Неверно. Это личное (гражданское) право (ст. 20)."],
+    ["Право на свободу передвижения", 0, "Неверно. Личное (гражданское) право (ст. 27)."],
+    ["Право на неприкосновенность частной жизни", 0, "Неверно. Личное (гражданское) право (ст. 23)."],
+    ["Право на охрану здоровья и медицинскую помощь", 0, "Неверно. Социально-экономическое право (ст. 41)."],
+    ["Право на доступ к культурным ценностям", 0, "Неверно. Культурное право (ст. 44)."]
+  ], SRC_CONST + " Часто путают политические и личные права — это отмечал ФИПИ в разборе ЕГЭ-2025. Здесь верных ответов всего два.");
+
+M("t12-03", 12, "5.7", "Классификация прав: личные",
+  "Найдите в приведённом списке личные (гражданские) права и свободы человека и гражданина РФ. Запишите цифры, под которыми они указаны.",
+  [
+    ["Право на жизнь", 1, "Верно. Ст. 20."],
+    ["Право на неприкосновенность жилища", 1, "Верно. Ст. 25."],
+    ["Право избирать и быть избранным", 0, "Неверно. Политическое право (ст. 32)."],
+    ["Право на тайну переписки, телефонных переговоров и иных сообщений", 1, "Верно. Ст. 23 (ч. 2)."],
+    ["Право на социальное обеспечение", 0, "Неверно. Социально-экономическое право (ст. 39)."],
+    ["Право на свободу передвижения, выбор места пребывания и жительства", 1, "Верно. Ст. 27."],
+    ["Право на образование", 0, "Неверно. Относят к социально-экономическим и культурным правам (ст. 43)."]
+  ], SRC_CONST);
+
+M("t12-04", 12, "5.7", "Классификация прав: социально-экономические",
+  "Найдите в приведённом списке социально-экономические права человека и гражданина РФ. Запишите цифры, под которыми они указаны.",
+  [
+    ["Право на труд в условиях, отвечающих требованиям безопасности и гигиены", 1, "Верно. Ст. 37 (ч. 3)."],
+    ["Право на отдых", 1, "Верно. Ст. 37 (ч. 5)."],
+    ["Право на социальное обеспечение по возрасту, в случае болезни, инвалидности, потери кормильца", 1, "Верно. Ст. 39 (ч. 1)."],
+    ["Свобода совести и вероисповедания", 0, "Неверно. Личное право (ст. 28)."],
+    ["Право участвовать в управлении делами государства", 0, "Неверно. Политическое право (ст. 32)."],
+    ["Право на жилище", 1, "Верно. Ст. 40 (ч. 1)."],
+    ["Право на участие в культурной жизни и пользование учреждениями культуры", 0, "Неверно. Культурное право (ст. 44)."]
+  ], SRC_CONST);
+
+M("t12-05", 12, "5.7", "Конституционные обязанности",
+  "Найдите в приведённом списке конституционные обязанности гражданина РФ. Запишите цифры, под которыми они указаны.",
+  [
+    ["Платить законно установленные налоги и сборы", 1, "Верно. Ст. 57."],
+    ["Сохранять природу и окружающую среду, бережно относиться к природным богатствам", 1, "Верно. Ст. 58."],
+    ["Защита Отечества", 1, "Верно. Ст. 59 (ч. 1): защита Отечества — долг и обязанность гражданина РФ."],
+    ["Вступать в политическую партию", 0, "Неверно. Участие в партиях — право (ст. 30), а не обязанность."],
+    ["Участвовать в выборах", 0, "Неверно. Участие в выборах — право (ст. 32), а не конституционная обязанность."],
+    ["Заботиться о сохранении исторического и культурного наследия, беречь памятники истории и культуры", 1, "Верно. Ст. 44 (ч. 3)."],
+    ["Посещать религиозные службы", 0, "Неверно. Каждый вправе исповедовать любую религию или не исповедовать никакой (ст. 28)."]
+  ], SRC_CONST + " Воинская обязанность и альтернативная гражданская служба — см. ФЗ «О воинской обязанности и военной службе», «Об альтернативной гражданской службе».");
+
+M("t12-06", 12, "5.6", "Гражданство РФ",
+  "Найдите в приведённом списке положения, относящиеся к гражданству Российской Федерации по Конституции РФ. Запишите цифры, под которыми они указаны.",
+  [
+    ["Гражданство РФ приобретается и прекращается в соответствии с федеральным законом, является единым и равным независимо от оснований приобретения.", 1, "Верно. Ст. 6 (ч. 1)."],
+    ["Гражданин РФ не может быть лишён своего гражданства или права изменить его.", 1, "Верно. Ст. 6 (ч. 3)."],
+    ["Гражданин РФ может быть выдан другому государству.", 0, "Неверно. Ст. 61 (ч. 1): гражданин РФ не может быть выслан за пределы страны или выдан другому государству."],
+    ["Граждане РФ имеют на её территории все права и свободы и несут равные обязанности.", 1, "Верно. Ст. 6 (ч. 2)."],
+    ["Гражданство РФ приобретается только по рождению.", 0, "Неверно. Есть иные основания: приём в гражданство, восстановление и др. — по закону о гражданстве."],
+    ["Наличие у гражданина РФ второго гражданства запрещено Конституцией в любых случаях.", 0, "Неверно. Ст. 62 (ч. 1) допускает наличие иностранного гражданства в соответствии с федеральным законом или международным договором."],
+    ["За границей гражданин РФ лишается защиты и покровительства государства.", 0, "Неверно. Ст. 61 (ч. 2): он пользуется защитой и покровительством РФ и за её пределами."]
+  ], SRC_CONST + " ФЗ «О гражданстве Российской Федерации» (гл. 1, 3, 4).");
+
+M("t12-07", 12, "5.6", "Россия — социальное государство",
+  "Найдите в приведённом списке положения, характеризующие Российскую Федерацию как социальное государство. Запишите цифры, под которыми они указаны.",
+  [
+    ["Охраняются труд и здоровье людей", 1, "Верно. Ст. 7 (ч. 2)."],
+    ["Устанавливается гарантированный минимальный размер оплаты труда", 1, "Верно. Ст. 7 (ч. 2)."],
+    ["Обеспечивается государственная поддержка семьи, материнства, отцовства и детства, инвалидов и пожилых граждан", 1, "Верно. Ст. 7 (ч. 2)."],
+    ["Устанавливается единая государственная идеология", 0, "Неверно. Ст. 13 запрещает государственную идеологию; к социальному государству это не относится."],
+    ["Развивается система социальных служб, устанавливаются государственные пенсии, пособия и иные гарантии социальной защиты", 1, "Верно. Ст. 7 (ч. 2)."],
+    ["Запрещается частное предпринимательство", 0, "Неверно. Ст. 34 гарантирует свободу предпринимательской деятельности."],
+    ["Власть принадлежит одной партии", 0, "Неверно. Ст. 13 признаёт многопартийность."]
+  ], SRC_CONST + " В ЕГЭ-2025 почти четверть участников не смогла охарактеризовать социальное и светское государство.");
+
+M("t12-08", 12, "5.7", "Конституционные гарантии: презумпция невиновности, обратная сила закона",
+  "Найдите в приведённом списке положения, закреплённые в Конституции РФ. Запишите цифры, под которыми они указаны.",
+  [
+    ["Обвиняемый считается невиновным, пока его вина не доказана в установленном законом порядке и не установлена вступившим в силу приговором суда.", 1, "Верно. Ст. 49 (ч. 1) — презумпция невиновности."],
+    ["Неустранимые сомнения в виновности лица толкуются в пользу обвиняемого.", 1, "Верно. Ст. 49 (ч. 3)."],
+    ["Обвиняемый обязан доказывать свою невиновность.", 0, "Неверно. Ст. 49 (ч. 2): обвиняемый не обязан доказывать свою невиновность."],
+    ["Никто не может быть повторно осуждён за одно и то же преступление.", 1, "Верно. Ст. 50 (ч. 1)."],
+    ["Закон, устанавливающий или отягчающий ответственность, имеет обратную силу.", 0, "Неверно. Ст. 54 (ч. 1): такой закон обратной силы не имеет."],
+    ["Закон, устраняющий или смягчающий ответственность, имеет обратную силу.", 1, "Верно. Ст. 54 (ч. 1)."],
+    ["Каждый обязан давать показания против самого себя и своих близких родственников.", 0, "Неверно. Ст. 51: никто не обязан свидетельствовать против себя, супруга и близких родственников."]
+  ], SRC_CONST + " Презумпция невиновности и обратная сила закона — частые «провальные» темы ЕГЭ-2025 и ЕГЭ-2026.");
+
+M("t12-09", 12, "5.6", "Основы строя: собственность, МСУ, идеология, право",
+  "Найдите в приведённом списке положения, закреплённые в главе 1 Конституции Российской Федерации. Запишите цифры, под которыми они указаны.",
+  [
+    ["Признаются и защищаются равным образом частная, государственная, муниципальная и иные формы собственности.", 1, "Верно. Ст. 8 (ч. 2)."],
+    ["Признаётся и гарантируется местное самоуправление.", 1, "Верно. Ст. 12."],
+    ["Признаётся идеологическое многообразие.", 1, "Верно. Ст. 13 (ч. 1)."],
+    ["Признаются политическое многообразие и многопартийность.", 1, "Верно. Ст. 13 (ч. 3)."],
+    ["В Российской Федерации устанавливается государственная религия.", 0, "Неверно. Ст. 14: никакая религия не может устанавливаться в качестве государственной."],
+    ["Международные договоры РФ обладают более высокой юридической силой, чем Конституция РФ.", 0, "Неверно. Ст. 15: высшая юридическая сила — у Конституции. Договоры — составная часть правовой системы и имеют приоритет над законами."],
+    ["Неопубликованные законы подлежат применению, если они не касаются прав человека.", 0, "Неверно. Ст. 15 (ч. 3): законы подлежат официальному опубликованию; неопубликованные законы не применяются."]
+  ], SRC_CONST);
+
+M("t12-10", 12, "5.7", "Ограничение прав и свобод",
+  "Найдите в приведённом списке положения Конституции РФ о гарантиях и ограничении прав и свобод человека и гражданина. Запишите цифры, под которыми они указаны.",
+  [
+    ["В РФ не должны издаваться законы, отменяющие или умаляющие права и свободы человека и гражданина.", 1, "Верно. Ст. 55 (ч. 2)."],
+    ["Права и свободы могут быть ограничены федеральным законом в той мере, в какой это необходимо для защиты основ конституционного строя, нравственности, здоровья, прав и законных интересов других лиц, обороны и безопасности государства.", 1, "Верно. Ст. 55 (ч. 3)."],
+    ["Права и свободы могут быть ограничены указом главы региона.", 0, "Неверно. Ограничение возможно только федеральным законом (ст. 55)."],
+    ["Перечисление в Конституции основных прав не должно толковаться как отрицание или умаление других общепризнанных прав.", 1, "Верно. Ст. 55 (ч. 1)."],
+    ["При введении чрезвычайного положения могут быть ограничены любые права, включая право на жизнь.", 0, "Неверно. Ст. 56 (ч. 3): ряд прав (в частности, право на жизнь, ст. 20) не подлежит ограничению."],
+    ["При чрезвычайном положении может быть ограничено право на судебную защиту.", 0, "Неверно. Ст. 56 (ч. 3): права по ст. 46–54 ограничению не подлежат."],
+    ["Права и свободы человека и гражданина являются непосредственно действующими.", 1, "Верно. Ст. 18."]
+  ], SRC_CONST);
+
+M("t12-11", 12, "5.7", "Участие граждан в управлении государством",
+  "Найдите в приведённом списке положения Конституции РФ об участии граждан в управлении делами государства. Запишите цифры, под которыми они указаны.",
+  [
+    ["Граждане РФ вправе участвовать в управлении делами государства как непосредственно, так и через своих представителей.", 1, "Верно. Ст. 32 (ч. 1)."],
+    ["Граждане РФ имеют равный доступ к государственной службе.", 1, "Верно. Ст. 32 (ч. 4)."],
+    ["Не имеют права избирать и быть избранными граждане, признанные судом недееспособными, а также содержащиеся в местах лишения свободы по приговору суда.", 1, "Верно. Ст. 32 (ч. 3)."],
+    ["Право избирать принадлежит гражданам РФ с 16 лет.", 0, "Неверно. Гражданин РФ может самостоятельно осуществлять в полном объёме свои права с 18 лет (ст. 60); право избирать — с 18 лет."],
+    ["Избираться в органы власти могут только члены политических партий.", 0, "Неверно. Конституция не связывает право быть избранным с партийной принадлежностью."],
+    ["Граждане РФ не вправе участвовать в референдуме.", 0, "Неверно. Ст. 32 (ч. 2): вправе."],
+    ["Право избирать в органы государственной власти РФ принадлежит всем лицам, проживающим в стране, включая иностранных граждан.", 0, "Неверно. Ст. 32 говорит о гражданах Российской Федерации."]
+  ], SRC_CONST);
+
+/* ===== Задание 13: федеративное устройство и субъекты государственной власти (кодификатор 4.5, 4.6) ===== */
+const SRC_POW = "Конституция РФ, гл. 3–7 (ст. 65–129); кодификатор 4.5, 4.6; навигатор ФИПИ («Политика»).";
+const Q13 = "Установите соответствие между ";
+
+X("t13-01", "4.6", "Президент, Дума, Совет Федерации, Правительство",
+  Q13 + "полномочиями и органами государственной власти РФ, которые ими обладают: к каждой позиции первого столбца подберите позицию из второго столбца.",
+  "ПОЛНОМОЧИЯ", "ОРГАНЫ ВЛАСТИ",
+  ["Президент РФ", "Государственная Дума", "Совет Федерации", "Правительство РФ"],
+  [
+    ["утверждение кандидатуры Председателя Правительства РФ", 2, "Ст. 103: Государственная Дума утверждает по представлению Президента кандидатуру Председателя Правительства (в редакции поправок 2020 г.)."],
+    ["подписание и обнародование федеральных законов", 1, "Ст. 84: Президент подписывает и обнародует федеральные законы (ст. 107 — в течение 14 дней)."],
+    ["назначение выборов Президента РФ", 3, "Ст. 102: выборы Президента назначает Совет Федерации."],
+    ["обеспечение исполнения федерального бюджета", 4, "Ст. 114: Правительство разрабатывает и представляет Думе бюджет и обеспечивает его исполнение."]
+  ], SRC_POW);
+
+X("t13-02", "4.6", "Кто объявляет, утверждает, выдвигает",
+  Q13 + "полномочиями и органами государственной власти РФ, которые ими обладают: к каждой позиции первого столбца подберите позицию из второго столбца.",
+  "ПОЛНОМОЧИЯ", "ОРГАНЫ ВЛАСТИ",
+  ["Президент РФ", "Государственная Дума", "Совет Федерации", "Правительство РФ"],
+  [
+    ["объявление амнистии", 2, "Ст. 103: амнистию объявляет Государственная Дума. Помилование — полномочие Президента (ст. 89)."],
+    ["утверждение указа Президента о введении чрезвычайного положения", 3, "Ст. 102: Совет Федерации утверждает указы о введении военного и чрезвычайного положения."],
+    ["управление федеральной собственностью", 4, "Ст. 114: управление федеральной собственностью осуществляет Правительство."],
+    ["Верховное главнокомандование Вооружёнными Силами РФ", 1, "Ст. 87: Президент — Верховный Главнокомандующий."],
+    ["выдвижение обвинения против Президента для отрешения от должности", 2, "Ст. 93, 103: обвинение выдвигает Государственная Дума, а отрешает от должности Совет Федерации."]
+  ], SRC_POW);
+
+X("t13-03", "4.5", "Предметы ведения (ст. 71–73)",
+  Q13 + "примерами вопросов и уровнями ведения, к которым они относятся: к каждой позиции первого столбца подберите позицию из второго столбца.",
+  "ВОПРОСЫ", "ВЕДЕНИЕ",
+  ["Исключительное ведение РФ (ст. 71)", "Совместное ведение РФ и субъектов (ст. 72)", "Ведение субъектов РФ (ст. 73)"],
+  [
+    ["установление системы федеральных налогов и сборов", 1, "Ст. 71: федеральные налоги и сборы — ведение РФ."],
+    ["установление общих принципов налогообложения и сборов в РФ", 2, "Ст. 72: общие принципы налогообложения — совместное ведение. Не путайте с системой федеральных налогов (ст. 71)."],
+    ["обеспечение законности, правопорядка, общественной безопасности", 2, "Ст. 72: совместное ведение."],
+    ["решение вопросов, не отнесённых к ведению РФ и совместному ведению", 3, "Ст. 73: вне ведения РФ и совместного ведения субъекты обладают всей полнотой государственной власти."],
+    ["оборона и безопасность", 1, "Ст. 71: ведение РФ."]
+  ], SRC_POW + " В ЕГЭ частая ошибка — путаница предметов ведения и полномочий уровней власти.");
+
+X("t13-04", "4.6", "Конституционный Суд, Верховный Суд, Прокуратура",
+  Q13 + "полномочиями и органами, которые ими обладают: к каждой позиции первого столбца подберите позицию из второго столбца.",
+  "ПОЛНОМОЧИЯ", "ОРГАНЫ",
+  ["Конституционный Суд РФ", "Верховный Суд РФ", "Прокуратура РФ"],
+  [
+    ["проверка соответствия Конституции федеральных законов", 1, "Ст. 125: это полномочие Конституционного Суда."],
+    ["высший судебный орган по гражданским, уголовным, административным делам и экономическим спорам", 2, "Ст. 126: Верховный Суд РФ."],
+    ["надзор за соблюдением Конституции и исполнением законов", 3, "Ст. 129: функция прокуратуры (единой федеральной централизованной системы органов)."],
+    ["разрешение споров о компетенции между федеральными органами государственной власти", 1, "Ст. 125 (ч. 3): Конституционный Суд разрешает споры о компетенции."]
+  ], SRC_POW);
+
+X("t13-05", "4.6", "Ветви власти и их функции",
+  Q13 + "примерами государственной деятельности и ветвями власти, к которым они относятся: к каждой позиции первого столбца подберите позицию из второго столбца.",
+  "ПРИМЕРЫ", "ВЕТВИ ВЛАСТИ",
+  ["Законодательная власть", "Исполнительная власть", "Судебная власть"],
+  [
+    ["разработка проекта федерального бюджета", 2, "Это делает Правительство — орган исполнительной власти (ст. 110, 114)."],
+    ["принятие федерального закона", 1, "Законы принимает Государственная Дума — часть Федерального Собрания."],
+    ["рассмотрение уголовного дела по существу и вынесение приговора", 3, "Правосудие осуществляется только судом (ст. 118)."],
+    ["управление федеральной собственностью", 2, "Полномочие Правительства (ст. 114)."],
+    ["одобрение федерального закона, принятого Государственной Думой", 1, "Совет Федерации — палата Федерального Собрания (ст. 94, 105)."]
+  ], SRC_POW);
+
+X("t13-06", "4.6", "Законодательный процесс",
+  Q13 + "действиями в законодательном процессе и органами, которые их осуществляют: к каждой позиции первого столбца подберите позицию из второго столбца.",
+  "ДЕЙСТВИЯ", "ОРГАНЫ",
+  ["Правительство РФ", "Государственная Дума", "Совет Федерации", "Президент РФ"],
+  [
+    ["принимает федеральный закон большинством голосов от общего числа депутатов", 2, "Ст. 105 (ч. 2): закон принимает Государственная Дума."],
+    ["рассматривает принятый Думой закон и одобряет его", 3, "Ст. 105 (ч. 3), 106: закон направляется в Совет Федерации."],
+    ["подписывает закон в течение 14 дней и обнародует его", 4, "Ст. 107 (ч. 2): полномочие Президента."],
+    ["утверждает указ Президента о введении военного положения", 3, "Ст. 102: это полномочие Совета Федерации."],
+    ["разрабатывает и представляет Думе проект федерального бюджета", 1, "Ст. 114: это делает Правительство."]
+  ], SRC_POW + " В ЕГЭ часто путают функции законодательной власти и полномочия главы государства.");
+
+X("t13-07", "4.6", "Президент, Дума или Совет Федерации",
+  Q13 + "полномочиями и органами государственной власти РФ, которые ими обладают: к каждой позиции первого столбца подберите позицию из второго столбца.",
+  "ПОЛНОМОЧИЯ", "ОРГАНЫ ВЛАСТИ",
+  ["Президент РФ", "Государственная Дума", "Совет Федерации"],
+  [
+    ["принятие решения об отставке Правительства РФ", 1, "Ст. 83: Президент принимает решение об отставке Правительства."],
+    ["выражение недоверия Правительству РФ", 2, "Ст. 117 (ч. 3): недоверие выражает Государственная Дума."],
+    ["осуществление помилования", 1, "Ст. 89: помилование — полномочие Президента."],
+    ["назначение по представлению Президента судей Конституционного и Верховного судов", 3, "Ст. 102: судей назначает Совет Федерации по представлению Президента."],
+    ["объявление амнистии", 2, "Ст. 103: Государственная Дума."]
+  ], SRC_POW);
+
+X("t13-08", "4.6", "Федеральное Собрание: палаты и глава государства",
+  Q13 + "характеристиками и органами власти, к которым они относятся: к каждой позиции первого столбца подберите позицию из второго столбца.",
+  "ХАРАКТЕРИСТИКИ", "ОРГАНЫ ВЛАСТИ",
+  ["Государственная Дума", "Совет Федерации", "Президент РФ"],
+  [
+    ["состоит из 450 депутатов", 1, "Ст. 95 (ч. 3)."],
+    ["в состав входят по два представителя от каждого субъекта РФ (от законодательного и исполнительного органов)", 2, "Ст. 95: так формируется Совет Федерации (плюс представители Российской Федерации, назначаемые Президентом)."],
+    ["может быть распущена по указу Президента в случаях, предусмотренных Конституцией", 1, "Ст. 84, 109: распустить можно Государственную Думу."],
+    ["одобряет принятые Государственной Думой федеральные законы", 2, "Ст. 105: полномочие Совета Федерации."],
+    ["обеспечивает согласованное функционирование и взаимодействие органов публичной власти", 3, "Ст. 80 (ч. 2): задача Президента как главы государства."]
+  ], SRC_POW);
+
+X("t13-09", "4.6", "Президент и Правительство: не путать",
+  Q13 + "полномочиями и органами государственной власти РФ, которые ими обладают: к каждой позиции первого столбца подберите позицию из второго столбца.",
+  "ПОЛНОМОЧИЯ", "ОРГАНЫ ВЛАСТИ",
+  ["Президент РФ", "Правительство РФ"],
+  [
+    ["обеспечение проведения единой финансовой, кредитной и денежной политики", 2, "Ст. 114: Правительство."],
+    ["определение основных направлений внутренней и внешней политики государства", 1, "Ст. 80 (ч. 3): Президент."],
+    ["утверждение военной доктрины РФ", 1, "Ст. 83: Президент."],
+    ["осуществление мер по обеспечению обороны страны и государственной безопасности", 2, "Ст. 114: Правительство осуществляет конкретные меры."],
+    ["обеспечение проведения единой государственной политики в области культуры, науки, образования, здравоохранения", 2, "Ст. 114: Правительство."]
+  ], SRC_POW + " Президент определяет основные направления политики, Правительство реализует их.");
+
+X("t13-10", "4.5", "Предметы ведения: ещё примеры",
+  Q13 + "вопросами и уровнями ведения, к которым они относятся: к каждой позиции первого столбца подберите позицию из второго столбца.",
+  "ВОПРОСЫ", "ВЕДЕНИЕ",
+  ["Исключительное ведение РФ (ст. 71)", "Совместное ведение РФ и субъектов (ст. 72)", "Ведение субъектов РФ (ст. 73)"],
+  [
+    ["федеральная государственная собственность и управление ею", 1, "Ст. 71."],
+    ["природопользование, охрана окружающей среды, обеспечение экологической безопасности", 2, "Ст. 72: совместное ведение."],
+    ["общие вопросы воспитания, образования, науки, культуры, физической культуры и спорта", 2, "Ст. 72: совместное ведение."],
+    ["правовые основы единого рынка, финансовое, валютное, кредитное регулирование, денежная эмиссия", 1, "Ст. 71: ведение РФ."],
+    ["внешняя политика и международные отношения РФ", 1, "Ст. 71: ведение РФ."]
+  ], SRC_POW);
+
+/* ===== Логика тренажёра ===== */
+(function () {
+  "use strict";
+
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var esc = function (s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+    });
+  };
+  var shuffle = function (a) {
+    a = a.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  };
+  var maxPts = function (n) { return n === 12 ? 1 : 2; };
+  var LET = ["А", "Б", "В", "Г", "Д", "Е"];
+  var balls = function (n) { return n === 1 ? "балла" : "баллов"; }; /* после «из» и «до»: родительный падеж */
+
+  /* ---------- хранилище (с запасным вариантом в памяти) ---------- */
+  var KEY = "ege27-ob-1013-v1";
+  var mem = null;
+  function loadP() {
+    try {
+      var r = localStorage.getItem(KEY);
+      if (r) { var p = JSON.parse(r); if (p && p.tasks) { if (!p.exams) p.exams = []; return p; } }
+    } catch (e) { /* хранилище недоступно */ }
+    return mem || { tasks: {}, exams: [] };
+  }
+  var P = loadP();
+  function saveP() {
+    mem = P;
+    try { localStorage.setItem(KEY, JSON.stringify(P)); } catch (e) { /* ничего */ }
+  }
+  function record(id, pts) {
+    var r = P.tasks[id] || { best: 0, last: 0, tries: 0 };
+    r.best = Math.max(r.best, pts); r.last = pts; r.tries += 1;
+    P.tasks[id] = r; saveP();
+  }
+
+  /* ---------- экземпляр задания ---------- */
+  function mkInst(t) {
+    if (t.type === "multi") {
+      return { t: t, order: shuffle(t.opts.map(function (_, i) { return i; })), sel: {}, done: false };
+    }
+    return { t: t, order: shuffle(t.rows.map(function (_, i) { return i; })), pick: {}, done: false };
+  }
+  function answered(inst) {
+    return inst.t.type === "multi" ? Object.keys(inst.sel).length > 0 : Object.keys(inst.pick).length > 0;
+  }
+
+  function grade(inst) {
+    var t = inst.t, max = maxPts(t.num), errors = 0, i;
+    var res = { max: max, missing: [], extra: [], wrongRows: [], correctKey: "", userKey: "", correctCount: 0 };
+    if (t.type === "multi") {
+      var ck = [], uk = [];
+      for (i = 0; i < inst.order.length; i++) {
+        var ok = t.opts[inst.order[i]].ok, chosen = !!inst.sel[i];
+        if (ok) { ck.push(i + 1); res.correctCount++; }
+        if (chosen) uk.push(i + 1);
+        if (ok && !chosen) { res.missing.push(i + 1); errors++; }
+        if (!ok && chosen) { res.extra.push(i + 1); errors++; }
+      }
+      res.correctKey = ck.join(""); res.userKey = uk.join("");
+    } else {
+      var c2 = [], u2 = [];
+      for (i = 0; i < inst.order.length; i++) {
+        var a = t.rows[inst.order[i]].a, p = inst.pick[i];
+        c2.push(a); u2.push(p ? p : "–");
+        if (p !== a) { errors++; res.wrongRows.push(LET[i]); }
+      }
+      res.correctKey = c2.join(""); res.userKey = u2.join("");
+    }
+    res.errors = errors;
+    if (max === 1) res.pts = errors === 0 ? 1 : 0;
+    else res.pts = errors === 0 ? 2 : (errors === 1 ? 1 : 0);
+    return res;
+  }
+
+  /* ---------- состояние ---------- */
+  var S = { num: "all", onlyErr: false, mode: "practice", queue: [], i: 0, inst: null,
+            series: { pts: 0, max: 0, n: 0 }, exam: null, timer: null };
+  var stage = $("#stage");
+
+  function stopTimer() { if (S.timer) { clearInterval(S.timer); S.timer = null; } }
+
+  function buildQueue() {
+    var pool = TASKS.filter(function (t) { return S.num === "all" || t.num === S.num; });
+    if (S.onlyErr) {
+      pool = pool.filter(function (t) { var r = P.tasks[t.id]; return !r || r.last < maxPts(t.num); });
+    }
+    var unseen = shuffle(pool.filter(function (t) { return !P.tasks[t.id]; }));
+    var wrong = shuffle(pool.filter(function (t) { var r = P.tasks[t.id]; return r && r.last < maxPts(t.num); }));
+    var done = shuffle(pool.filter(function (t) { var r = P.tasks[t.id]; return r && r.last >= maxPts(t.num); }));
+    return unseen.concat(wrong, done);
+  }
+
+  /* ---------- разметка задания ---------- */
+  function revealed(inst, mode) { return mode === "review" || (mode === "practice" && inst.done); }
+
+  function blankHTML(inst, key, cls) {
+    var t = inst.t, cells = "";
+    if (t.type === "multi") {
+      var arr = key ? key.split("") : [];
+      var n = Math.max(arr.length, 3);
+      for (var i = 0; i < n; i++) cells += '<span class="cell">' + (arr[i] || "") + "</span>";
+    } else {
+      var a2 = key ? key.split("") : [];
+      for (var j = 0; j < inst.order.length; j++) {
+        cells += '<span class="cellcol"><span class="cl">' + LET[j] + '</span><span class="cell">' + (a2[j] && a2[j] !== "–" ? a2[j] : "") + "</span></span>";
+      }
+    }
+    return '<span class="blank ' + (cls || "") + '">' + cells + "</span>";
+  }
+
+  function liveKey(inst) {
+    var t = inst.t, i;
+    if (t.type === "multi") {
+      var u = [];
+      for (i = 0; i < inst.order.length; i++) if (inst.sel[i]) u.push(i + 1);
+      return u.join("");
+    }
+    var p = [];
+    for (i = 0; i < inst.order.length; i++) p.push(inst.pick[i] ? inst.pick[i] : "–");
+    return p.join("");
+  }
+
+  function headHTML(inst, label) {
+    var t = inst.t, mx = maxPts(t.num);
+    return '<div class="chips"><span class="chip strong">Задание ' + t.num + "</span>" +
+      '<span class="chip">' + (t.num === 10 || t.num === 11 ? "повышенный уровень" : "базовый уровень") + "</span>" +
+      '<span class="chip">до ' + mx + " " + balls(mx) + "</span>" +
+      '<span class="chip">кодификатор ' + esc(t.code) + "</span>" +
+      (label ? '<span class="chip ghost">' + esc(label) + "</span>" : "") + "</div>" +
+      '<p class="topic">' + esc(t.topic) + "</p>";
+  }
+
+  function resultHTML(inst) {
+    var g = grade(inst), t = inst.t;
+    var cls = g.pts === g.max ? "ok" : (g.pts > 0 ? "part" : "bad");
+    var d = "";
+    if (t.type === "multi") {
+      d += '<p>Верных ответов в этом задании: <b>' + g.correctCount + "</b>. Количество верных ответов не фиксируется — их может быть от двух до четырёх.</p>";
+      if (g.missing.length) d += "<p>Пропущено: № " + g.missing.join(", ") + ".</p>";
+      if (g.extra.length) d += "<p>Лишнее: № " + g.extra.join(", ") + ".</p>";
+    } else if (g.wrongRows.length) {
+      d += "<p>Ошибки в строках: " + g.wrongRows.join(", ") + ".</p>";
+    }
+    d += '<p class="rule">' + (g.max === 1
+      ? "Задание 12 оценивается в 1 балл: засчитывается только полностью верный ответ."
+      : "2 балла — ответ верный, 1 балл — одна ошибка, иначе 0.") + "</p>";
+    return '<div class="result ' + cls + '" role="status"><p class="score">' + g.pts + " из " + g.max + " " + balls(g.max) + "</p>" +
+      '<p class="ans">Ваш ответ: ' + blankHTML(inst, g.userKey, "mini") + '</p><p class="ans">Верный ответ: ' + blankHTML(inst, g.correctKey, "mini good") + "</p>" +
+      d + '<p class="src">Опора для проверки: ' + esc(t.src) + "</p></div>";
+  }
+
+  function cardHTML(inst, mode, label) {
+    var t = inst.t, rev = revealed(inst, mode), h = headHTML(inst, label);
+    h += '<p class="q">' + esc(t.q) + "</p>";
+    var i;
+    if (t.type === "multi") {
+      h += '<div class="opts" role="group" aria-label="Варианты ответа">';
+      for (i = 0; i < inst.order.length; i++) {
+        var o = t.opts[inst.order[i]], chosen = !!inst.sel[i], cls = "opt", tag = "";
+        if (rev) {
+          if (o.ok && chosen) { cls += " is-hit"; tag = "Выбрано верно"; }
+          else if (!o.ok && chosen) { cls += " is-bad"; tag = "Выбрано ошибочно"; }
+          else if (o.ok && !chosen) { cls += " is-miss"; tag = "Пропущено"; }
+          else { cls += " is-neutral"; tag = "Не выбрано, и это верно"; }
+        } else if (chosen) cls += " is-sel";
+        h += '<div class="optwrap"><button type="button" class="' + cls + '" data-act="tog" data-pos="' + i + '" aria-pressed="' + chosen + '"' + (rev ? ' aria-disabled="true"' : "") + ">" +
+          '<span class="n">' + (i + 1) + '</span><span class="tx">' + esc(o.t) + "</span></button>" +
+          (rev ? '<p class="why"><span class="tag">' + tag + "</span> " + esc(o.why) + "</p>" : "") + "</div>";
+      }
+      h += "</div>";
+    } else {
+      h += '<div class="legend"><p class="lh">' + esc(t.right) + '</p><ol class="lst">';
+      for (i = 0; i < t.choices.length; i++) h += "<li><b>" + (i + 1) + "</b> " + esc(t.choices[i]) + "</li>";
+      h += '</ol></div><p class="lh left">' + esc(t.left) + '</p><div class="mrows">';
+      for (i = 0; i < inst.order.length; i++) {
+        var r = t.rows[inst.order[i]], pk = inst.pick[i], rc = "mrow", note = "";
+        if (rev) {
+          if (pk === r.a) { rc += " is-hit"; note = "Верно."; }
+          else { rc += " is-bad"; note = pk ? "Вы выбрали " + pk + ", верно: " + r.a + "." : "Нет ответа, верно: " + r.a + "."; }
+        }
+        h += '<div class="' + rc + '"><div class="mtop"><span class="letter">' + LET[i] + '</span><p class="mt">' + esc(r.t) + "</p></div>" +
+          '<div class="picks" role="group" aria-label="Строка ' + LET[i] + '">';
+        for (var k = 1; k <= t.choices.length; k++) {
+          var pc = "pick";
+          if (rev) { if (k === r.a) pc += " is-right"; else if (k === pk) pc += " is-wrong"; }
+          else if (pk === k) pc += " is-sel";
+          h += '<button type="button" class="' + pc + '" data-act="pick" data-pos="' + i + '" data-val="' + k + '" aria-pressed="' + (pk === k) + '"' + (rev ? ' aria-disabled="true"' : "") + ">" + k + "</button>";
+        }
+        h += "</div>" + (rev ? '<p class="why"><span class="tag">' + note + "</span> " + esc(r.why) + "</p>" : "") + "</div>";
+      }
+      h += "</div>";
+    }
+    if (!rev) {
+      h += '<div class="answerbar" aria-live="polite"><span class="al">Ваш ответ</span>' + blankHTML(inst, liveKey(inst), "") + "</div>";
+    }
+    return h;
+  }
+
+  /* ---------- практика ---------- */
+  function startPractice() {
+    stopTimer(); S.exam = null;
+    S.queue = buildQueue(); S.i = 0;
+    S.series = { pts: 0, max: 0, n: 0 };
+    if (!S.queue.length) { renderEmpty(); return; }
+    S.inst = mkInst(S.queue[0]);
+    renderPractice();
+  }
+
+  function renderEmpty() {
+    stage.innerHTML = '<div class="empty"><p class="big">Здесь пока пусто.</p><p>Все задания этого набора решены без ошибок. Выберите другой номер задания, выключите фильтр «Только нерешённые и с ошибками» или запустите мини-вариант.</p></div>';
+  }
+
+  function renderPractice() {
+    var inst = S.inst, total = S.queue.length;
+    var h = '<div class="card" id="card">' + cardHTML(inst, "practice", "Вопрос " + (S.i + 1) + " из " + total);
+    if (inst.done) {
+      h += resultHTML(inst) + '<div class="ctrl"><button type="button" class="btn primary" data-act="next">' + (S.i + 1 < total ? "Следующее задание" : "Завершить серию") + "</button></div>";
+    } else {
+      h += '<div class="ctrl"><button type="button" class="btn primary" data-act="check"' + (answered(inst) ? "" : " disabled") + ">Проверить</button>" +
+        '<button type="button" class="btn ghost" data-act="skip">Пропустить</button></div>';
+    }
+    h += "</div>";
+    stage.innerHTML = h;
+  }
+
+  function renderSeriesEnd() {
+    var s = S.series;
+    stage.innerHTML = '<div class="card summary"><p class="big">Серия завершена</p><p class="score">' + s.pts + " из " + s.max + " " + balls(s.max) + "</p>" +
+      "<p>Решено заданий: " + s.n + ". Ошибочные задания вернутся в начало следующей серии.</p>" +
+      '<div class="ctrl"><button type="button" class="btn primary" data-act="restart">Новая серия</button>' +
+      '<button type="button" class="btn ghost" data-act="errs">Разобрать ошибки</button></div></div>';
+  }
+
+  /* ---------- вариант (мини и расширенный) ---------- */
+  function pickFor(num, n) {
+    var pool = shuffle(TASKS.filter(function (t) { return t.num === num; }));
+    return pool.slice(0, n);
+  }
+  function startExam(kind) {
+    stopTimer();
+    var per = kind === "full" ? 2 : 1, items = [];
+    [10, 11, 12, 13].forEach(function (n) { pickFor(n, per).forEach(function (t) { items.push(mkInst(t)); }); });
+    var minutes = kind === "full" ? 24 : 12;
+    S.exam = { kind: kind, items: items, idx: 0, endAt: Date.now() + minutes * 60000, finished: false, minutes: minutes };
+    renderExam();
+    S.timer = setInterval(tick, 1000);
+  }
+  function fmt(ms) {
+    var s = Math.max(0, Math.round(ms / 1000)), m = Math.floor(s / 60), r = s % 60;
+    return (m < 10 ? "0" : "") + m + ":" + (r < 10 ? "0" : "") + r;
+  }
+  function tick() {
+    if (!S.exam || S.exam.finished) { stopTimer(); return; }
+    var left = S.exam.endAt - Date.now(), el = $("#timer");
+    if (el) { el.textContent = fmt(left); el.classList.toggle("low", left < 120000); }
+    if (left <= 0) finishExam(true);
+  }
+  function renderExam() {
+    var ex = S.exam, inst = ex.items[ex.idx], last = ex.idx === ex.items.length - 1;
+    var pills = "";
+    ex.items.forEach(function (it, i) {
+      pills += '<button type="button" class="pill' + (i === ex.idx ? " cur" : "") + (answered(it) ? " has" : "") + '" data-act="goto" data-i="' + i + '" aria-label="Задание ' + (i + 1) + ", номер " + it.t.num + '">' + it.t.num + "</button>";
+    });
+    stage.innerHTML = '<div class="exambar"><div><span class="tl">Осталось</span><span id="timer" class="timer">' + fmt(ex.endAt - Date.now()) + "</span></div>" +
+      '<div class="pills" role="group" aria-label="Задания варианта">' + pills + "</div></div>" +
+      '<div class="card" id="card">' + cardHTML(inst, "exam", "Вопрос " + (ex.idx + 1) + " из " + ex.items.length) +
+      '<div class="ctrl">' + (ex.idx > 0 ? '<button type="button" class="btn ghost" data-act="prev">Назад</button>' : "") +
+      (last ? '<button type="button" class="btn primary" data-act="finish">Завершить вариант</button>' : '<button type="button" class="btn primary" data-act="nextq">Дальше</button>') +
+      "</div></div>" +
+      '<p class="hint">Ответы проверяются после завершения варианта — как на экзамене. Можно возвращаться к любому заданию.</p>';
+  }
+  function finishExam(auto) {
+    var ex = S.exam; if (!ex || ex.finished) return;
+    ex.finished = true; stopTimer();
+    var pts = 0, max = 0, rows = "", review = "";
+    ex.items.forEach(function (it, i) {
+      var g = grade(it); it.done = true; pts += g.pts; max += g.max; record(it.t.id, g.pts);
+      var cls = g.pts === g.max ? "ok" : (g.pts > 0 ? "part" : "bad");
+      rows += '<li class="' + cls + '"><span>Задание ' + it.t.num + ", " + esc(it.t.topic) + "</span><b>" + g.pts + " из " + g.max + "</b></li>";
+      review += '<div class="card review">' + cardHTML(it, "review", "Разбор " + (i + 1)) + resultHTML(it) + "</div>";
+    });
+    P.exams.unshift({ ts: Date.now(), kind: ex.kind, pts: pts, max: max });
+    P.exams = P.exams.slice(0, 5); saveP();
+    var pct = Math.round(pts / max * 100);
+    var verdict = pct >= 85 ? "Отличный результат: эти задания у вас под контролем." :
+      pct >= 60 ? "Хорошая база. Посмотрите разбор ошибок и повторите соответствующие темы." :
+      "Есть что подтянуть: начните с разбора ниже и тренируйте номера с ошибками по отдельности.";
+    stage.innerHTML = '<div class="card summary"><p class="big">' + (auto ? "Время вышло" : "Вариант завершён") + '</p><p class="score">' + pts + " из " + max + " " + balls(max) + "</p><p>" + verdict + "</p>" +
+      '<ul class="rows">' + rows + '</ul><div class="ctrl"><button type="button" class="btn primary" data-act="again">Новый вариант</button><button type="button" class="btn ghost" data-act="toPractice">Тренировать ошибки</button></div></div>' +
+      '<h3 class="rv">Разбор варианта</h3>' + review;
+    renderProgress();
+    var top = $("#trainer"); if (top) top.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  /* ---------- события в области задания ---------- */
+  stage.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-act]"); if (!b) return;
+    var act = b.getAttribute("data-act"), pos = parseInt(b.getAttribute("data-pos"), 10);
+    var inst = S.mode === "practice" ? S.inst : (S.exam ? S.exam.items[S.exam.idx] : null);
+    var inExam = S.mode !== "practice" && S.exam && !S.exam.finished;
+    var inPrac = S.mode === "practice" && inst && !inst.done;
+
+    if (act === "tog" && (inExam || inPrac)) {
+      if (inst.sel[pos]) delete inst.sel[pos]; else inst.sel[pos] = true;
+      rerender(inExam, '[data-act="tog"][data-pos="' + pos + '"]');
+    } else if (act === "pick" && (inExam || inPrac)) {
+      var v = parseInt(b.getAttribute("data-val"), 10);
+      if (inst.pick[pos] === v) delete inst.pick[pos]; else inst.pick[pos] = v;
+      rerender(inExam, '[data-act="pick"][data-pos="' + pos + '"][data-val="' + v + '"]');
+    } else if (act === "check" && inPrac) {
+      var g = grade(inst); inst.done = true; record(inst.t.id, g.pts);
+      S.series.pts += g.pts; S.series.max += g.max; S.series.n += 1;
+      renderPractice(); renderProgress();
+      var rs = $(".result"); if (rs) rs.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    } else if (act === "skip" || act === "next") {
+      if (S.i + 1 < S.queue.length) { S.i++; S.inst = mkInst(S.queue[S.i]); renderPractice(); scrollToStage(); }
+      else renderSeriesEnd();
+    } else if (act === "restart") { startPractice(); }
+    else if (act === "errs") { S.onlyErr = true; syncControls(); startPractice(); }
+    else if (act === "goto" && S.exam) { S.exam.idx = parseInt(b.getAttribute("data-i"), 10); renderExam(); }
+    else if (act === "prev" && S.exam) { S.exam.idx = Math.max(0, S.exam.idx - 1); renderExam(); scrollToStage(); }
+    else if (act === "nextq" && S.exam) { S.exam.idx = Math.min(S.exam.items.length - 1, S.exam.idx + 1); renderExam(); scrollToStage(); }
+    else if (act === "finish") { finishExam(false); }
+    else if (act === "again") { startExam(S.exam ? S.exam.kind : "mini"); }
+    else if (act === "toPractice") { S.mode = "practice"; S.onlyErr = true; S.num = "all"; syncControls(); startPractice(); }
+  });
+  function rerender(inExam, focusSel) {
+    var sc = window.scrollY;
+    if (inExam) renderExam(); else renderPractice();
+    window.scrollTo(0, sc);
+    var f = $(focusSel); if (f && f.focus) { try { f.focus({ preventScroll: true }); } catch (e) { f.focus(); } }
+  }
+  function scrollToStage() {
+    var c = $("#stageTop"); if (c) c.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  /* ---------- панель выбора ---------- */
+  function syncControls() {
+    $$("[data-num]").forEach(function (b) {
+      var on = String(b.getAttribute("data-num")) === String(S.num);
+      b.classList.toggle("on", on); b.setAttribute("aria-pressed", on);
+    });
+    $$("[data-mode]").forEach(function (b) {
+      var on = b.getAttribute("data-mode") === S.mode;
+      b.classList.toggle("on", on); b.setAttribute("aria-pressed", on);
+    });
+    var f = $("#onlyErr"); if (f) { f.setAttribute("aria-pressed", S.onlyErr); f.classList.toggle("on", S.onlyErr); }
+    var numRow = $("#numRow"); if (numRow) numRow.classList.toggle("dim", S.mode !== "practice");
+    var fl = $("#filterRow"); if (fl) fl.classList.toggle("dim", S.mode !== "practice");
+  }
+  $$("[data-num]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var v = b.getAttribute("data-num"); S.num = v === "all" ? "all" : parseInt(v, 10);
+      S.mode = "practice"; syncControls(); startPractice();
+    });
+  });
+  $$("[data-mode]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var m = b.getAttribute("data-mode"); S.mode = m; syncControls();
+      if (m === "practice") startPractice(); else startExam(m);
+    });
+  });
+  var fe = $("#onlyErr");
+  if (fe) fe.addEventListener("click", function () { S.onlyErr = !S.onlyErr; S.mode = "practice"; syncControls(); startPractice(); });
+
+  /* внешние кнопки: «Начать», строки заданий, мини-вариант */
+  $$("[data-go]").forEach(function (b) {
+    b.addEventListener("click", function (ev) {
+      var g = b.getAttribute("data-go");
+      ev.preventDefault();
+      if (g === "mini" || g === "full") { S.mode = g; syncControls(); startExam(g); }
+      else { S.mode = "practice"; S.num = g === "all" ? "all" : parseInt(g, 10); syncControls(); startPractice(); }
+      var tr = $("#trainer"); if (tr) tr.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
+  /* ---------- прогресс ---------- */
+  function renderProgress() {
+    var el = $("#progress"); if (!el) return;
+    var nums = [10, 11, 12, 13], totalTasks = TASKS.length, solved = 0, bestSum = 0, maxSum = 0, per = "";
+    nums.forEach(function (n) {
+      var list = TASKS.filter(function (t) { return t.num === n; }), s = 0, b = 0, m = 0, mastered = 0;
+      list.forEach(function (t) {
+        var r = P.tasks[t.id]; m += maxPts(n);
+        if (r) { s++; b += r.best; if (r.last >= maxPts(n)) mastered++; }
+      });
+      solved += s; bestSum += b; maxSum += m;
+      var w = m ? Math.round(b / m * 100) : 0;
+      per += '<li><div class="pl"><b>Задание ' + n + "</b><span>решено " + s + " из " + list.length + ", без ошибок в последней попытке: " + mastered + '</span></div><div class="bar" role="img" aria-label="Лучший результат: ' + w + ' процентов"><i style="width:' + w + '%"></i></div></li>';
+    });
+    var weak = {}, wk = [];
+    TASKS.forEach(function (t) {
+      var r = P.tasks[t.id];
+      if (r && r.last < maxPts(t.num)) { var key = t.code + " " + t.topic; if (!weak[key]) { weak[key] = 0; wk.push(key); } weak[key]++; }
+    });
+    var weakH = wk.length ? '<ul class="weak">' + wk.slice(0, 5).map(function (k) { return "<li>" + esc(k) + "</li>"; }).join("") + "</ul>" :
+      '<p class="muted">Пока нет задач с ошибками в последней попытке.</p>';
+    var ex = P.exams.length ? '<ul class="hist">' + P.exams.map(function (x) {
+      var d = new Date(x.ts), dd = ("0" + d.getDate()).slice(-2) + "." + ("0" + (d.getMonth() + 1)).slice(-2);
+      return "<li><span>" + dd + ", " + (x.kind === "full" ? "расширенный" : "мини") + "</span><b>" + x.pts + " из " + x.max + "</b></li>";
+    }).join("") + "</ul>" : '<p class="muted">Вы ещё не проходили вариант.</p>';
+    el.innerHTML = '<div class="pgtop"><p class="score">' + bestSum + " из " + maxSum + '</p><p class="muted">баллов по лучшим попыткам, решено заданий: ' + solved + " из " + totalTasks + "</p></div>" +
+      '<ul class="per">' + per + "</ul><h4>Темы с ошибками</h4>" + weakH + "<h4>Последние варианты</h4>" + ex +
+      '<div class="ctrl"><button type="button" class="btn ghost" id="resetBtn">Сбросить прогресс</button></div>';
+    var rb = $("#resetBtn"), armed = false, tmr = null;
+    rb.addEventListener("click", function () {
+      if (!armed) { armed = true; rb.textContent = "Нажмите ещё раз, чтобы стереть"; rb.classList.add("danger"); tmr = setTimeout(function () { armed = false; rb.textContent = "Сбросить прогресс"; rb.classList.remove("danger"); }, 3500); }
+      else { clearTimeout(tmr); P = { tasks: {}, exams: [] }; saveP(); renderProgress(); if (S.mode === "practice") startPractice(); }
+    });
+  }
+
+  /* ---------- коды банка: копирование ---------- */
+  $$("[data-copy]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var src = $(b.getAttribute("data-copy")); if (!src) return;
+      var text = $$("code", src).map(function (c) { return c.textContent; }).join(" ");
+      var done = function () { var o = b.textContent; b.textContent = "Скопировано"; setTimeout(function () { b.textContent = o; }, 1600); };
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, fallback); }
+        else fallback();
+      } catch (e) { fallback(); }
+      function fallback() {
+        try { var ta = document.createElement("textarea"); ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0"; document.body.appendChild(ta); ta.select(); document.execCommand("copy"); document.body.removeChild(ta); done(); } catch (e2) { /* ничего */ }
+      }
+    });
+  });
+
+  /* ---------- тема ---------- */
+  var tbtn = $("#themeBtn"), TK = "ege27-ob-theme";
+  function setTheme(t) {
+    document.documentElement.setAttribute("data-theme", t);
+    if (tbtn) { tbtn.setAttribute("aria-pressed", t === "dark"); tbtn.textContent = t === "dark" ? "Светлая тема" : "Тёмная тема"; }
+  }
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem(TK); } catch (e) { /* ничего */ }
+    if (!t) t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    setTheme(t);
+  })();
+  if (tbtn) tbtn.addEventListener("click", function () {
+    var t = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    setTheme(t); try { localStorage.setItem(TK, t); } catch (e) { /* ничего */ }
+  });
+
+  /* ---------- старт ---------- */
+  var cnt = $("#taskCount"); if (cnt) cnt.textContent = TASKS.length;
+  $$(".cnt-num").forEach(function (el) {
+    var n = parseInt(el.getAttribute("data-n"), 10);
+    el.textContent = TASKS.filter(function (t) { return t.num === n; }).length;
+  });
+  syncControls(); renderProgress(); startPractice();
+})();
+</script>
+</body>
+</html>
