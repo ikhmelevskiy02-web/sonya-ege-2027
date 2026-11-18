@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Русский язык ЕГЭ-2027: тренажёр заданий 8 и 21 с разбором</title>
+<meta name="description" content="Интерактивный тренажёр заданий 8 (грамматические ошибки) и 21 (пунктуационный анализ) ЕГЭ по русскому языку 2027. Разбор каждого предложения, баллы по критериям ФИПИ, мини-вариант с таймером.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#F3F5F9; --surface:#FFFFFF; --ink:#0F2137; --muted:#56667B; --line:#D6DEE9;
+  --primary:#1F46C9; --primary-ink:#FFFFFF; --blank:#EAF0FF; --blank-line:#9DB2F2;
+  --ok:#14703F; --ok-bg:#E3F4EB; --bad:#B8342A; --bad-bg:#FBE9E6; --warn:#8F5A00; --warn-bg:#FFF1D2;
+  --hdr:rgba(243,245,249,.92); --shadow:0 1px 0 rgba(15,33,55,.04);
+  --f-body:"Onest",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --f-disp:"Unbounded","Onest",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B1420; --surface:#132033; --ink:#E7EEF8; --muted:#9BAABF; --line:#27384F;
+    --primary:#8EAAFF; --primary-ink:#0B1420; --blank:#182A47; --blank-line:#3E5C9E;
+    --ok:#62D69C; --ok-bg:#10322A; --bad:#FF8B7F; --bad-bg:#3A1D1C; --warn:#F2C468; --warn-bg:#392E12;
+    --hdr:rgba(11,20,32,.92);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B1420; --surface:#132033; --ink:#E7EEF8; --muted:#9BAABF; --line:#27384F;
+  --primary:#8EAAFF; --primary-ink:#0B1420; --blank:#182A47; --blank-line:#3E5C9E;
+  --ok:#62D69C; --ok-bg:#10322A; --bad:#FF8B7F; --bad-bg:#3A1D1C; --warn:#F2C468; --warn-bg:#392E12;
+  --hdr:rgba(11,20,32,.92);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);-webkit-text-size-adjust:100%;height:auto}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.55 var(--f-body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--hdr);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+a{color:var(--primary);text-underline-offset:.18em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--primary);outline-offset:2px;border-radius:6px}
+h1,h2,h3,h4{margin:0;line-height:1.15;font-family:var(--f-disp);font-weight:600;letter-spacing:-.01em}
+h1{font-size:clamp(1.75rem,5.4vw,2.9rem)}
+h2{font-size:clamp(1.4rem,3.8vw,2rem);margin-bottom:.6rem}
+h3{font-size:1.05rem;line-height:1.3}
+h4{font-size:.95rem;margin:1.2rem 0 .5rem}
+p{margin:0 0 .8rem}
+.wrap{max-width:1040px;margin:0 auto;padding:0 clamp(16px,4vw,28px)}
+section{padding:clamp(44px,7vw,84px) 0}
+.muted{color:var(--muted)}
+.lead{font-size:1.15rem;max-width:60ch;color:var(--ink)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* шапка */
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--hdr);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;gap:1rem;min-height:56px}
+.brand{font:600 .95rem/1.1 var(--f-disp);color:var(--ink);text-decoration:none;white-space:nowrap}
+.nav{display:flex;gap:.25rem;overflow-x:auto;margin-left:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{color:var(--ink);text-decoration:none;padding:.5rem .7rem;border-radius:8px;font-size:.95rem;white-space:nowrap}
+.nav a:hover{background:var(--blank)}
+.tbtn{font:inherit;font-size:.85rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:.4rem .65rem;cursor:pointer;white-space:nowrap}
+@media (max-width:640px){.brand{display:none}.nav{margin-left:0}}
+
+/* герой */
+.hero{padding-top:clamp(32px,6vw,72px)}
+.hero .grid{display:grid;gap:2rem;align-items:center}
+@media (min-width:900px){.hero .grid{grid-template-columns:1.15fr .85fr;gap:3rem}}
+.hero h1{margin-bottom:1rem}
+.cta{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.4rem 0 1rem}
+.btn{font:inherit;font-weight:600;font-size:1rem;border-radius:10px;padding:.8rem 1.25rem;border:1.5px solid var(--primary);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;min-height:46px;background:transparent;color:var(--primary)}
+.btn.primary{background:var(--primary);color:var(--primary-ink)}
+.btn.ghost{border-color:var(--line);color:var(--ink)}
+.btn.danger{border-color:var(--bad);color:var(--bad)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.note{font-size:.93rem;color:var(--muted);max-width:60ch}
+
+/* бланк в герое и ответы */
+.form{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.2rem 1.2rem;box-shadow:var(--shadow)}
+.form .ft{font-size:.85rem;color:var(--muted);margin-bottom:.9rem}
+.frow{display:flex;align-items:center;gap:.9rem;margin-bottom:.8rem}
+.frow .no{font:600 1.35rem/1 var(--f-disp);width:2.6rem;color:var(--ink)}
+.cell{display:inline-grid;place-items:center;width:2.15rem;height:2.7rem;border:1.5px solid var(--blank-line);background:var(--blank);color:var(--primary);font:600 1.15rem/1 var(--f-disp);margin-right:-1.5px}
+.blank{display:inline-flex;vertical-align:middle}
+.blank .cell:first-child,.blank .cellcol:first-child .cell{border-radius:5px 0 0 5px}
+.blank .cell:last-child,.blank .cellcol:last-child .cell{border-radius:0 5px 5px 0}
+.blank.mini .cell{width:1.7rem;height:2.1rem;font-size:.95rem}
+.blank.good .cell{border-color:var(--ok);background:var(--ok-bg);color:var(--ok)}
+.cellcol{display:inline-flex;flex-direction:column;align-items:center}
+.cellcol .cl{font-size:.7rem;color:var(--muted);line-height:1.3}
+.form .cell{animation:put .35s ease both;animation-delay:var(--d,0s)}
+@keyframes put{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.form .cap{font-size:.9rem;color:var(--muted);margin:1rem 0 0}
+
+/* что проверяют */
+.trow{display:grid;gap:.4rem 1.2rem;padding:1.3rem 0;border-top:1px solid var(--line)}
+.trow:last-of-type{border-bottom:1px solid var(--line)}
+@media (min-width:760px){.trow{grid-template-columns:5.2rem 1fr auto;align-items:start}}
+.trow .num{font:600 2.4rem/1 var(--f-disp);color:var(--primary)}
+.trow h3{margin-bottom:.3rem}
+.trow p{margin:0 0 .6rem;max-width:62ch}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.6rem}
+.chip{font-size:.8rem;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.15rem .65rem;color:var(--muted)}
+.chip.strong{background:var(--primary);border-color:var(--primary);color:var(--primary-ink);font-weight:600}
+.chip.ghost{background:transparent}
+.trow .go{align-self:center}
+.stat{font-size:.88rem;color:var(--muted)}
+
+/* как устроено */
+.how{display:grid;gap:1rem;margin-top:1.2rem}
+@media (min-width:760px){.how{grid-template-columns:repeat(2,1fr)}}
+.how div{border-left:3px solid var(--blank-line);padding:.1rem 0 .1rem 1rem}
+.how h3{margin-bottom:.25rem}
+.how p{margin:0;color:var(--muted)}
+
+/* тренажёр */
+#trainer{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ctl{display:grid;gap:.8rem;margin:1.2rem 0 1.4rem}
+.seg{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}
+.seg .sl{font-size:.9rem;color:var(--muted);margin-right:.3rem;min-width:4.2rem}
+.sb{font:inherit;font-size:.95rem;font-weight:500;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);border-radius:9px;padding:.5rem .9rem;cursor:pointer;min-height:42px;text-align:left}
+.sb small{display:block;font-size:.75rem;font-weight:400;color:var(--muted);line-height:1.2}
+.sb.on{border-color:var(--primary);background:var(--blank);color:var(--primary)}
+.sb.on small{color:var(--primary)}
+.dim{opacity:.5}
+.tgrid{display:grid;gap:1.6rem}
+@media (min-width:940px){.tgrid{grid-template-columns:minmax(0,1fr) 320px;align-items:start}.tgrid aside{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px)}}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:clamp(1rem,3vw,1.5rem);margin-bottom:1rem}
+.card .topic{font:600 1.05rem/1.3 var(--f-disp);margin:.2rem 0 .8rem}
+.card .q{font-weight:500;margin-bottom:1rem}
+.opts{display:grid;gap:.55rem}
+.opt{font:inherit;color:inherit;text-align:left;display:flex;gap:.75rem;align-items:flex-start;width:100%;padding:.75rem .85rem;border:1.5px solid var(--line);border-radius:11px;background:var(--surface);cursor:pointer;min-height:48px}
+.opt .n{flex:none;display:grid;place-items:center;width:1.9rem;height:1.9rem;border-radius:7px;background:var(--blank);color:var(--primary);font:600 .85rem/1 var(--f-disp)}
+.opt .tx{padding-top:.18rem}
+.opt:hover{border-color:var(--blank-line)}
+.opt.is-sel{border-color:var(--primary);background:var(--blank)}
+.opt.is-sel .n{background:var(--primary);color:var(--primary-ink)}
+.opt.is-hit{border-color:var(--ok);background:var(--ok-bg)}
+.opt.is-bad{border-color:var(--bad);background:var(--bad-bg)}
+.opt.is-miss{border:1.5px dashed var(--warn);background:var(--warn-bg)}
+.opt.is-neutral{opacity:.9}
+.opt[aria-disabled="true"]{cursor:default}
+.why{font-size:.94rem;color:var(--muted);margin:.4rem 0 .35rem 2.6rem}
+.why .tag{font-weight:700;color:var(--ink)}
+.legend{border:1px solid var(--line);border-radius:11px;padding:.8rem 1rem;background:var(--surface);margin-bottom:1rem}
+.lh{font:600 .85rem/1.3 var(--f-body);color:var(--muted);margin:0 0 .4rem;letter-spacing:.02em}
+.lh.left{margin-top:.2rem}
+.lst{margin:0;padding:0;list-style:none;display:grid;gap:.25rem}
+.lst b{display:inline-grid;place-items:center;width:1.5rem;height:1.5rem;border-radius:6px;background:var(--blank);color:var(--primary);font-size:.85rem;margin-right:.4rem}
+.mrows{display:grid;gap:.7rem}
+.mrow{border:1.5px solid var(--line);border-radius:11px;padding:.75rem .85rem;background:var(--surface)}
+.mrow.is-hit{border-color:var(--ok);background:var(--ok-bg)}
+.mrow.is-bad{border-color:var(--bad);background:var(--bad-bg)}
+.mtop{display:flex;gap:.7rem;align-items:flex-start}
+.mt{margin:0}
+.letter{flex:none;display:grid;place-items:center;width:1.9rem;height:1.9rem;border-radius:50%;background:var(--blank);color:var(--primary);font:600 .85rem/1 var(--f-disp)}
+.picks{display:flex;flex-wrap:wrap;gap:.45rem;margin:.65rem 0 0 2.6rem}
+.pick{font:600 1rem/1 var(--f-disp);width:2.9rem;height:2.9rem;border:1.5px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink);cursor:pointer}
+.pick.is-sel{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
+.pick.is-right{border-color:var(--ok);background:var(--ok);color:var(--surface)}
+.pick.is-wrong{border-color:var(--bad);background:var(--bad);color:var(--surface)}
+.pick[aria-disabled="true"]{cursor:default}
+.mrow .why{margin-left:2.6rem}
+.answerbar{display:flex;align-items:center;gap:.8rem;margin-top:1rem;flex-wrap:wrap}
+.answerbar .al{font-size:.9rem;color:var(--muted)}
+.ctrl{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+.result{border-left:5px solid var(--line);background:var(--surface);border-radius:0 11px 11px 0;padding:.9rem 1rem;margin-top:1.1rem}
+.result.ok{border-left-color:var(--ok)} .result.part{border-left-color:var(--warn)} .result.bad{border-left-color:var(--bad)}
+.result p{margin:0 0 .5rem}
+.result .ans{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+.score{font:600 1.35rem/1.2 var(--f-disp)}
+.result .rule,.result .src{font-size:.85rem;color:var(--muted)}
+.summary .big,.empty .big{font:600 1.3rem/1.25 var(--f-disp);margin-bottom:.5rem}
+.empty{border:1.5px dashed var(--line);border-radius:14px;padding:1.4rem}
+.rows{list-style:none;margin:1rem 0 0;padding:0;display:grid;gap:.4rem}
+.rows li{display:flex;justify-content:space-between;gap:1rem;padding:.5rem .7rem;border-radius:8px;background:var(--surface);border-left:4px solid var(--line)}
+.rows li.ok{border-left-color:var(--ok)} .rows li.part{border-left-color:var(--warn)} .rows li.bad{border-left-color:var(--bad)}
+.rv{margin:1.6rem 0 .8rem}
+.exambar{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;align-items:center;justify-content:space-between;margin-bottom:1rem}
+.tl{font-size:.85rem;color:var(--muted);margin-right:.5rem}
+.timer{font:600 1.5rem/1 var(--f-disp);font-variant-numeric:tabular-nums}
+.timer.low{color:var(--bad)}
+.pills{display:flex;gap:.35rem;flex-wrap:wrap}
+.pill{font:600 .85rem/1 var(--f-disp);min-width:2.6rem;height:2.6rem;border:1.5px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink);cursor:pointer}
+.pill.has{border-color:var(--blank-line);background:var(--blank);color:var(--primary)}
+.pill.cur{border-color:var(--primary);box-shadow:inset 0 -3px 0 var(--primary)}
+.hint{font-size:.9rem;color:var(--muted)}
+aside{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.2rem}
+aside h3{margin-bottom:.6rem}
+.pgtop .score{margin:0}
+.per{list-style:none;margin:1rem 0 0;padding:0;display:grid;gap:.8rem}
+.pl{display:flex;flex-direction:column;font-size:.85rem;color:var(--muted);margin-bottom:.25rem}
+.pl b{color:var(--ink);font-size:.95rem}
+.bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--primary);border-radius:99px}
+.weak,.hist{margin:0;padding:0;list-style:none;display:grid;gap:.35rem;font-size:.9rem}
+.weak li{padding:.35rem .6rem;border-radius:8px;background:var(--warn-bg);color:var(--ink)}
+.hist li{display:flex;justify-content:space-between}
+
+/* теория */
+details{border-top:1px solid var(--line)}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:1rem 2rem 1rem 0;font:600 1.02rem/1.35 var(--f-disp);position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:.2rem;top:.85rem;font:500 1.5rem/1 var(--f-body);color:var(--primary)}
+details[open] summary::after{content:"−"}
+.dbody{padding:0 0 1.4rem;max-width:880px}
+.tw{overflow-x:auto;margin:.4rem 0 1.1rem;border:1px solid var(--line);border-radius:11px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.93rem}
+th,td{text-align:left;vertical-align:top;padding:.55rem .75rem;border-bottom:1px solid var(--line)}
+th{font-weight:600;background:var(--blank);color:var(--ink)}
+tr:last-child td{border-bottom:0}
+.dbody h4{font-family:var(--f-body);font-weight:700;font-size:1rem;margin:1.1rem 0 .4rem}
+.dbody ul{margin:0 0 .8rem;padding-left:1.2rem}
+.dbody li{margin-bottom:.25rem}
+.scheme{border-left:3px solid var(--primary);padding:.2rem 0 .2rem 1rem;margin:1rem 0}
+
+/* ошибки */
+.pit{display:grid;gap:1rem;margin-top:1.2rem}
+@media (min-width:760px){.pit{grid-template-columns:repeat(2,1fr)}}
+.pit div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
+.pit h3{margin-bottom:.35rem}
+.pit p{margin:0;color:var(--muted);font-size:.97rem}
+.rules{margin:1.4rem 0 0;padding-left:1.2rem}
+.rules li{margin-bottom:.4rem;max-width:70ch}
+
+/* источники */
+.src-list{margin:0;padding:0;list-style:none;display:grid;gap:.55rem}
+.src-list li{padding-left:1rem;border-left:3px solid var(--blank-line)}
+.honest{background:var(--warn-bg);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;margin:1.2rem 0;max-width:78ch}
+.honest p{margin:0}
+.noscript{background:var(--warn-bg);border-bottom:1px solid var(--line);padding:.9rem 0;font-weight:500}
+.codes{display:flex;flex-wrap:wrap;gap:.35rem;margin:.6rem 0}
+.codes code{font:500 .82rem/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--blank);border:1px solid var(--blank-line);border-radius:6px;padding:.3rem .45rem;color:var(--ink)}
+.faq details{border-top:1px solid var(--line)}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+footer p{max-width:70ch}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.form .cell{animation:none}}
+
+/* русский язык: задание 8 и 21 */
+.slist{list-style:none;margin:0 0 1.2rem;padding:0;display:grid;gap:.5rem}
+.slist li{display:flex;gap:.7rem;align-items:flex-start;border:1px solid var(--line);border-radius:11px;background:var(--surface);padding:.65rem .8rem}
+.sn{flex:none;display:grid;place-items:center;width:1.9rem;height:1.9rem;border-radius:7px;background:var(--blank);color:var(--primary);font:600 .85rem/1 var(--f-disp)}
+.st{margin:0;padding-top:.18rem}
+.slist .why{margin:.35rem 0 0}
+.picks.nine{margin-left:2.6rem;gap:.35rem}
+.picks.nine .pick{width:2.5rem;height:2.5rem;font-size:.95rem}
+@media (max-width:420px){.picks.nine{margin-left:0}}
+mark{background:var(--warn-bg);color:var(--ink);border-radius:4px;padding:0 .15em;font-weight:700}
+.opt .tx{padding-top:.18rem}
+.errlist{display:grid;gap:.9rem}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top">Русский язык ЕГЭ-2027</a>
+    <nav class="nav" aria-label="Разделы страницы">
+      <a href="#tasks">Задания</a><a href="#trainer">Тренажёр</a><a href="#theory">Теория</a><a href="#errors">Ошибки</a><a href="#sources">Источники</a>
+    </nav>
+    <button type="button" class="tbtn" id="themeBtn" aria-pressed="false">Тёмная тема</button>
+  </div>
+</header>
+<noscript><div class="noscript"><div class="wrap">Тренажёр не запустился: в этом окне отключены скрипты. Так бывает при открытии файла в мессенджере или во встроенном просмотрщике. Откройте файл в обычном браузере (Chrome, Safari, Яндекс Браузер, Firefox) или по ссылке на сайт.</div></div></noscript>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <h1>Задания 8 и 21 ЕГЭ по русскому языку: тренажёр с разбором</h1>
+      <p class="lead"><span id="taskCount">60</span> заданий в формате КИМ-2027: по 30 на грамматические ошибки (№8) и на пунктуационный анализ (№21). После проверки разобрано каждое предложение.</p>
+      <div class="cta">
+        <a class="btn primary" href="#trainer" data-go="all">Начать тренировку</a>
+        <a class="btn" href="#trainer" data-go="mini">Мини-вариант на 8 минут</a>
+      </div>
+      <p class="note">Актуально на 17 ноября 2026 года: ФИПИ не менял структуру ЕГЭ по русскому языку на 2027 год — 27 заданий, до 50 первичных баллов, 210 минут (<a href="https://4ege.ru/russkiy/80645-demoversija-ege-2027-po-russkomu-jazyku-v2.html" target="_blank" rel="noopener">обзор демоверсии</a>). Задание 8 даёт до 2 баллов, задание 21 — 1 балл.</p>
+    </div>
+    <div class="form" aria-hidden="true">
+      <p class="ft">Так выглядит ответ в бланке. Пример заполнения.</p>
+      <div class="frow"><span class="no">8</span><span class="blank"><span class="cellcol"><span class="cl">А</span><span class="cell" style="--d:.2s">2</span></span><span class="cellcol"><span class="cl">Б</span><span class="cell" style="--d:.3s">4</span></span><span class="cellcol"><span class="cl">В</span><span class="cell" style="--d:.4s">6</span></span><span class="cellcol"><span class="cl">Г</span><span class="cell" style="--d:.5s">8</span></span><span class="cellcol"><span class="cl">Д</span><span class="cell" style="--d:.6s">9</span></span></span></div>
+      <div class="frow"><span class="no">21</span><span class="blank"><span class="cell" style="--d:.8s">3</span><span class="cell" style="--d:.9s">6</span></span></div>
+      <p class="cap">В задании 8 порядок цифр принципиален: каждая стоит под своей буквой и не повторяется. В задании 21 — номера предложений.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tasks">
+  <div class="wrap">
+    <h2>Что проверяют задания 8 и 21</h2>
+    <p class="lead">Номера, уровень сложности и баллы взяты из демоверсии ФИПИ-2027, проценты выполнения — из методических рекомендаций ФИПИ по итогам ЕГЭ-2025.</p>
+    <div style="margin-top:1.4rem">
+      <div class="trow">
+        <span class="num">8</span>
+        <div>
+          <h3>Синтаксические нормы: грамматические ошибки</h3>
+          <p>Пять типов ошибок нужно соотнести с пятью из девяти предложений. Важно не исправить ошибку, а назвать её тип. Порядок цифр принципиален, повторов нет.</p>
+          <div class="chips"><span class="chip">кодификатор 3.6.3–3.6.7</span><span class="chip">базовый уровень</span><span class="chip">до 2 баллов</span></div>
+          <span class="stat">Выполнили в среднем 57% участников ЕГЭ-2025. В тренажёре заданий: <span class="cnt-num" data-n="8">30</span>.</span>
+        </div>
+        <a class="btn go" href="#trainer" data-go="8">Тренировать</a>
+      </div>
+      <div class="trow">
+        <span class="num">21</span>
+        <div>
+          <h3>Пунктуационный анализ предложения</h3>
+          <p>В тексте из нескольких предложений нужно найти те, где тире, двоеточие или запятая ставятся по одному и тому же правилу. Верный ответ всегда один.</p>
+          <div class="chips"><span class="chip">кодификатор 3.8.1</span><span class="chip">повышенный уровень</span><span class="chip">1 балл</span></div>
+          <span class="stat">Выполнили в среднем 40% участников ЕГЭ-2025. В тренажёре заданий: <span class="cnt-num" data-n="21">30</span>.</span>
+        </div>
+        <a class="btn go" href="#trainer" data-go="21">Тренировать</a>
+      </div>
+    </div>
+    <div class="how">
+      <div><h3>Формат как на экзамене</h3><p>В №8 девять предложений и пять ошибок: цифры нельзя повторять. В №21 нужно указать все предложения с общим правилом. Предложения №8 перемешиваются при каждом открытии.</p></div>
+      <div><h3>Баллы по критериям ФИПИ</h3><p>№8: 2 балла за пять верных соответствий, 1 балл при одной или двух ошибках, иначе 0. №21: 1 балл за точный ответ.</p></div>
+      <div><h3>Разбор каждого предложения</h3><p>В №8 видно, какая ошибка в каждом из девяти предложений и как её исправить. В №21 — по какому правилу стоит знак, и сам знак подсвечен.</p></div>
+      <div><h3>Прогресс остаётся у вас</h3><p>Результаты и частые ошибки хранятся в браузере этого устройства и никуда не отправляются.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="trainer">
+  <div class="wrap">
+    <h2>Тренажёр</h2>
+    <p class="muted">Выберите номер задания или пройдите вариант на время.</p>
+    <div class="ctl">
+      <div id="numRow" class="seg" role="group" aria-label="Номер задания">
+        <span class="sl">Задание</span>
+        <button type="button" class="sb on" data-num="all" aria-pressed="true">Все</button>
+        <button type="button" class="sb" data-num="8" aria-pressed="false">8</button>
+        <button type="button" class="sb" data-num="21" aria-pressed="false">21</button>
+      </div>
+      <div class="seg" role="group" aria-label="Режим">
+        <span class="sl">Режим</span>
+        <button type="button" class="sb on" data-mode="practice" aria-pressed="true">Практика</button>
+        <button type="button" class="sb" data-mode="mini" aria-pressed="false">Мини-вариант<small>2 задания, 8 минут</small></button>
+        <button type="button" class="sb" data-mode="full" aria-pressed="false">Расширенный<small>6 заданий, 24 минуты</small></button>
+      </div>
+      <div id="filterRow" class="seg">
+        <span class="sl"></span>
+        <button type="button" class="sb" id="onlyErr" aria-pressed="false">Только нерешённые и с ошибками</button>
+      </div>
+    </div>
+    <div class="tgrid">
+      <div>
+        <div id="stageTop"></div>
+        <div id="stage"></div>
+      </div>
+      <aside aria-label="Ваш прогресс">
+        <h3>Ваш прогресс</h3>
+        <div id="progress"></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="theory">
+  <div class="wrap">
+    <h2>Короткая теория по кодификатору</h2>
+    <p class="lead">Опорные таблицы по правилам, которые проверяют задания 8 и 21. Примеры составлены для тренировки.</p>
+    <div style="margin-top:1.2rem">
+
+      <details>
+        <summary>Задание 8: девять типов грамматических ошибок</summary>
+        <div class="dbody">
+          <div class="tw"><table>
+            <tr><th>Тип ошибки</th><th>Как проверить</th><th>Ошибка и верный вариант</th></tr>
+            <tr><td>Несогласованное приложение</td><td>Название в кавычках после родового слова не склоняем</td><td>в журнале «Огоньке» → в журнале «Огонёк»</td></tr>
+            <tr><td>Однородные члены</td><td>Одинаковые формы и один вопрос к общему слову; общее зависимое слово подходит каждому однородному члену по управлению; части двойного союза стоят перед однородными членами; нельзя соединять слово и придаточное</td><td>любит музыку и танцевать → любит музыку и танцы</td></tr>
+            <tr><td>Подлежащее и сказуемое</td><td>Согласуем в числе и роде. Группа, рота, колония, каждый из, кто-то из — единственное число; ни… ни при двух подлежащих — множественное</td><td>рота вернулись → рота вернулась</td></tr>
+            <tr><td>Причастный оборот</td><td>Причастие повторяет род, число и падеж определяемого слова</td><td>письмо, полученный → письмо, полученное</td></tr>
+            <tr><td>Деепричастный оборот</td><td>Деепричастие и сказуемое — действия одного лица; в безличном предложении оборот невозможен</td><td>Читая книгу, мне стало скучно → Читая книгу, я заскучал</td></tr>
+            <tr><td>Сложное предложение</td><td>Без повтора союзного слова местоимением, без лишних союзов, без пар вида «хотя… но»</td><td>дом, в котором в нём я вырос → дом, в котором я вырос</td></tr>
+            <tr><td>Косвенная речь</td><td>Без форм 1-го и 2-го лица и повелительного наклонения</td><td>сказал, что не опаздывайте → сказал не опаздывать</td></tr>
+            <tr><td>Предложно-падежная форма</td><td>Падеж и предлог задаёт главное слово: согласно (чему?), вопреки (чему?), по приезде, наблюдать за (чем?), преимущество перед (кем?)</td><td>согласно приказа → согласно приказу</td></tr>
+            <tr><td>Видовременная соотнесённость</td><td>Однородные сказуемые в рассказе стоят в одном времени</td><td>вошёл, сел и читает → вошёл, сел и читал</td></tr>
+          </table></div>
+          <div class="scheme"><b>Алгоритм.</b> Не исправляйте предложение «на слух», а сначала назовите приметы: есть ли кавычки, причастие или деепричастие, слово «который», «что» или «чтобы», ряд однородных членов, ряд глаголов. Затем проверьте именно это правило. Последняя цифра подбирается по остатку: каждый тип встречается не больше одного раза.</div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Задание 21: правила пунктуации и как их различать</summary>
+        <div class="dbody">
+          <p>Классификация правил, на которой строится задание, по методическим рекомендациям ФИПИ:</p>
+          <ul>
+            <li>тире между подлежащим и сказуемым; тире в неполных предложениях;</li>
+            <li>однородные члены; однородные члены с обобщающим словом;</li>
+            <li>обособленное определение; обособленное приложение; обособленное обстоятельство (деепричастие, деепричастный оборот, производный предлог);</li>
+            <li>сравнительный оборот (с 2025 года — отдельное явление); уточняющий член; обособленное дополнение;</li>
+            <li>вводное слово и вводная конструкция; вставная конструкция (тире и скобки); обращение; междометие;</li>
+            <li>сложносочинённое, сложноподчинённое и бессоюзное сложное предложение;</li>
+            <li>чужая речь: прямая речь, цитата, диалог.</li>
+          </ul>
+          <h4>Пары, которые путают</h4>
+          <div class="tw"><table>
+            <tr><th>Правило А</th><th>Правило Б</th></tr>
+            <tr><td>Тире между подлежащим и сказуемым: Волга — крупнейшая река Европы.</td><td>Тире при приложении: Мы плыли по Волге — крупнейшей реке Европы.</td></tr>
+            <tr><td>Двоеточие в бессоюзном предложении: За окном непогода: гремит гром, хлещет ливень.</td><td>Двоеточие при обобщающем слове: За окном непогода: гром, ливень.</td></tr>
+            <tr><td>Запятая при однородных членах: Он любил читать, писать и путешествовать.</td><td>Запятая в бессоюзном предложении: Наступил вечер, в окнах зажглись огни.</td></tr>
+          </table></div>
+          <div class="scheme"><b>Алгоритм ФИПИ.</b> Сначала сделайте «пунктуационную разметку»: для каждого предложения определите, по какому правилу стоит искомый знак. Предложения без этого знака отбросьте. Затем найдите совпадающее правило. По уточнению ФИПИ, правильный ответ в задании 21 только один. Сложные предложения, части которых связаны словами «поэтому», «потому», «оттого», ФИПИ относит к бессоюзным.</div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Как записывать ответ в бланк</summary>
+        <div class="dbody">
+          <ul>
+            <li>Ответ на задание части 1 — цифры без пробелов, запятых и других символов.</li>
+            <li>В задании 8 пять цифр записывают в порядке букв А–Д. Лишние символы писать не нужно.</li>
+            <li>Цифры и буквы пишите по образцу, строго внутри клеток, а не на стыке. Чаще всего неверно пишут цифры 2 и 7.</li>
+            <li>Ответ должен уместиться в 17 клеток бланка.</li>
+          </ul>
+          <p class="muted">Источник: методические рекомендации ФИПИ обучающимся по подготовке к ЕГЭ-2025 и ЕГЭ-2026.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="errors">
+  <div class="wrap">
+    <h2>Где теряют баллы в заданиях 8 и 21</h2>
+    <p class="lead">По данным методических рекомендаций ФИПИ по итогам ЕГЭ-2024 и ЕГЭ-2025.</p>
+    <div class="pit">
+      <div><h3>В №8 ошибку чувствуют, но не называют</h3><p>Задание 8 в среднем выполнили 59% участников в 2024 году и 57% в 2025. Баллы теряют, когда исправляют на слух и не определяют тип. ФИПИ отмечает те же ошибки в сочинениях: построение сложных предложений, косвенной речи, однородных членов и деепричастного оборота, а также управление, согласование и связь подлежащего со сказуемым.</p></div>
+      <div><h3>В №21 путают соседние правила</h3><p>Задание 21 выполнили 47% участников в 2024 году и 40% в 2025. Чаще всего путают тире между подлежащим и сказуемым с тире при приложении, а двоеточие в бессоюзном предложении — с двоеточием при обобщающем слове.</p></div>
+      <div><h3>«Скрытая» грамматическая основа</h3><p>ФИПИ предупреждает: запятая при однородных членах и запятая в бессоюзном предложении различаются только числом основ. Если в последней части пропущено сказуемое, там будет тире, а запятая разделяет части бессоюзного предложения.</p></div>
+      <div><h3>Сравнительные обороты</h3><p>С 2025 года в КИМ сравнительные обороты используются как отдельное пунктуационное явление: «красива, как мама» — это не обособленное определение и не однородные члены.</p></div>
+    </div>
+    <ol class="rules">
+      <li>В №8 сначала назовите тип ошибки по приметам, и только потом проверяйте.</li>
+      <li>В №8 не ставьте две одинаковые цифры: если цифра уже занята, пересмотрите обе строки.</li>
+      <li>В №21 выпишите правило для каждого предложения. Совпадение найдётся не «на глаз», а по списку.</li>
+      <li>В №21 внимательно читайте, какой именно знак нужен: тире, двоеточие или запятая.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="sources">
+  <div class="wrap">
+    <h2>Источники и честные оговорки</h2>
+    <div class="honest"><p><b>Откуда задания.</b> Все предложения и тексты авторские: они написаны по модели заданий ФИПИ (формулировки, число позиций, система оценивания взяты из демоверсии и методических рекомендаций). Тексты из открытого банка ФИПИ здесь не копировались: они защищены авторским правом. В реальных КИМ предложения длиннее и сложнее, а в №21 больше правил внутри одного предложения. Здесь они проще, чтобы отрабатывать распознавание. Тридцать заданий №8 собраны из банка в 164 предложения: сочетания разные, но отдельные предложения встречаются повторно. В части вариантов лишние предложения вообще не содержат ошибок, чтобы приучить проверять каждое.</p></div>
+    <h3 style="margin:1.4rem 0 .7rem">Официальные материалы</h3>
+    <ul class="src-list">
+      <li><a href="https://fipi.ru/ege/demoversii-specifikacii-kodifikatory" target="_blank" rel="noopener">ФИПИ: демоверсия, спецификация и кодификатор ЕГЭ-2027 по русскому языку</a>. Изменений структуры и содержания по сравнению с 2026 годом нет.</li>
+      <li><a href="https://ege.fipi.ru/bank/" target="_blank" rel="noopener">Открытый банк заданий ФИПИ</a>: тренируйтесь на реальных заданиях линий 8 и 21.</li>
+      <li><a href="https://fipi.ru/navigator-podgotovki/navigator-ege#ru" target="_blank" rel="noopener">Навигатор самостоятельной подготовки к ЕГЭ по русскому языку</a>.</li>
+      <li><a href="https://doc.fipi.ru/navigator-podgotovki/navigator-ege/MR_rus_yaz_ege_2025.pdf" target="_blank" rel="noopener">Методические рекомендации ФИПИ обучающимся, ЕГЭ-2025</a> и <a href="https://doc.fipi.ru/navigator-podgotovki/navigator-ege/MR_rus_yaz_ege_2026.pdf" target="_blank" rel="noopener">ЕГЭ-2026</a>: структура, система оценивания, классификация правил для задания 21.</li>
+      <li>Школьный учебник, на который ссылается ФИПИ в разъяснении про бессоюзные сложные предложения: Бархударов С.Г., Крючков С.Е., Максимов Л.Ю. и др. Русский язык. 9 класс. 5-е изд., перераб. М.: Просвещение, 2023.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <h2>Частые вопросы</h2>
+    <div style="margin-top:1rem">
+      <details><summary>Что изменится в ЕГЭ по русскому языку в 2027 году?</summary><div class="dbody"><p>По материалам ФИПИ — ничего: структура и содержание те же. 27 заданий (26 с кратким и одно с развёрнутым ответом), до 50 первичных баллов, 210 минут.</p></div></details>
+      <details><summary>Как считаются баллы в тренажёре?</summary><div class="dbody"><p>Задание 8: 2 балла, если все пять цифр верны и стоят на своих местах; 1 балл, если неверны одна или две позиции; иначе 0. Задание 21: 1 балл за точный набор номеров предложений. Это соответствует логике критериев ФИПИ, точные критерии смотрите в спецификации.</p></div></details>
+      <details><summary>Почему в задании 8 нельзя повторять цифры?</summary><div class="dbody"><p>Каждое предложение содержит свою ошибку, а ответ — пять разных цифр. Если нужная цифра уже занята, значит, одно из соответствий выбрано неверно. Тренажёр сам переносит цифру в новую строку.</p></div></details>
+      <details><summary>Где хранится мой прогресс?</summary><div class="dbody"><p>Только в браузере вашего устройства. Если очистить данные сайта или открыть страницу на другом устройстве, прогресс начнётся заново.</p></div></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Неофициальный учебный проект. Он не связан с ФИПИ и Рособрнадзором. Задания авторские и могут отличаться от реальных заданий экзамена; ориентируйтесь на демоверсию и открытый банк на сайте ФИПИ. Сведения актуальны на 17 ноября 2026 года.</p>
+  </div>
+</footer>
+
+<script>
+/* ===== Русский язык: типы ошибок, правила, конструкторы ===== */
+const TASKS = [];
+const T8 = {
+  app:  { name: "нарушение в построении предложения с несогласованным приложением", short: "несогласованное приложение",
+          rule: "Название в кавычках после родового слова (роман, газета, журнал, ледокол) не склоняется: в романе «Обломов», в газете «Известия»." },
+  hom:  { name: "неправильное построение предложения с однородными членами", short: "однородные члены",
+          rule: "Однородные члены должны быть выражены одинаковыми формами и зависеть от общего слова одинаково. Нельзя соединять слово и придаточное, нарушать парные союзы (не только… но и, как… так и)." },
+  subj: { name: "нарушение связи между подлежащим и сказуемым", short: "подлежащее и сказуемое",
+          rule: "Сказуемое согласуется с подлежащим в числе и роде. Группа, рота, колония, стая — единственное число; каждый из, кто-то из — единственное число; ни… ни при двух подлежащих — множественное." },
+  part: { name: "неправильное построение предложения с причастным оборотом", short: "причастный оборот",
+          rule: "Причастие согласуется с определяемым словом в роде, числе и падеже. Причастный оборот нельзя отрывать от определяемого слова." },
+  ger:  { name: "неправильное построение предложения с деепричастным оборотом", short: "деепричастный оборот",
+          rule: "Деепричастие обозначает действие того же лица, что и сказуемое. В безличных предложениях и при другом подлежащем такой оборот невозможен." },
+  comp: { name: "неправильное построение сложного предложения", short: "сложное предложение",
+          rule: "В сложном предложении нельзя повторять союзное слово местоимением, ставить лишние союзы и слова, смешивать пары союзов, соединять разнотипные придаточные." },
+  ind:  { name: "неправильное построение предложения с косвенной речью", short: "косвенная речь",
+          rule: "В косвенной речи нет форм 1-го и 2-го лица, относящихся к говорящему, и повелительного наклонения: их заменяют 3-м лицом и инфинитивом." },
+  prep: { name: "неправильное употребление предложно-падежной формы управляемого слова", short: "управление",
+          rule: "Падеж и предлог определяются главным словом: согласно (чему?), вопреки (чему?), благодаря (чему?), по окончании (предложный падеж), преимущество (перед кем?), наблюдать (за чем?)." },
+  tense:{ name: "нарушение видовременной соотнесённости глагольных форм", short: "видовременная соотнесённость",
+          rule: "Однородные сказуемые и части предложения, описывающие последовательные события, употребляют в одном времени (прошедшем или настоящем)." }
+};
+const T8KEYS = ["app", "hom", "subj", "part", "ger", "comp", "ind", "prep", "tense"];
+
+const RULES = {
+  T1: "тире между подлежащим и сказуемым", T2: "тире в неполном предложении",
+  T3: "тире при обобщающем слове после однородных членов", T4: "тире при приложении",
+  T5: "тире в бессоюзном сложном предложении", T6: "тире при вставной конструкции", T7: "тире при прямой речи",
+  D1: "двоеточие в бессоюзном сложном предложении", D2: "двоеточие после обобщающего слова перед однородными членами",
+  D3: "двоеточие перед прямой речью",
+  C1: "запятая при однородных членах", C2: "запятые при обособленном определении", C3: "запятые при обособленном приложении",
+  C4: "запятая(-ые) при обособленном обстоятельстве (деепричастие, деепричастный оборот)", C5: "запятая при сравнительном обороте",
+  C6: "запятые при уточняющем члене предложения", C7: "запятые при вводном слове", C8: "запятые при обращении",
+  C9: "запятая в сложносочинённом предложении", C10: "запятая в сложноподчинённом предложении",
+  C11: "запятая в бессоюзном сложном предложении", C12: "запятая при прямой речи", C13: "запятая при междометии",
+  C14: "запятые при обособленном дополнении"
+};
+const SIGN21 = {
+  "тире": { glyph: "—", stmt: "Найдите предложения, в которых тире ставится в соответствии с одним и тем же правилом пунктуации. Запишите номера этих предложений." },
+  "двоеточие": { glyph: ":", stmt: "Найдите предложения, в которых двоеточие ставится в соответствии с одним и тем же правилом пунктуации. Запишите номера этих предложений." },
+  "запятая": { glyph: ",", stmt: "Найдите предложения, в которых запятая(-ые) ставится(-ятся) в соответствии с одним и тем же правилом пунктуации. Запишите номера этих предложений." }
+};
+
+/* Задание 21: sents = [[текст, [коды правил для искомого знака]], ...]; rot — циклический сдвиг, чтобы разнообразить позиции */
+function D21(id, sign, rot, topic, sents) {
+  const r = rot % sents.length;
+  const s = sents.slice(r).concat(sents.slice(0, r));
+  TASKS.push({ id: id, num: 21, type: "p21", sign: sign, topic: topic, sents: s.map(function (x) { return { t: x[0], r: x[1] }; }) });
+}
+
+/* Банк для задания 8 */
+const BANK = { err: {}, ok: {} };
+function ERR(type, list) { BANK.err[type] = list; }
+function OK(type, list) { BANK.ok[type] = list; }
+
+/* Детерминированный генератор, чтобы 30 заданий №8 были одинаковыми при каждой загрузке */
+function mulberry(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function seededShuffle(arr, rnd) { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); const x = a[i]; a[i] = a[j]; a[j] = x; } return a; }
+
+function buildTasks8(count) {
+  const rnd = mulberry(2027);
+  const seq = {};
+  T8KEYS.forEach(function (k) {
+    const n = BANK.err[k].length;
+    let s = [];
+    while (s.length < count) s = s.concat(seededShuffle(Array.from({ length: n }, function (_, i) { return i; }), rnd));
+    seq[k] = s.slice(0, count);
+  });
+  const okSeq = {};
+  T8KEYS.forEach(function (k) {
+    const n = BANK.ok[k].length; let s = [];
+    while (s.length < count) s = s.concat(seededShuffle(Array.from({ length: n }, function (_, i) { return i; }), rnd));
+    okSeq[k] = s.slice(0, count);
+  });
+  for (let i = 0; i < count; i++) {
+    const asked = seededShuffle(T8KEYS, rnd).slice(0, 5);
+    const sents = T8KEYS.map(function (k) {
+      const useOk = asked.indexOf(k) === -1 && rnd() < 0.5;
+      if (useOk) { const o = BANK.ok[k][okSeq[k][i]]; return { type: k, ok: true, t: o[0], fix: "", why: o[1] }; }
+      const e = BANK.err[k][seq[k][i]]; return { type: k, ok: false, t: e[0], fix: e[1], why: "" };
+    });
+    TASKS.push({ id: "t08-" + (i < 9 ? "0" : "") + (i + 1), num: 8, type: "e8", asked: asked, sents: sents,
+      topic: "Грамматические ошибки в предложениях" });
+  }
+}
+
+/* ===== Задание 8: банк предложений. [предложение с ошибкой, исправление] ===== */
+
+ERR("app", [
+  ["Мы много слышали о балете «Лебединого озера» в постановке этого театра.", "о балете «Лебединое озеро»"],
+  ["В романе «Анне Карениной» Л. Н. Толстой описал судьбы нескольких семей.", "В романе «Анна Каренина»"],
+  ["Школьники подписались на журнал «Науке и жизни».", "на журнал «Наука и жизнь»"],
+  ["Статья появилась в газете «Известиях» на прошлой неделе.", "в газете «Известия»"],
+  ["Мальчик прочитал в повести «Белом Биме Чёрное ухо» о судьбе собаки.", "в повести «Белый Бим Чёрное ухо»"],
+  ["Экипаж ледокола «Ленина» вернулся в порт после долгого рейса.", "ледокола «Ленин»"],
+  ["Мы побывали на заводе «Красного Октября» на экскурсии.", "на заводе «Красный Октябрь»"],
+  ["Репродукцию картины под названием «Неизвестной» мы увидели в учебнике.", "под названием «Неизвестная»"],
+  ["Мы с интересом слушали оперу «Руслану и Людмиле» Глинки.", "оперу «Руслан и Людмила»"],
+  ["Дети любят сказку «Золотого петушка» Пушкина.", "сказку «Золотой петушок»"],
+  ["Музыканты выступили вместе с ансамблем «Берёзкой» на фестивале.", "с ансамблем «Берёзка»"],
+  ["В сборнике «Вечерам на хуторе близ Диканьки» Гоголь собрал яркие повести.", "В сборнике «Вечера на хуторе близ Диканьки»"],
+  ["Экскурсия по теплоходу «Михаилу Лермонтову» понравилась всем туристам.", "по теплоходу «Михаил Лермонтов»"],
+  ["В стихотворении «Парусе» Лермонтов рисует образ одинокой лодки.", "В стихотворении «Парус»"],
+  ["Посетители выставки долго стояли у картины «Грачам прилетели».", "у картины «Грачи прилетели»"]
+]);
+OK("app", [
+  ["Мы с интересом смотрели оперу «Евгений Онегин» в новой постановке.", "Название «Евгений Онегин» после слова «оперу» не изменяется: ошибки нет."],
+  ["Статью о новом фильме напечатал журнал «Огонёк».", "Название журнала стоит в начальной форме: ошибки нет."],
+  ["Школьники отправились на экскурсию на ледокол «Красин».", "Название судна не склоняется: ошибки нет."],
+  ["Бабушка любит слушать песню «Подмосковные вечера».", "Название песни после родового слова не склоняется: ошибки нет."]
+]);
+
+ERR("hom", [
+  ["Мой друг любит футбол и заниматься плаванием.", "любит футбол и плавание"],
+  ["Лектор рассказал о развитии лирики и как она связана с эпохой.", "о развитии лирики и о её связи с эпохой"],
+  ["Выставка не только привлекла школьников, но и родителей.", "Выставка привлекла не только школьников, но и родителей."],
+  ["Мы с интересом наблюдали и восхищались игрой молодых актёров.", "наблюдали за игрой молодых актёров и восхищались ею"],
+  ["В парке посетителей ждут аттракционы, мороженое и покататься на лодках.", "аттракционы, мороженое и катание на лодках"],
+  ["Она была красивой, умной и с добрым характером.", "красивой, умной и доброй"],
+  ["Он гордился своим успехом и что получил награду.", "гордился своим успехом и тем, что получил награду"],
+  ["Туристы любовались горами, озёрами и как цветут альпийские луга.", "горами, озёрами и цветущими лугами"],
+  ["Нам нужен учитель опытный, внимательный и который умеет находить подход к детям.", "опытный, внимательный и умеющий находить подход"],
+  ["Родители заботились и воспитывали детей.", "заботились о детях и воспитывали их"],
+  ["Он был уверен в победе и что соперники слабее.", "в победе и в том, что соперники слабее"],
+  ["Как студенты, и преподаватели должны соблюдать правила безопасности.", "Как студенты, так и преподаватели"],
+  ["Директор приказал сменить режим работы и чтобы сотрудники заполнили анкеты.", "сменить режим работы и заполнить анкеты"],
+  ["Мы рады не только успехам спортсменов, но и что они стали примером для молодёжи.", "но и тому, что они стали примером"],
+  ["Автор статьи размышляет о причинах и последствиях кризиса, а также как с ним бороться.", "а также о способах борьбы с ним"]
+]);
+OK("hom", [
+  ["Зимой мы катаемся на лыжах, играем в хоккей и ходим в кино.", "Однородные сказуемые выражены одинаково: ошибки нет."],
+  ["Не только дети, но и взрослые с удовольствием посетили выставку.", "Части двойного союза стоят перед однородными подлежащими: ошибки нет."],
+  ["Он не только прекрасно играл на гитаре, но и сам сочинял песни.", "Однородные сказуемые, части союза на своих местах: ошибки нет."],
+  ["Мы говорили о предстоящем походе и о том, как подготовиться к нему.", "Предлог повторён при существительном и придаточном: ошибки нет."]
+]);
+
+ERR("subj", [
+  ["Рота солдат вернулись в казарму после учений.", "рота вернулась"],
+  ["Мало кто из присутствующих знали о случившемся.", "мало кто знал"],
+  ["Группа студентов, приехавших из других городов, были размещены в общежитии.", "группа была размещена"],
+  ["Каждый из участников соревнований получили памятный диплом.", "каждый получил"],
+  ["Туристическая компания «Горизонт» организовали экскурсию по городу.", "компания организовала"],
+  ["Пять студентов-практикантов проходил стажировку в лаборатории.", "проходили (или проходило) стажировку"],
+  ["Ни директор, ни его заместитель не пришло на собрание.", "не пришли"],
+  ["Директор школы Ковалёва объявил благодарность всем учителям.", "Ковалёва объявила"],
+  ["Несколько человек из толпы закричал от испуга.", "несколько человек закричали"],
+  ["Кто-то из ребят оставили на столе записку.", "кто-то оставил"],
+  ["Лишь немногие из выпускников нашей школы стал учёным.", "немногие стали"],
+  ["Моя тётя, учитель математики, преподавал в нашей школе тридцать лет.", "тётя преподавала"],
+  ["Студентка-практикант Нина Орлова написал отчёт о командировке.", "Нина Орлова написала"],
+  ["Колония пингвинов расположились на льдине.", "колония расположилась"],
+  ["Стая журавлей пролетели над озером на рассвете.", "стая пролетела"]
+]);
+OK("subj", [
+  ["Группа туристов вернулась в гостиницу к вечеру.", "Сказуемое согласовано с подлежащим «группа»: ошибки нет."],
+  ["Те, кто пришёл вовремя, заняли лучшие места.", "Связь между подлежащим «те» и сказуемым «заняли» верна: ошибки нет."],
+  ["Мы с братом уехали к бабушке на всё лето.", "Сказуемое во множественном числе: ошибки нет."],
+  ["Несколько человек из зала задали докладчику вопросы.", "Допустимо множественное число сказуемого: ошибки нет."]
+]);
+
+ERR("part", [
+  ["На вокзале мы встретили друга, приехавшую из другого города.", "друга, приехавшего"],
+  ["Поэма, написавшая в юности, до сих пор волнует читателей.", "поэма, написанная в юности"],
+  ["Тренер похвалил игрока, забивший решающий гол.", "игрока, забившего"],
+  ["Туристы любовались вершинами гор, возвышающиеся над долиной.", "вершинами, возвышающимися"],
+  ["В журнале я нашёл статью о космосе, напечатанный в прошлом году.", "статью, напечатанную"],
+  ["Мы подошли к реке, покрытая тонким льдом.", "к реке, покрытой"],
+  ["Учителя были довольны учениками, выполнившие сложное задание.", "учениками, выполнившими"],
+  ["Автор рассказа, прочитанный нами на уроке, получил премию.", "Автор рассказа, прочитанного нами на уроке"],
+  ["Дети, играющая во дворе, не заметили дождя.", "дети, играющие"],
+  ["Я прочёл письмо, полученный от друга.", "письмо, полученное"],
+  ["Мы любовались картиной, украшающие стену гостиной.", "картиной, украшающей"],
+  ["Директор поблагодарил сотрудников, работавшей над проектом.", "сотрудников, работавших"],
+  ["Мы осмотрели здание, строящуюся рядом с вокзалом.", "здание, строящееся"],
+  ["На берегу озера стоял домик, окружённые высокими соснами.", "домик, окружённый"],
+  ["Книги, прочитанный летом, помогли мне в учёбе.", "книги, прочитанные"]
+]);
+OK("part", [
+  ["Поляна, залитая солнцем, казалась золотой.", "Причастие согласовано с определяемым словом «поляна»: ошибки нет."],
+  ["Мы с интересом слушали рассказ человека, пережившего блокаду.", "Причастие согласовано со словом «человека»: ошибки нет."],
+  ["Мальчик, увлечённый чтением, не услышал звонка.", "Причастие согласовано со словом «мальчик»: ошибки нет."],
+  ["Письмо, полученное вчера, оказалось очень важным.", "Причастие согласовано со словом «письмо»: ошибки нет."]
+]);
+
+ERR("ger", [
+  ["Читая лекцию, у студентов возникло много вопросов.", "Когда преподаватель читал лекцию, у студентов возникло много вопросов."],
+  ["Подходя к дому, мне встретился сосед.", "Подходя к дому, я встретил соседа."],
+  ["Закончив работу, было решено сделать перерыв.", "Закончив работу, мы решили сделать перерыв."],
+  ["Находясь в отпуске, меня часто навещали друзья.", "Находясь в отпуске, я часто принимал друзей."],
+  ["Глядя на закат, в голове рождались стихи.", "Глядя на закат, я сочинял стихи."],
+  ["Приехав в город, на вокзале нас встретил экскурсовод.", "Когда мы приехали в город, на вокзале нас встретил экскурсовод."],
+  ["Ознакомившись с документами, они показались мне подозрительными.", "Ознакомившись с документами, я счёл их подозрительными."],
+  ["Работая над проектом, были получены новые данные.", "Работая над проектом, учёные получили новые данные."],
+  ["Не имея возможности встретиться, договор был подписан по почте.", "Не имея возможности встретиться, стороны подписали договор по почте."],
+  ["Возвращаясь с прогулки, пошёл дождь.", "Когда мы возвращались с прогулки, пошёл дождь."],
+  ["Проходя мимо парка, нам открылся вид на реку.", "Проходя мимо парка, мы увидели реку."],
+  ["Выступая перед студентами, видно, что лектор волнуется.", "Выступая перед студентами, лектор заметно волнуется."],
+  ["Будучи ребёнком, мне дали прозвище «Стрекоза».", "Будучи ребёнком, я получил прозвище «Стрекоза»."],
+  ["Увидев опасность, ему пришлось быстро принимать решение.", "Увидев опасность, он быстро принял решение."],
+  ["Оставшись одна, в душе девушки поселилась тревога.", "Оставшись одна, девушка почувствовала тревогу."]
+]);
+OK("ger", [
+  ["Подъезжая к станции, мы увидели старинную водокачку.", "Деепричастие и сказуемое «увидели» относятся к одному лицу — «мы»: ошибки нет."],
+  ["Прочитав рассказ, я надолго задумался.", "Действия «прочитав» и «задумался» совершает один и тот же человек: ошибки нет."],
+  ["Выходя из комнаты, не забудьте выключить свет.", "Побудительное предложение, действующее лицо — адресат: ошибки нет."],
+  ["Улыбаясь, девочка протянула нам цветы.", "Деепричастие и сказуемое относятся к девочке: ошибки нет."]
+]);
+
+ERR("comp", [
+  ["Это дом, в котором в нём я вырос.", "Это дом, в котором я вырос."],
+  ["Рассказ, о котором мы говорили о нём вчера, напечатан в сборнике.", "Рассказ, о котором мы говорили вчера, напечатан в сборнике."],
+  ["Он сказал, что чтобы успешно сдать экзамен, нужно много заниматься.", "Он сказал, что для успешной сдачи экзамена нужно много заниматься."],
+  ["Хотя мы опоздали на поезд, но успели вернуться домой вовремя.", "Хотя мы опоздали на поезд, мы успели вернуться домой вовремя."],
+  ["Те, кто интересуется историей, они обязательно посетят этот музей.", "Те, кто интересуется историей, обязательно посетят этот музей."],
+  ["Он вернулся в город, где родился там и вырос.", "Он вернулся в город, где родился и вырос."],
+  ["Мы показали гостям фотографии города, которые приехали вчера.", "Мы показали фотографии города гостям, которые приехали вчера."],
+  ["Мы знали, что если ты придёшь, что всё будет хорошо.", "Мы знали, что если ты придёшь, всё будет хорошо."],
+  ["Он не пришёл на встречу именно поэтому, что болел.", "Он не пришёл на встречу именно потому, что болел."],
+  ["Вследствие того что в кассе не осталось билетов, поэтому концерт отменили.", "Так как в кассе не осталось билетов, концерт отменили."],
+  ["Когда мы пришли на станцию, но поезд уже ушёл.", "Когда мы пришли на станцию, поезд уже ушёл."],
+  ["Автор убеждает читателей в том, чтобы не оставались равнодушными.", "Автор убеждает читателей не оставаться равнодушными."],
+  ["Как только поезд отошёл от перрона, как мы уже заскучали.", "Как только поезд отошёл от перрона, мы заскучали."],
+  ["Дорога, по которой мы шли по ней, вела к озеру.", "Дорога, по которой мы шли, вела к озеру."],
+  ["Мы поговорили с человеком, чью книгу ты читал, и который живёт рядом.", "с человеком, чью книгу ты читал и чей дом находится рядом"]
+]);
+OK("comp", [
+  ["Мне понравился фильм, о котором ты рассказывал.", "Союзное слово «о котором» не дублируется местоимением: ошибки нет."],
+  ["Он объяснил, что для этой работы нужно особое разрешение.", "Лишних союзов нет: ошибки нет."],
+  ["Мы надеялись, что если погода улучшится, мы пойдём в поход.", "Союзы использованы правильно: ошибки нет."],
+  ["Я пришёл туда, где мы когда-то познакомились.", "Указательное и союзное слова согласованы: ошибки нет."]
+]);
+
+ERR("ind", [
+  ["Преподаватель объявил группе, что завтра у вас будет контрольная работа.", "что завтра у них будет контрольная работа"],
+  ["Тренер сказал, что не опаздывайте на тренировки.", "Тренер сказал не опаздывать на тренировки."],
+  ["Врач посоветовал пациенту, что вам необходимо больше отдыхать.", "что ему необходимо больше отдыхать"],
+  ["Командир спросил бойцов, готовы ли вы к маршу.", "готовы ли они к маршу"],
+  ["Мама пообещала сыну, что я куплю ему велосипед.", "что купит ему велосипед"],
+  ["Начальник цеха приказал, чтобы немедленно приступайте к работе.", "приказал немедленно приступить к работе"],
+  ["Автор убеждён, что «не бойтесь трудностей, они закаляют характер».", "Автор убеждён, что трудностей не надо бояться: они закаляют характер."],
+  ["Бабушка сказала внуку, что ты должен слушаться родителей.", "что он должен слушаться родителей"],
+  ["Экскурсовод предупредил туристов, что вы не должны отходить от группы.", "что они не должны отходить от группы"],
+  ["Редактор попросил журналистку, что принесите статью завтра.", "попросил журналистку принести статью завтра"],
+  ["Учитель литературы спросил учеников, читали ли вы роман «Обломов».", "читали ли они роман «Обломов»"],
+  ["Вожатый сказал детям, что перед сном нужно почистить зубы, а потом вы сразу ложитесь.", "а потом сразу ложиться"],
+  ["Мастер объяснил ученикам, что вам нужно сначала отшлифовать деталь.", "что им нужно сначала отшлифовать деталь"],
+  ["Староста напомнила одноклассникам, что вы сдаёте проекты в понедельник.", "что они сдают проекты в понедельник"],
+  ["Диспетчер сообщил водителю, что вашему автобусу нужно ждать на остановке.", "что его автобус должен ждать на остановке"]
+]);
+OK("ind", [
+  ["Отец сказал сыну, что завтра они вместе поедут на рыбалку.", "Косвенная речь построена верно, формы 3-го лица: ошибки нет."],
+  ["Вожатый предупредил ребят, чтобы они не купались без взрослых.", "Придаточное с «чтобы», 3-е лицо: ошибки нет."],
+  ["Капитан приказал матросам немедленно спустить шлюпки.", "Приказ передан инфинитивом: ошибки нет."],
+  ["Учитель спросил, кто выполнил домашнее задание.", "Косвенный вопрос построен верно: ошибки нет."]
+]);
+
+ERR("prep", [
+  ["Согласно приказа директора, занятия начнутся в девять.", "согласно приказу"],
+  ["Благодаря сильного ветра лодка быстро добралась до берега.", "благодаря сильному ветру"],
+  ["По окончанию школы мы разъехались по разным городам.", "по окончании"],
+  ["Наперекор всех трудностей экспедиция дошла до цели.", "наперекор всем трудностям"],
+  ["Мы оплатили за проезд в автобусе.", "оплатили проезд"],
+  ["Он выразил уверенность в победу своей команды.", "уверенность в победе"],
+  ["Мы удивились его равнодушием к судьбе друга.", "удивились его равнодушию"],
+  ["Родители гордятся о своих детях.", "гордятся своими детьми"],
+  ["По приезду комиссии работы были остановлены.", "по приезде"],
+  ["Вопреки советов врача он вернулся к работе.", "вопреки советам"],
+  ["Мы с интересом наблюдали над ходом эксперимента.", "наблюдали за ходом"],
+  ["Наша команда имела явное преимущество над соперником в скорости.", "преимущество перед соперником"],
+  ["Студенты обратили внимание о проблеме.", "обратили внимание на проблему"],
+  ["Он руководил отряд туристов в горах.", "руководил отрядом"],
+  ["Мальчик похвастался о своих успехах в школе.", "похвастался своими успехами"]
+]);
+OK("prep", [
+  ["Благодаря помощи друзей мы успели закончить работу вовремя.", "Управление соблюдено: «благодаря чему? — помощи». Ошибки нет."],
+  ["Мы удивились его решению уехать.", "Верное управление: «удивились чему?» — решению. Ошибки нет."],
+  ["Наши спортсмены гордятся своими победами.", "Верное управление: «гордятся чем?» — победами. Ошибки нет."],
+  ["Согласно расписанию, поезд отправляется в восемь.", "Предлог «согласно» требует дательного падежа: расписанию. Ошибки нет."]
+]);
+
+ERR("tense", [
+  ["Мы вышли из дома, сели в автобус и едем на вокзал.", "и поехали на вокзал"],
+  ["Когда ученик вошёл в класс, все встают.", "все встали"],
+  ["Лес шумел, птицы поют, и река блестит.", "птицы пели, и река блестела"],
+  ["Я открыл окно и вижу, как над городом поднимается солнце.", "и увидел"],
+  ["Он взял книгу, сядет у окна и начал читать.", "сел у окна"],
+  ["Мы подошли к озеру, остановились и любуемся закатом.", "и любовались закатом"],
+  ["Автор показал героя и рассказывает о его судьбе.", "показывает героя и рассказывает"],
+  ["Учитель вошёл в класс, поздоровался и начинает урок.", "и начал урок"],
+  ["Когда мы пришли на стадион, матч уже начнётся.", "матч уже начался"],
+  ["Пока я собирал вещи, брат звонит родителям.", "брат звонил родителям"],
+  ["Наступила ночь, взошла луна, и в саду пахнет цветами.", "и в саду запахло цветами"],
+  ["Мальчик дожидался автобуса, смотрит на часы и волновался.", "смотрел на часы и волновался"],
+  ["Она закончила работу, выключила компьютер и идёт домой.", "и пошла домой"],
+  ["Пушкин написал поэму и посвящает её другу.", "и посвятил её другу"],
+  ["Как только пошёл дождь, мы укрылись под навесом и ждём, пока он закончится.", "и ждали, пока он закончится"]
+]);
+OK("tense", [
+  ["Мы разожгли костёр, поставили палатку и приготовили ужин.", "Все сказуемые в прошедшем времени: ошибки нет."],
+  ["Когда гости ушли, мы убрали посуду и легли спать.", "Видовременные формы согласованы: ошибки нет."],
+  ["Стемнело, на небе появились звёзды, и поднялся ветер.", "Однородные части в одном времени: ошибки нет."],
+  ["Он прочитал письмо, сложил его и убрал в карман.", "Все глаголы в прошедшем времени: ошибки нет."]
+]);
+
+buildTasks8(30);
+
+/* ===== Задание 21: пунктуационный анализ. Правила — см. RULES в helpers.js ===== */
+
+/* ---- тире (10) ---- */
+D21("t21-01", "тире", 5, "Волга", [
+  ["Волга — главная река нашей страны, её длина превышает три тысячи километров.", ["T1"]],
+  ["Верховья реки изучали геологи, дельту — биологи.", ["T2"]],
+  ["Вдоль берегов раскинулись поля, луга, рощи — всё это радует глаз путешественников.", ["T3"]],
+  ["Мы побывали в Угличе — старинном городе на берегу Волги.", ["T4"]],
+  ["Придёт весна — вернёмся сюда снова на теплоходе.", ["T5"]],
+  ["Одни пассажиры любовались берегами, другие — читали книги в каютах.", ["T2"]],
+  ["Круизный теплоход идёт вниз по течению почти без остановок.", []]
+]);
+D21("t21-02", "тире", 3, "Осень в парке", [
+  ["Осень — любимое время года многих поэтов и художников.", ["T1"]],
+  ["Клёны, липы, дубы, рябины — все деревья в парке нарядились в золото.", ["T3"]],
+  ["Мы гуляли по Сокольникам — одному из самых больших парков Москвы.", ["T4"]],
+  ["Грянут морозы — осыплются последние листья.", ["T5"]],
+  ["Дожди, туманы, ветры, первые заморозки — всё напоминало о скором приходе зимы.", ["T3"]],
+  ["Старый сторож — он помнил этот парк ещё молодым — подметал дорожки.", ["T6"]],
+  ["Над прудом пролетала последняя стая уток.", []]
+]);
+D21("t21-03", "тире", 2, "Эрмитаж", [
+  ["Эрмитаж — один из крупнейших музеев мира.", ["T1"]],
+  ["Мы познакомились с залом Рембрандта — одной из жемчужин музея.", ["T4"]],
+  ["В первом зале экспонировались скульптуры, во втором — картины.", ["T2"]],
+  ["Экскурсовод рассказал о Павильонном зале — настоящем шедевре архитектуры.", ["T4"]],
+  ["Откроешь тяжёлую дверь — увидишь Иорданскую лестницу.", ["T5"]],
+  ["Хрустальные люстры, золотые рамы, мраморные колонны — всё поражало роскошью.", ["T3"]],
+  ["Билеты в музей продаются в кассах и на сайте.", []]
+]);
+D21("t21-04", "тире", 3, "Шахматы", [
+  ["Шахматы — игра, в которую играют во всём мире.", ["T1"]],
+  ["Сделаешь неверный ход — потеряешь фигуру.", ["T5"]],
+  ["Старший брат играет за первую команду, младший — за вторую.", ["T2"]],
+  ["Прозвенел сигнал — партия началась.", ["T5"]],
+  ["Король, ферзь, ладьи, слоны, кони, пешки — все фигуры стояли на своих местах.", ["T3"]],
+  ["Вечером в клубе собрались все любители этой игры.", []],
+  ["На турнир приехали гости из других городов.", []]
+]);
+D21("t21-05", "тире", 1, "Лесная прогулка", [
+  ["Старая ель — она росла здесь с незапамятных времён — укрывала путников от дождя.", ["T6"]],
+  ["Грибники, ягодники, охотники — все любили этот лес.", ["T3"]],
+  ["Лес — наш друг и защитник.", ["T1"]],
+  ["Весной — а она в этом году выдалась ранней — всё зазеленело раньше срока.", ["T6"]],
+  ["Мы заблудились — пришлось ночевать у костра.", ["T5"]],
+  ["Ребята пошли за грибами, девочки — за ягодами.", ["T2"]],
+  ["Тропинка вела к тихому лесному озеру.", []]
+]);
+D21("t21-06", "тире", 5, "Море", [
+  ["«Пора домой», — сказал отец, взглянув на часы.", ["T7"]],
+  ["«Как красиво вокруг!» — воскликнула Лена.", ["T7"]],
+  ["Море — стихия, которую невозможно покорить до конца.", ["T1"]],
+  ["Поднимется ветер — волны станут выше.", ["T5"]],
+  ["Дельфины, чайки, альбатросы — всё живое радовалось утру.", ["T3"]],
+  ["Я плавал у берега, а брат — на лодке с дядей.", ["T2"]],
+  ["Над бухтой кружили чайки.", []]
+]);
+D21("t21-07", "тире", 3, "Космос", [
+  ["Космос — неисчерпаемый источник загадок для учёных.", ["T1"]],
+  ["Юрий Гагарин — первый человек, полетевший в космос.", ["T1"]],
+  ["Нажмёшь кнопку — ракета стартует.", ["T5"]],
+  ["Солнце, Луна, звёзды — всё интересовало юного астронома.", ["T3"]],
+  ["Мы побывали в планетарии — настоящем храме звёздного неба.", ["T4"]],
+  ["Одни ребята увлекаются астрономией, другие — физикой.", ["T2"]],
+  ["Вечером мы наблюдали за созвездиями в телескоп.", []]
+]);
+D21("t21-08", "тире", 6, "Спорт", [
+  ["Тренер — человек строгий, но справедливый.", ["T1"]],
+  ["Не потренируешься — не выиграешь.", ["T5"]],
+  ["Футболисты, хоккеисты, волейболисты — все спортсмены школы собрались в зале.", ["T3"]],
+  ["Старшие классы играли на поле, младшие — в зале.", ["T2"]],
+  ["Прозвучал свисток — игра остановилась.", ["T5"]],
+  ["После игры все пошли в раздевалку.", []],
+  ["Вчера мы встретили Ивана Петрова — известного волейболиста.", ["T4"]]
+]);
+D21("t21-09", "тире", 6, "Музыка", [
+  ["Мы слушали Первый концерт Чайковского — одно из самых известных произведений композитора.", ["T4"]],
+  ["Скрипки играли в унисон, виолончели — тише.", ["T2"]],
+  ["Зазвучит оркестр — зал замрёт.", ["T5"]],
+  ["Дирижёр рассказал о Бетховене — гениальном композиторе, потерявшем слух.", ["T4"]],
+  ["Музыка — язык души.", ["T1"]],
+  ["Флейты, гобои, кларнеты — все инструменты вступили почти одновременно.", ["T3"]],
+  ["После концерта публика долго аплодировала.", []]
+]);
+D21("t21-10", "тире", 1, "Школа", [
+  ["Школа — второй дом для многих ребят.", ["T1"]],
+  ["Одни ученики любят математику, другие — литературу.", ["T2"]],
+  ["Прозвенит звонок — урок закончится.", ["T5"]],
+  ["Мы поздравили Ирину Сергеевну — нашего классного руководителя.", ["T4"]],
+  ["Столы, стулья, парты, шкафы — всё в классе блестело чистотой.", ["T3"]],
+  ["Старшеклассники готовили сцену, младшие — костюмы.", ["T2"]],
+  ["На школьном дворе ребята играли в футбол.", []]
+]);
+
+/* ---- двоеточие (8) ---- */
+D21("t21-11", "двоеточие", 4, "Погода", [
+  ["За окном ненастье: дует холодный ветер, льёт проливной дождь.", ["D1"]],
+  ["Я посмотрел на небо: тучи постепенно расходились.", ["D1"]],
+  ["В саду цвели цветы: розы, пионы, астры.", ["D2"]],
+  ["Мама сказала: «Возьми зонт».", ["D3"]],
+  ["Дождь прекратился, и выглянуло солнце.", []],
+  ["Вечером похолодало — пришлось надеть куртки.", []],
+  ["Мы вышли на улицу и пошли к реке.", []]
+]);
+D21("t21-12", "двоеточие", 1, "Дача", [
+  ["Бабушка улыбнулась и сказала: «Угощайтесь!»", ["D3"]],
+  ["Всё было готово к приезду гостей: стол накрыт, постели застелены.", ["D1"]],
+  ["На участке росли овощи: морковь, свёкла, редис.", ["D2"]],
+  ["Ночью был сильный ветер, и несколько яблок упали на землю.", []],
+  ["Во дворе росли деревья: яблони, груши, сливы.", ["D2"]],
+  ["Мы собрали урожай — все остались довольны.", []],
+  ["Утром за окном щебетали птицы.", []]
+]);
+D21("t21-13", "двоеточие", 5, "Урок", [
+  ["Учитель спросил: «Кто выполнил задание?»", ["D3"]],
+  ["Класс затих: все ждали решения.", ["D1"]],
+  ["Я ответил: «Все справились».", ["D3"]],
+  ["На доске были написаны примеры: сложение, вычитание, умножение.", ["D2"]],
+  ["После урока мы пошли в библиотеку.", []],
+  ["Звонок прозвенел — наступила перемена.", []],
+  ["В коридоре было шумно.", []]
+]);
+D21("t21-14", "двоеточие", 2, "Лето", [
+  ["Летом в нашем городе обычно жарко и сухо.", []],
+  ["Я рад: каникулы начались.", ["D1"]],
+  ["В походе нам понадобятся вещи: палатка, спальники, котелок.", ["D2"]],
+  ["Отец предупредил: «Без компаса в лес не ходить».", ["D3"]],
+  ["Мы вернулись домой поздно, усталые и счастливые.", []],
+  ["Река обмелела: давно не было дождей.", ["D1"]],
+  ["Лето — лучшая пора для путешествий.", []]
+]);
+D21("t21-15", "двоеточие", 1, "Библиотека", [
+  ["На полках стояли книги: романы, повести, сборники стихов.", ["D2"]],
+  ["Библиотекарь сказал: «Книги нужно возвращать вовремя».", ["D3"]],
+  ["Читатель огляделся: свободных мест не было.", ["D1"]],
+  ["Вечером в библиотеке стало тихо.", []],
+  ["Мы взяли учебники и пошли домой.", []],
+  ["В каталоге были указаны сведения: автор, название, год издания.", ["D2"]],
+  ["Утром мы пришли заранее.", []]
+]);
+D21("t21-16", "двоеточие", 1, "Поездка", [
+  ["Проводник объявил станции: Тверь, Бологое, Окуловка.", ["D2"]],
+  ["Пассажир вздохнул и сказал: «Мы опаздываем».", ["D3"]],
+  ["В вагоне было тихо: все спали.", ["D1"]],
+  ["За окном мелькали леса и поля.", []],
+  ["Проводница ответила: «Опоздание небольшое».", ["D3"]],
+  ["Поезд тронулся — и мы поехали.", []],
+  ["Мы приехали утром.", []]
+]);
+D21("t21-17", "двоеточие", 4, "Музей", [
+  ["В зале нас встретили экспонаты: вазы, статуи, гобелены.", ["D2"]],
+  ["Экскурсовод заметил: «Здесь собраны редчайшие вещи».", ["D3"]],
+  ["Мы замерли: перед нами стоял древний меч.", ["D1"]],
+  ["Я понял сразу: это подлинник.", ["D1"]],
+  ["Посетители ходили по залам не торопясь.", []],
+  ["Вечером музей закрылся — и мы ушли.", []],
+  ["Билеты стоили недорого.", []]
+]);
+D21("t21-18", "двоеточие", 6, "Кухня", [
+  ["Мама сказала: «Помоги мне накрыть на стол».", ["D3"]],
+  ["Я посмотрел на плиту: суп давно закипел.", ["D1"]],
+  ["На столе стояли тарелки и чашки.", []],
+  ["В холодильнике лежали продукты: молоко, сыр, колбаса.", ["D2"]],
+  ["Пахло вкусно — так пахнет только дома.", []],
+  ["Отец пришёл с работы поздно.", []],
+  ["На подносе лежали сладости: конфеты, печенье, пастила.", ["D2"]]
+]);
+
+/* ---- запятая (12) ---- */
+D21("t21-19", "запятая", 2, "Поход", [
+  ["Мы решили пойти в двухдневный поход, хотя прогноз погоды на выходные обещал дожди.", ["C10"]],
+  ["Улыбаясь, Маша взяла тяжёлый рюкзак.", ["C4"]],
+  ["В рюкзаке лежали палатка, спальники и котелок.", ["C1"]],
+  ["Друзья, нам пора выходить!", ["C8"]],
+  ["Дождь, который зарядил ещё с утра, не прекращался до вечера.", ["C10"]],
+  ["Лес стоял тихий и тёмный.", []],
+  ["Мы шли быстро, как настоящие туристы.", ["C5"]]
+]);
+D21("t21-20", "запятая", 2, "Вечер в городе", [
+  ["Увидев друга на остановке, Олег помахал ему рукой.", ["C4"]],
+  ["Он, к счастью, не опоздал на встречу.", ["C7"]],
+  ["Над городом, залитым огнями, стояла тишина.", ["C2"]],
+  ["Мы шли по набережной, любуясь закатом.", ["C4"]],
+  ["Хорошо, что вы пришли именно сегодня.", ["C10"]],
+  ["Вечер был тёплый и тихий.", []],
+  ["Мама встретила нас на крыльце.", []]
+]);
+D21("t21-21", "запятая", 6, "Сад", [
+  ["В вазе на столе стояли розы, тюльпаны, лилии.", ["C1"]],
+  ["Девочка смеялась, шутила, танцевала.", ["C1"]],
+  ["Мальчик, увлечённый чтением, не заметил гостей.", ["C2"]],
+  ["Если пойдёт дождь, мы останемся дома.", ["C10"]],
+  ["Она красива, как мама.", ["C5"]],
+  ["Погода, по-видимому, скоро улучшится.", ["C7"]],
+  ["На столе лежала открытая книга.", []]
+]);
+D21("t21-22", "запятая", 0, "Школьный день", [
+  ["Прозвенел звонок, и ученики вышли из класса.", ["C9"]],
+  ["Ветер усилился, и волны стали выше.", ["C9"]],
+  ["Мальчик, уставший за день, быстро уснул.", ["C2"]],
+  ["Вдалеке, за лесом, виднелась деревня.", ["C6"]],
+  ["Как же хорошо, друзья, сидеть у костра!", ["C8"]],
+  ["Он улыбнулся, обнимая сестру.", ["C4"]],
+  ["Зимой выпал глубокий снег.", []]
+]);
+D21("t21-23", "запятая", 1, "Лето и погода", [
+  ["Погода, к сожалению, испортилась.", ["C7"]],
+  ["Вероятно, он уже уехал.", ["C7"]],
+  ["Дети играли во дворе, где росли старые тополя.", ["C10"]],
+  ["Ах, какая красота!", ["C13"]],
+  ["Мы шли по тропинке, поросшей травой.", ["C2"]],
+  ["Мой брат, студент-медик, живёт в Казани.", ["C3"]],
+  ["Лето прошло быстро.", []]
+]);
+D21("t21-24", "запятая", 2, "Семья и друзья", [
+  ["Мой дядя, опытный водитель, работает на автобазе.", ["C3"]],
+  ["Мы познакомились с Ниной, дочерью директора.", ["C3"]],
+  ["Сестра, смеясь, вошла в комнату.", ["C4"]],
+  ["Поезд отправился, и мы остались одни.", ["C9"]],
+  ["Мы знали, что он вернётся.", ["C10"]],
+  ["Мы расположились на опушке, у самой реки.", ["C6"]],
+  ["Быстро вечерело.", []]
+]);
+D21("t21-25", "запятая", 3, "У реки", [
+  ["Облака плыли по небу, как белые корабли.", ["C5"]],
+  ["Река блестела, словно зеркало.", ["C5"]],
+  ["Дорога, ведущая к дому, заросла травой.", ["C2"]],
+  ["Мы собирали грибы, ягоды и орехи.", ["C1"]],
+  ["Я знаю, где находится библиотека.", ["C10"]],
+  ["Друг, хороший спортсмен, победил в забеге.", ["C3"]],
+  ["Утром выпала роса.", []]
+]);
+D21("t21-26", "запятая", 0, "Деревня", [
+  ["Лес, освещённый солнцем, казался сказочным.", ["C2"]],
+  ["Дом, стоявший на холме, был виден издалека.", ["C2"]],
+  ["Нина, не оборачиваясь, ушла.", ["C4"]],
+  ["Если хочешь успеть, выходи пораньше.", ["C10"]],
+  ["Мы встретились, как старые друзья.", ["C5"]],
+  ["На столе, у окна, лежали письма.", ["C6"]],
+  ["Ночью шёл снег.", []]
+]);
+D21("t21-27", "запятая", 6, "Утро", [
+  ["Наступило утро, стало светло.", ["C11"]],
+  ["Мы вышли из дома, дул холодный ветер.", ["C11"]],
+  ["Ребята, пойдёмте купаться!", ["C8"]],
+  ["Девочка, взяв зонт, вышла на улицу.", ["C4"]],
+  ["Мой отец, врач по профессии, любит рыбалку.", ["C3"]],
+  ["Она сказала, что придёт позже.", ["C10"]],
+  ["Всю ночь шёл дождь.", []]
+]);
+D21("t21-28", "запятая", 4, "У моря", [
+  ["Далеко внизу, под обрывом, шумело море.", ["C6"]],
+  ["Вечером, около семи часов, мы вышли из дома.", ["C6"]],
+  ["Он улыбнулся, вспомнив детство.", ["C4"]],
+  ["К сожалению, билетов не осталось.", ["C7"]],
+  ["Я видел Андрея, который недавно вернулся из отпуска.", ["C10"]],
+  ["Мальчик читал, а девочка рисовала.", ["C9"]],
+  ["В зале стояла тишина.", []]
+]);
+D21("t21-29", "запятая", 5, "Каникулы", [
+  ["Друзья, помогите мне!", ["C8"]],
+  ["Спасибо тебе, милая мама, за заботу.", ["C8"]],
+  ["Мы устали, но довольны.", ["C1"]],
+  ["Мой брат, мастер спорта, выиграл турнир.", ["C3"]],
+  ["Мы шли быстро, чтобы не опоздать.", ["C10"]],
+  ["Лето, на удивление, было дождливым.", ["C7"]],
+  ["Туман поднялся над рекой.", []]
+]);
+D21("t21-30", "запятая", 1, "Сборы", [
+  ["Все, кроме Ивана, пришли вовремя.", ["C14"]],
+  ["Помимо учебников, в сумке лежали тетради.", ["C14"]],
+  ["Начался дождь, и мы остались дома.", ["C9"]],
+  ["Если придёшь рано, мы успеем.", ["C10"]],
+  ["Ах, как красиво поют птицы!", ["C13"]],
+  ["Девочка, застенчивая и тихая, редко выступала.", ["C2"]],
+  ["Мы собирали яблоки, груши и сливы.", ["C1"]]
+]);
+
+/* ===== Логика тренажёра: задания 8 и 21 ===== */
+(function () {
+  "use strict";
+
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var esc = function (s) {
+    return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; });
+  };
+  var shuffle = function (a) {
+    a = a.slice();
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  };
+  var maxPts = function (n) { return n === 8 ? 2 : 1; };
+  var LET = ["А", "Б", "В", "Г", "Д"];
+  var balls = function (n) { return n === 1 ? "балла" : "баллов"; }; /* после «из» и «до»: родительный падеж */
+
+  /* ---------- хранилище ---------- */
+  var KEY = "ege27-rus-821-v1";
+  var mem = null;
+  function loadP() {
+    try {
+      var r = localStorage.getItem(KEY);
+      if (r) { var p = JSON.parse(r); if (p && p.tasks) { if (!p.exams) p.exams = []; if (!p.weak) p.weak = {}; return p; } }
+    } catch (e) { /* хранилище недоступно */ }
+    return mem || { tasks: {}, exams: [], weak: {} };
+  }
+  var P = loadP();
+  function saveP() { mem = P; try { localStorage.setItem(KEY, JSON.stringify(P)); } catch (e) { /* ничего */ } }
+  function record(id, pts) {
+    var r = P.tasks[id] || { best: 0, last: 0, tries: 0 };
+    r.best = Math.max(r.best, pts); r.last = pts; r.tries += 1; P.tasks[id] = r; saveP();
+  }
+  function weak(label) { P.weak[label] = (P.weak[label] || 0) + 1; }
+
+  /* ---------- экземпляр задания ---------- */
+  function mkInst(t) {
+    if (t.type === "e8") return { t: t, order: shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8]), pick: {}, done: false };
+    return { t: t, sel: {}, done: false };
+  }
+  function answered(inst) { return inst.t.type === "e8" ? Object.keys(inst.pick).length > 0 : Object.keys(inst.sel).length > 0; }
+
+  function key21(t) {
+    var cnt = {}, res = { rule: null, nums: [] };
+    t.sents.forEach(function (s, i) { s.r.forEach(function (r) { (cnt[r] = cnt[r] || []).push(i + 1); }); });
+    Object.keys(cnt).forEach(function (r) { if (cnt[r].length >= 2) { res.rule = r; res.nums = cnt[r]; } });
+    return res;
+  }
+
+  function grade(inst) {
+    var t = inst.t, max = maxPts(t.num), res = { max: max, wrong: [] }, i;
+    if (t.type === "e8") {
+      var ck = [], uk = [], errors = 0;
+      for (i = 0; i < 5; i++) {
+        var typ = t.asked[i], cp = 0;
+        for (var p = 0; p < 9; p++) if (t.sents[inst.order[p]].type === typ && !t.sents[inst.order[p]].ok) cp = p + 1;
+        ck.push(cp); var up = inst.pick[i]; uk.push(up ? up : "–");
+        if (up !== cp) { errors++; res.wrong.push(i); }
+      }
+      res.correctKey = ck.join(""); res.userKey = uk.join(""); res.errors = errors;
+      res.pts = errors === 0 ? 2 : (errors <= 2 ? 1 : 0);
+    } else {
+      var k = key21(t), u = [];
+      Object.keys(inst.sel).forEach(function (n) { u.push(parseInt(n, 10)); });
+      u.sort(function (a, b) { return a - b; });
+      res.rule = k.rule; res.nums = k.nums;
+      res.correctKey = k.nums.join(""); res.userKey = u.join("");
+      res.pts = res.correctKey === res.userKey ? 1 : 0;
+      res.errors = res.pts ? 0 : 1;
+    }
+    return res;
+  }
+
+  /* ---------- состояние ---------- */
+  var S = { num: "all", onlyErr: false, mode: "practice", queue: [], i: 0, inst: null, series: { pts: 0, max: 0, n: 0 }, exam: null, timer: null };
+  var stage = $("#stage");
+  function stopTimer() { if (S.timer) { clearInterval(S.timer); S.timer = null; } }
+
+  function buildQueue() {
+    var pool = TASKS.filter(function (t) { return S.num === "all" || t.num === S.num; });
+    if (S.onlyErr) pool = pool.filter(function (t) { var r = P.tasks[t.id]; return !r || r.last < maxPts(t.num); });
+    var unseen = shuffle(pool.filter(function (t) { return !P.tasks[t.id]; }));
+    var wrong = shuffle(pool.filter(function (t) { var r = P.tasks[t.id]; return r && r.last < maxPts(t.num); }));
+    var done = shuffle(pool.filter(function (t) { var r = P.tasks[t.id]; return r && r.last >= maxPts(t.num); }));
+    return unseen.concat(wrong, done);
+  }
+
+  /* ---------- разметка ---------- */
+  function revealed(inst, mode) { return mode === "review" || (mode === "practice" && inst.done); }
+
+  function blankHTML(inst, key, cls) {
+    var t = inst.t, cells = "", i;
+    if (t.type === "e8") {
+      var a = key ? key.split("") : [];
+      for (i = 0; i < 5; i++) cells += '<span class="cellcol"><span class="cl">' + LET[i] + '</span><span class="cell">' + (a[i] && a[i] !== "–" && a[i] !== "0" ? a[i] : "") + "</span></span>";
+    } else {
+      var arr = key ? key.split("") : [], n = Math.max(arr.length, 2);
+      for (i = 0; i < n; i++) cells += '<span class="cell">' + (arr[i] || "") + "</span>";
+    }
+    return '<span class="blank ' + (cls || "") + '">' + cells + "</span>";
+  }
+  function liveKey(inst) {
+    var i;
+    if (inst.t.type === "e8") { var p = []; for (i = 0; i < 5; i++) p.push(inst.pick[i] ? inst.pick[i] : "–"); return p.join(""); }
+    var u = []; Object.keys(inst.sel).forEach(function (n) { u.push(parseInt(n, 10)); });
+    u.sort(function (a, b) { return a - b; }); return u.join("");
+  }
+  function headHTML(inst, label) {
+    var t = inst.t, mx = maxPts(t.num);
+    return '<div class="chips"><span class="chip strong">Задание ' + t.num + "</span>" +
+      '<span class="chip">' + (t.num === 21 ? "повышенный уровень" : "базовый уровень") + "</span>" +
+      '<span class="chip">до ' + mx + " " + balls(mx) + "</span>" +
+      (label ? '<span class="chip ghost">' + esc(label) + "</span>" : "") + "</div>" +
+      '<p class="topic">' + esc(t.type === "p21" ? "Пунктуационный анализ: " + t.topic : t.topic) + "</p>";
+  }
+  function markGlyph(text, glyph) {
+    return esc(text).split(glyph).join('<mark>' + glyph + "</mark>");
+  }
+
+  function resultHTML(inst) {
+    var g = grade(inst), t = inst.t;
+    var cls = g.pts === g.max ? "ok" : (g.pts > 0 ? "part" : "bad"), d = "";
+    if (t.type === "e8") {
+      if (g.wrong.length) d += "<p>Ошибки в строках: " + g.wrong.map(function (i) { return LET[i]; }).join(", ") + ".</p>";
+      d += '<p class="rule">2 балла — все пять соответствий верны; 1 балл — неверны одна или две позиции; иначе 0. Порядок цифр принципиален, повторов нет.</p>';
+    } else {
+      d += "<p>Общее правило: <b>" + esc(RULES[g.rule]) + "</b> (предложения " + g.nums.join(" и ") + ").</p>";
+      d += '<p class="rule">Задание 21 оценивается в 1 балл: нужно указать все предложения с общим правилом и только их.</p>';
+    }
+    return '<div class="result ' + cls + '" role="status"><p class="score">' + g.pts + " из " + g.max + " " + balls(g.max) + "</p>" +
+      '<p class="ans">Ваш ответ: ' + blankHTML(inst, g.userKey, "mini") + '</p><p class="ans">Верный ответ: ' + blankHTML(inst, g.correctKey, "mini good") + "</p>" + d + "</div>";
+  }
+
+  function cardHTML(inst, mode, label) {
+    var t = inst.t, rev = revealed(inst, mode), h = headHTML(inst, label), i;
+    if (t.type === "e8") {
+      h += '<p class="q">Установите соответствие между грамматическими ошибками и предложениями, в которых они допущены: к каждой позиции первого столбца подберите соответствующую позицию из второго столбца.</p>';
+      h += '<p class="lh">ПРЕДЛОЖЕНИЯ</p><ol class="slist">';
+      for (i = 0; i < 9; i++) {
+        var s = t.sents[inst.order[i]], li = "";
+        if (rev) {
+          var li0 = t.asked.indexOf(s.type), mk = li0 >= 0 && !s.ok ? " (" + LET[li0] + ")" : "";
+          if (s.ok) li = '<p class="why"><span class="tag">Ошибок нет.</span> ' + esc(s.why) + "</p>";
+          else li = '<p class="why"><span class="tag">' + esc(T8[s.type].short) + mk + ".</span> Правильно: " + esc(s.fix) + "</p>";
+        }
+        h += '<li><span class="sn">' + (i + 1) + '</span><div><p class="st">' + esc(s.t) + "</p>" + li + "</div></li>";
+      }
+      h += '</ol><p class="lh left">ГРАММАТИЧЕСКИЕ ОШИБКИ</p><div class="mrows">';
+      var res = rev ? grade(inst) : null;
+      for (i = 0; i < 5; i++) {
+        var pk = inst.pick[i], rc = "mrow", note = "";
+        if (rev) {
+          var corr = parseInt(res.correctKey.charAt(i), 10);
+          if (pk === corr) { rc += " is-hit"; note = "Верно."; } else { rc += " is-bad"; note = pk ? "Вы выбрали " + pk + ", верно: " + corr + "." : "Нет ответа, верно: " + corr + "."; }
+        }
+        h += '<div class="' + rc + '"><div class="mtop"><span class="letter">' + LET[i] + '</span><p class="mt">' + esc(T8[t.asked[i]].name) + '</p></div><div class="picks nine" role="group" aria-label="Строка ' + LET[i] + '">';
+        for (var k = 1; k <= 9; k++) {
+          var pc = "pick";
+          if (rev) { if (k === corr) pc += " is-right"; else if (k === pk) pc += " is-wrong"; } else if (pk === k) pc += " is-sel";
+          h += '<button type="button" class="' + pc + '" data-act="pick" data-pos="' + i + '" data-val="' + k + '" aria-pressed="' + (pk === k) + '"' + (rev ? ' aria-disabled="true"' : "") + ">" + k + "</button>";
+        }
+        h += "</div>" + (rev ? '<p class="why"><span class="tag">' + note + "</span> " + esc(T8[t.asked[i]].rule) + "</p>" : "") + "</div>";
+      }
+      h += "</div>";
+    } else {
+      var sg = SIGN21[t.sign];
+      h += '<p class="q">Прочитайте текст. ' + esc(sg.stmt) + "</p>";
+      var key = rev ? key21(t) : null;
+      h += '<div class="opts" role="group" aria-label="Предложения текста">';
+      for (i = 0; i < t.sents.length; i++) {
+        var st = t.sents[i], n = i + 1, chosen = !!inst.sel[n], cl = "opt", tag = "";
+        var isCorr = rev && key.nums.indexOf(n) >= 0;
+        if (rev) {
+          if (isCorr && chosen) { cl += " is-hit"; tag = "Выбрано верно"; }
+          else if (!isCorr && chosen) { cl += " is-bad"; tag = "Выбрано ошибочно"; }
+          else if (isCorr && !chosen) { cl += " is-miss"; tag = "Пропущено"; }
+          else { cl += " is-neutral"; tag = "Не выбрано, и это верно"; }
+        } else if (chosen) cl += " is-sel";
+        var why = "";
+        if (rev) {
+          var rl = st.r.length ? "Правило: " + st.r.map(function (c) { return RULES[c]; }).join("; ") + "." : "В предложении нет этого знака (" + t.sign + ").";
+          why = '<p class="why"><span class="tag">' + tag + ".</span> " + esc(rl) + "</p>";
+        }
+        h += '<div class="optwrap"><button type="button" class="' + cl + '" data-act="tog" data-pos="' + n + '" aria-pressed="' + chosen + '"' + (rev ? ' aria-disabled="true"' : "") + ">" +
+          '<span class="n">' + n + '</span><span class="tx">' + (rev ? markGlyph(st.t, sg.glyph) : esc(st.t)) + "</span></button>" + why + "</div>";
+      }
+      h += "</div>";
+    }
+    if (!rev) h += '<div class="answerbar" aria-live="polite"><span class="al">Ваш ответ</span>' + blankHTML(inst, liveKey(inst), "") + "</div>";
+    return h;
+  }
+
+  /* ---------- запись ошибок для «слабых мест» ---------- */
+  function noteWeak(inst, g) {
+    if (g.pts === g.max) return;
+    if (inst.t.type === "e8") g.wrong.forEach(function (i) { weak("№8: " + T8[inst.t.asked[i]].short); });
+    else weak("№21: " + RULES[g.rule]);
+  }
+
+  /* ---------- практика ---------- */
+  function startPractice() {
+    stopTimer(); S.exam = null; S.queue = buildQueue(); S.i = 0; S.series = { pts: 0, max: 0, n: 0 };
+    if (!S.queue.length) { stage.innerHTML = '<div class="empty"><p class="big">Здесь пока пусто.</p><p>Все задания этого набора решены без ошибок. Выберите другой номер, выключите фильтр «Только нерешённые и с ошибками» или запустите мини-вариант.</p></div>'; return; }
+    S.inst = mkInst(S.queue[0]); renderPractice();
+  }
+  function renderPractice() {
+    var inst = S.inst, total = S.queue.length;
+    var h = '<div class="card" id="card">' + cardHTML(inst, "practice", "Вопрос " + (S.i + 1) + " из " + total);
+    if (inst.done) h += resultHTML(inst) + '<div class="ctrl"><button type="button" class="btn primary" data-act="next">' + (S.i + 1 < total ? "Следующее задание" : "Завершить серию") + "</button></div>";
+    else h += '<div class="ctrl"><button type="button" class="btn primary" data-act="check"' + (answered(inst) ? "" : " disabled") + ">Проверить</button><button type=\"button\" class=\"btn ghost\" data-act=\"skip\">Пропустить</button></div>";
+    stage.innerHTML = h + "</div>";
+  }
+  function renderSeriesEnd() {
+    var s = S.series;
+    stage.innerHTML = '<div class="card summary"><p class="big">Серия завершена</p><p class="score">' + s.pts + " из " + s.max + " " + balls(s.max) + "</p><p>Решено заданий: " + s.n + '. Ошибочные задания вернутся в начало следующей серии.</p><div class="ctrl"><button type="button" class="btn primary" data-act="restart">Новая серия</button><button type="button" class="btn ghost" data-act="errs">Разобрать ошибки</button></div></div>';
+  }
+
+  /* ---------- вариант ---------- */
+  function startExam(kind) {
+    stopTimer();
+    var per = kind === "full" ? 3 : 1, items = [], p8 = shuffle(TASKS.filter(function (t) { return t.num === 8; })), p21 = shuffle(TASKS.filter(function (t) { return t.num === 21; }));
+    for (var i = 0; i < per; i++) { items.push(mkInst(p8[i])); items.push(mkInst(p21[i])); }
+    var minutes = kind === "full" ? 24 : 8;
+    S.exam = { kind: kind, items: items, idx: 0, endAt: Date.now() + minutes * 60000, finished: false };
+    renderExam(); S.timer = setInterval(tick, 1000);
+  }
+  function fmt(ms) { var s = Math.max(0, Math.round(ms / 1000)), m = Math.floor(s / 60), r = s % 60; return (m < 10 ? "0" : "") + m + ":" + (r < 10 ? "0" : "") + r; }
+  function tick() {
+    if (!S.exam || S.exam.finished) { stopTimer(); return; }
+    var left = S.exam.endAt - Date.now(), el = $("#timer");
+    if (el) { el.textContent = fmt(left); el.classList.toggle("low", left < 120000); }
+    if (left <= 0) finishExam(true);
+  }
+  function renderExam() {
+    var ex = S.exam, inst = ex.items[ex.idx], last = ex.idx === ex.items.length - 1, pills = "";
+    ex.items.forEach(function (it, i) {
+      pills += '<button type="button" class="pill' + (i === ex.idx ? " cur" : "") + (answered(it) ? " has" : "") + '" data-act="goto" data-i="' + i + '" aria-label="Вопрос ' + (i + 1) + ", задание " + it.t.num + '">' + it.t.num + "</button>";
+    });
+    stage.innerHTML = '<div class="exambar"><div><span class="tl">Осталось</span><span id="timer" class="timer">' + fmt(ex.endAt - Date.now()) + '</span></div><div class="pills" role="group" aria-label="Задания варианта">' + pills + "</div></div>" +
+      '<div class="card" id="card">' + cardHTML(inst, "exam", "Вопрос " + (ex.idx + 1) + " из " + ex.items.length) + '<div class="ctrl">' +
+      (ex.idx > 0 ? '<button type="button" class="btn ghost" data-act="prev">Назад</button>' : "") +
+      (last ? '<button type="button" class="btn primary" data-act="finish">Завершить вариант</button>' : '<button type="button" class="btn primary" data-act="nextq">Дальше</button>') +
+      '</div></div><p class="hint">Ответы проверяются после завершения варианта, как на экзамене. Можно возвращаться к любому заданию.</p>';
+  }
+  function finishExam(auto) {
+    var ex = S.exam; if (!ex || ex.finished) return;
+    ex.finished = true; stopTimer();
+    var pts = 0, max = 0, rows = "", review = "";
+    ex.items.forEach(function (it, i) {
+      var g = grade(it); it.done = true; pts += g.pts; max += g.max; record(it.t.id, g.pts); noteWeak(it, g);
+      var cls = g.pts === g.max ? "ok" : (g.pts > 0 ? "part" : "bad");
+      rows += '<li class="' + cls + '"><span>Задание ' + it.t.num + ", " + esc(it.t.topic) + "</span><b>" + g.pts + " из " + g.max + "</b></li>";
+      review += '<div class="card review">' + cardHTML(it, "review", "Разбор " + (i + 1)) + resultHTML(it) + "</div>";
+    });
+    P.exams.unshift({ ts: Date.now(), kind: ex.kind, pts: pts, max: max }); P.exams = P.exams.slice(0, 5); saveP();
+    var pct = Math.round(pts / max * 100);
+    var verdict = pct >= 85 ? "Отличный результат: эти задания у вас под контролем." : pct >= 60 ? "Хорошая база. Посмотрите разбор и повторите правила, где были ошибки." : "Есть что подтянуть: начните с разбора ниже и тренируйте номера по отдельности.";
+    stage.innerHTML = '<div class="card summary"><p class="big">' + (auto ? "Время вышло" : "Вариант завершён") + '</p><p class="score">' + pts + " из " + max + " " + balls(max) + "</p><p>" + verdict + '</p><ul class="rows">' + rows + '</ul><div class="ctrl"><button type="button" class="btn primary" data-act="again">Новый вариант</button><button type="button" class="btn ghost" data-act="toPractice">Тренировать ошибки</button></div></div><h3 class="rv">Разбор варианта</h3>' + review;
+    renderProgress();
+    var top = $("#trainer"); if (top) top.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  /* ---------- события ---------- */
+  stage.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-act]"); if (!b) return;
+    var act = b.getAttribute("data-act"), pos = parseInt(b.getAttribute("data-pos"), 10);
+    var inst = S.mode === "practice" ? S.inst : (S.exam ? S.exam.items[S.exam.idx] : null);
+    var inExam = S.mode !== "practice" && S.exam && !S.exam.finished, inPrac = S.mode === "practice" && inst && !inst.done;
+    if (act === "tog" && (inExam || inPrac)) {
+      if (inst.sel[pos]) delete inst.sel[pos]; else inst.sel[pos] = true;
+      rerender(inExam, '[data-act="tog"][data-pos="' + pos + '"]');
+    } else if (act === "pick" && (inExam || inPrac)) {
+      var v = parseInt(b.getAttribute("data-val"), 10);
+      if (inst.pick[pos] === v) delete inst.pick[pos];
+      else { Object.keys(inst.pick).forEach(function (k) { if (inst.pick[k] === v) delete inst.pick[k]; }); inst.pick[pos] = v; }
+      rerender(inExam, '[data-act="pick"][data-pos="' + pos + '"][data-val="' + v + '"]');
+    } else if (act === "check" && inPrac) {
+      var g = grade(inst); inst.done = true; record(inst.t.id, g.pts); noteWeak(inst, g);
+      S.series.pts += g.pts; S.series.max += g.max; S.series.n += 1;
+      renderPractice(); renderProgress();
+      var rs = $(".result"); if (rs) rs.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    } else if (act === "skip" || act === "next") {
+      if (S.i + 1 < S.queue.length) { S.i++; S.inst = mkInst(S.queue[S.i]); renderPractice(); scrollToStage(); } else renderSeriesEnd();
+    } else if (act === "restart") startPractice();
+    else if (act === "errs") { S.onlyErr = true; syncControls(); startPractice(); }
+    else if (act === "goto" && S.exam) { S.exam.idx = parseInt(b.getAttribute("data-i"), 10); renderExam(); }
+    else if (act === "prev" && S.exam) { S.exam.idx = Math.max(0, S.exam.idx - 1); renderExam(); scrollToStage(); }
+    else if (act === "nextq" && S.exam) { S.exam.idx = Math.min(S.exam.items.length - 1, S.exam.idx + 1); renderExam(); scrollToStage(); }
+    else if (act === "finish") finishExam(false);
+    else if (act === "again") startExam(S.exam ? S.exam.kind : "mini");
+    else if (act === "toPractice") { S.mode = "practice"; S.onlyErr = true; S.num = "all"; syncControls(); startPractice(); }
+  });
+  function rerender(inExam, focusSel) {
+    var sc = window.scrollY;
+    if (inExam) renderExam(); else renderPractice();
+    window.scrollTo(0, sc);
+    var f = $(focusSel); if (f && f.focus) { try { f.focus({ preventScroll: true }); } catch (e) { f.focus(); } }
+  }
+  function scrollToStage() { var c = $("#stageTop"); if (c) c.scrollIntoView({ behavior: "smooth", block: "start" }); }
+
+  /* ---------- панель выбора ---------- */
+  function syncControls() {
+    $$("[data-num]").forEach(function (b) { var on = String(b.getAttribute("data-num")) === String(S.num); b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
+    $$("[data-mode]").forEach(function (b) { var on = b.getAttribute("data-mode") === S.mode; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
+    var f = $("#onlyErr"); if (f) { f.setAttribute("aria-pressed", S.onlyErr); f.classList.toggle("on", S.onlyErr); }
+    var nr = $("#numRow"); if (nr) nr.classList.toggle("dim", S.mode !== "practice");
+    var fl = $("#filterRow"); if (fl) fl.classList.toggle("dim", S.mode !== "practice");
+  }
+  $$("[data-num]").forEach(function (b) { b.addEventListener("click", function () { var v = b.getAttribute("data-num"); S.num = v === "all" ? "all" : parseInt(v, 10); S.mode = "practice"; syncControls(); startPractice(); }); });
+  $$("[data-mode]").forEach(function (b) { b.addEventListener("click", function () { var m = b.getAttribute("data-mode"); S.mode = m; syncControls(); if (m === "practice") startPractice(); else startExam(m); }); });
+  var fe = $("#onlyErr"); if (fe) fe.addEventListener("click", function () { S.onlyErr = !S.onlyErr; S.mode = "practice"; syncControls(); startPractice(); });
+  $$("[data-go]").forEach(function (b) {
+    b.addEventListener("click", function (ev) {
+      var g = b.getAttribute("data-go"); ev.preventDefault();
+      if (g === "mini" || g === "full") { S.mode = g; syncControls(); startExam(g); }
+      else { S.mode = "practice"; S.num = g === "all" ? "all" : parseInt(g, 10); syncControls(); startPractice(); }
+      var tr = $("#trainer"); if (tr) tr.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
+  /* ---------- прогресс ---------- */
+  function renderProgress() {
+    var el = $("#progress"); if (!el) return;
+    var total = TASKS.length, solved = 0, bestSum = 0, maxSum = 0, per = "";
+    [8, 21].forEach(function (n) {
+      var list = TASKS.filter(function (t) { return t.num === n; }), s = 0, b = 0, m = 0, mastered = 0;
+      list.forEach(function (t) { var r = P.tasks[t.id]; m += maxPts(n); if (r) { s++; b += r.best; if (r.last >= maxPts(n)) mastered++; } });
+      solved += s; bestSum += b; maxSum += m;
+      var w = m ? Math.round(b / m * 100) : 0;
+      per += '<li><div class="pl"><b>Задание ' + n + "</b><span>решено " + s + " из " + list.length + ", без ошибок в последней попытке: " + mastered + '</span></div><div class="bar" role="img" aria-label="Лучший результат: ' + w + ' процентов"><i style="width:' + w + '%"></i></div></li>';
+    });
+    var wk = Object.keys(P.weak).sort(function (a, b) { return P.weak[b] - P.weak[a]; }).slice(0, 5);
+    var weakH = wk.length ? '<ul class="weak">' + wk.map(function (k) { return "<li>" + esc(k) + " — ошибок: " + P.weak[k] + "</li>"; }).join("") + "</ul>" : '<p class="muted">Пока нет накопленных ошибок.</p>';
+    var ex = P.exams.length ? '<ul class="hist">' + P.exams.map(function (x) {
+      var d = new Date(x.ts), dd = ("0" + d.getDate()).slice(-2) + "." + ("0" + (d.getMonth() + 1)).slice(-2);
+      return "<li><span>" + dd + ", " + (x.kind === "full" ? "расширенный" : "мини") + "</span><b>" + x.pts + " из " + x.max + "</b></li>";
+    }).join("") + "</ul>" : '<p class="muted">Вы ещё не проходили вариант.</p>';
+    el.innerHTML = '<div class="pgtop"><p class="score">' + bestSum + " из " + maxSum + '</p><p class="muted">баллов по лучшим попыткам, решено заданий: ' + solved + " из " + total + "</p></div><ul class=\"per\">" + per + "</ul><h4>Где чаще всего ошибки</h4>" + weakH + "<h4>Последние варианты</h4>" + ex +
+      '<div class="ctrl"><button type="button" class="btn ghost" id="resetBtn">Сбросить прогресс</button></div>';
+    var rb = $("#resetBtn"), armed = false, tmr = null;
+    rb.addEventListener("click", function () {
+      if (!armed) { armed = true; rb.textContent = "Нажмите ещё раз, чтобы стереть"; rb.classList.add("danger"); tmr = setTimeout(function () { armed = false; rb.textContent = "Сбросить прогресс"; rb.classList.remove("danger"); }, 3500); }
+      else { clearTimeout(tmr); P = { tasks: {}, exams: [], weak: {} }; saveP(); renderProgress(); if (S.mode === "practice") startPractice(); }
+    });
+  }
+
+  /* ---------- тема ---------- */
+  var tbtn = $("#themeBtn"), TK = "ege27-rus-theme";
+  function setTheme(t) {
+    document.documentElement.setAttribute("data-theme", t);
+    if (tbtn) { tbtn.setAttribute("aria-pressed", t === "dark"); tbtn.textContent = t === "dark" ? "Светлая тема" : "Тёмная тема"; }
+  }
+  (function () {
+    var t = null; try { t = localStorage.getItem(TK); } catch (e) { /* ничего */ }
+    if (!t) t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    setTheme(t);
+  })();
+  if (tbtn) tbtn.addEventListener("click", function () {
+    var t = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    setTheme(t); try { localStorage.setItem(TK, t); } catch (e) { /* ничего */ }
+  });
+
+  /* ---------- старт ---------- */
+  var cnt = $("#taskCount"); if (cnt) cnt.textContent = TASKS.length;
+  $$(".cnt-num").forEach(function (el) { var n = parseInt(el.getAttribute("data-n"), 10); el.textContent = TASKS.filter(function (t) { return t.num === n; }).length; });
+  syncControls(); renderProgress(); startPractice();
+})();
+</script>
+</body>
+</html>
